@@ -1,0 +1,177 @@
+/* --------------------- Content project --------------------- */
+
+.content {
+    .phone_template_part {
+        padding-top: 85px;
+        background-color: $bg_gray;
+        h3 {
+            padding-bottom: 35px;
+        }
+    }
+    .slider_phone {
+        position: relative;
+        width: 610px;
+        height: 545px;
+        margin: auto;
+        >div.arrow {
+            $size: 26px;
+            width: $size;
+            height: $size;
+            margin-top: -55px; ///-$size/2;
+            position: absolute;
+            top: 50%;
+            border-bottom-left-radius: 4px;
+            border-bottom: 4px solid #666666;
+            border-left: 4px solid #666666;
+        }
+        >div.arrow:first-of-type {
+            left: 5px - 75px;
+            transform: rotate(45deg);
+            /* @include bp(1300) {  left:20px;
+            z-index: 1
+            
+        }*/
+        }
+        >div.arrow:nth-of-type(2) {
+            right: 5px - 75px;
+            transform: rotate(-135deg);
+            /* @include bp(1300) {  right:20px;
+            z-index: 1
+            
+        }*/
+        }
+        .slide {
+            height: 100%;
+            background-size: auto 100%;
+            background-position: top center;
+            background-repeat: no-repeat;
+        }
+    }
+    .second_part {
+        padding-top: 15px;
+        padding-bottom: 75px;
+        border-color: #f5f5f5;
+        .block {
+            width: 580px;
+            padding-right: 20px;
+            padding-left: 150px;
+            position: relative;
+            box-sizing: border-box;
+            padding-top: 65px;
+            float: left;
+            h3 {
+                padding-bottom: 15px;
+                font-family: $f_medium;
+                font-size: $f_20;
+                color: #56a1d1;
+            }
+            .icon {
+                position: absolute;
+                top: 65px;
+                left: 0;
+            }
+            .icon1 {
+                width: 100px;
+                height: 100px;
+                background-image: url(../images/project_icon_1.png)
+            }
+            .icon2 {
+                width: 88px;
+                height: 101px;
+                background-image: url(../images/project_icon_2.png)
+            }
+            .icon3 {
+                width: 100px;
+                height: 83px;
+                background-image: url(../images/project_icon_3.png)
+            }
+            .icon4 {
+                width: 101px;
+                height: 101px;
+                background-image: url(../images/project_icon_4.png)
+            }
+            @include bp(1200) {float: none;
+                margin: auto;
+                
+            }
+        }
+        &:after {
+            @extend %clear
+        }
+    }
+    .third_part {$line-height: 22px;
+        background-color: #e3e3e3;
+        .wrapper {
+            padding-top: 30px;
+          
+           
+           .img1, text1 {
+                float: left;
+                    @include bp(1200) {margin:auto;
+                      
+                        float: none}
+            }
+             .img2, text2 {
+                float: right;
+                       @include bp(1200) {margin:auto;
+                        
+                          
+                        float: none}
+            }
+            .text,
+            h1,
+            p {  line-height: $line-height;
+                display: inline-block;
+            }
+            .text1 {
+                width: 570px;
+                @include bp(1200) {width: 80%;
+                    margin-left: 10%;
+                 
+                   }
+                           }
+            .text2 {
+                width: 840px;
+                  margin-bottom: 80px;
+                @include bp(1200) {width: 80%;
+                     margin-left: 10%;
+                    }
+            }
+            &:after {
+                @extend %clear
+            }
+        }
+        h1 {
+            padding-top: 50px;
+            padding-bottom: 35px;
+            font-family: $f_medium;
+            font-size: $f_20;
+            color: $f_red;
+        }
+        ul { line-height: $line-height;
+            padding-left: 30px;
+            padding-top: 20px;
+            li {padding-left: 20px;
+                list-style-type: none;
+                list-style-image: url(../images/check_icon.png)
+            }
+        }
+        .img1 {
+            width: 570px;
+            height: 360px;
+            margin-top: 95px;
+            background-repeat: no-repeat;
+        }
+        .img2 {
+            width: 296px;
+            height: 373px;
+              margin-left: 20px;
+             margin-bottom: 80px;
+         
+            background-repeat: no-repeat;
+        }
+        &:after {
+            @extend %clear
+        }
+    }
+}

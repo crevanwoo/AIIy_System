@@ -1,0 +1,308 @@
+#red_button {
+	width: 160px;
+	height: 45px;
+	right: -58px;
+	top: 320px;
+	margin-top: 55px;
+	position: fixed;
+	background-color: $bg_red;
+	line-height: 45px;
+	text-align: center;
+	font-family: $f_medium;
+	font-size: 14px;
+	color: white;
+	transform: rotate(-90deg);
+	z-index: 5
+}
+
+%form_style {
+	&:focus {
+		outline: none;
+		background-color: rgba(158, 202, 227, 0.5);
+	}
+	&::-webkit-input-placeholder {
+		font-family: $f_regular;
+		font-size: $f_16;
+		color: white
+	}
+	&::-moz-placeholder {
+		font-family: $f_regular;
+		font-size: $f_16;
+		color: white
+	}
+	/* Firefox 19+ */
+	&:-moz-placeholder {
+		font-family: $f_regular;
+		font-size: $f_16;
+		color: white
+	}
+	/* Firefox 18- */
+	&:-ms-input-placeholder {
+		font-family: $f_regular;
+		font-size: $f_16;
+		color: white
+	}
+}
+
+%icon {
+	background: {
+		position: 15px center;
+		repeat: no-repeat
+	}
+}
+
+.side_button_part {
+	//display:none;
+	width: 100%;
+	height: 100vh;
+	min-height: 700px;
+	position: fixed; // absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	.full_screen {
+		@extend %blue_transparent;
+		background-color: $dark_blue_transparent;
+		z-index: 6;
+		overflow: auto; // doesn't work
+		.content {
+			margin: auto;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			width: 720px;
+			height: 450px;
+			text-align: center;
+			//height: auto;
+			h2 {
+				width: 340px;
+				margin-right: 10px;
+				margin-left: 10px;
+				float: left;
+				padding-bottom: 13px;
+				border-bottom: 3px solid #506168;
+				text-align: center;
+				font-size: $f_20;
+				color: white;
+				&.active {
+					border-bottom: 3px solid #54a9d2;
+					font-family: $f_medium;
+				}
+			}
+			.job_seeker_part {
+				
+				color: white;
+				.contacts {
+					width: 340px;
+					padding-top: 35px;
+					padding-bottom: 35px;
+					float: left;
+					font-size: $f_14;
+					&:nth-of-type(1) {
+						float: left;
+						text-align: right;
+					}
+					&:nth-of-type(2) {
+						float: right;
+						text-align: left
+					}
+					a {
+						font-family: $f_medium;
+					}
+				}
+				h4 {
+					padding-bottom: 25px;
+					clear: both;
+					font-family: $f_medium;
+					font-size: $f_18;
+				}
+				.slider {position:relative;
+					.arrow { @extend %slider_arrow;
+				
+	margin-top: -55px;
+	
+	top: 50%;
+
+	&:first-of-type {
+		left: 5px - 55px;
+		transform: rotate(45deg);
+		border-bottom: 2px solid #475961;
+		border-left:  2px solid #475961;
+		@include bp(1300) {
+			left: 20px;
+			z-index: 2
+		}
+	}
+	&:nth-of-type(2) {
+		border-bottom: 2px solid #475961;
+		border-left:  2px solid #475961;
+		right: 5px - 55px;
+		transform: rotate(-135deg);
+		@include bp(1300) {
+			right: 20px;
+			z-index: 2
+		}
+	}}
+					.slide {
+						width: 610px;
+						margin: auto;
+						.block_info {
+							width: 33.33%;
+							float: left;
+							text-align: center;
+							.picture {
+								width: 100%;
+								height: 60px;
+								margin-bottom: 5px;
+								background: {
+									size: contain;
+									position: center center;
+									repeat: no-repeat
+								}
+							}
+							.title {
+								font-family: $f_medium;
+								font-size: $f_18;
+							}
+							.comment {
+								padding-bottom: 17px;
+								font-family: $f_light;
+								font-size: $f_12;
+							}
+							.red_button {
+								width: 135px;
+								margin: 0 auto 20px auto;
+								height: 35px;
+								font-family: $f_medium;
+								font-size: 12px;
+								line-height: 35px;
+								border-radius: 30px;
+								background-color: $bg_red;
+								&:hover {
+									background-color: #56aed8;
+								}
+							}
+						}
+						&:after {
+							@extend %clear
+						}
+					}
+					&:after {
+						@extend %clear
+					}
+					.slider_nav {
+						@extend %slider_nav;
+						@include slider_nav(blue)
+					}
+				}
+			}
+			.client_part {
+				color: white;
+				.contacts_wrapper {
+					margin: auto;
+					width: 700px;
+					&:after {
+						@extend %clear
+					}
+				}
+				.contacts {
+					position: relative;
+					width: 33.33%;
+					padding-top: 35px;
+					padding-bottom: 35px;
+					padding-left: 50px;
+					box-sizing: border-box;
+					float: left;
+					font-size: $f_14;
+					text-align: left;
+					>div:first-child {
+						position: absolute;
+						top: 40%;
+						left: 0;
+						width: 23px;
+						height: 22px;
+						background: {
+							position: center center;
+							repeat: no-repeat;
+						}
+					}
+					a,
+					span {
+						font-family: $f_medium;
+					}
+				}
+				form {
+					$border-radius: 10px;
+					$bg-color: rgba(255, 255, 255, 0.3);
+					clear: both;
+					input {
+						font-family: $f_regular;
+						font-size: $f_16;
+						position: relative;
+						display: block;
+						float: left;
+						box-sizing: border-box;
+						width: 340px;
+						margin-right: 10px;
+						margin-left: 10px;
+						height: 45px;
+						margin-bottom: 20px;
+						padding-left: 45px;
+						border: none;
+						border-radius: $border-radius;
+						background-color: $bg-color;
+						color: white;
+						&[type=text] {
+							@extend %icon;
+							background-image: url(../images/modal_icon4.png)
+						}
+						&[type=tel] {
+							@extend %icon;
+							background-image: url(../images/modal_icon2.png)
+						}
+						@extend %form_style;
+						@include bp(1200) {}
+					}
+					textarea {
+						font-family: $f_regular;
+						font-size: $f_16;
+						clear: both;
+						resize: none;
+						display: block;
+						width: 700px;
+						height: 85px;
+						margin: 0 auto 20px auto;
+						padding: 10px 10px 10px 20px;
+						box-sizing: border-box;
+						border: none;
+						border-radius: $border-radius;
+						background-color: $bg-color;
+						color: white;
+						@extend %form_style;
+					}
+					.red_button {
+						width: 180px;
+						margin: 0 auto 10px auto;
+						height: 45px;
+						font-family: $f_medium;
+						font-size: 16px;
+						border-radius: 30px;
+						background-color: $bg_red;
+						border: none;
+						color: white;
+						&:hover {
+							background-color: #56aed8;
+						}
+					}
+				}
+			}
+			#close_modal_window {
+				font-size: $f_14;
+				text-decoration: underline;
+				color: #b4c1bf
+			}
+		}
+	}
+}

@@ -1,0 +1,107 @@
+/* --------------------- Top part --------------------- */
+%half_transparent_top_header {text-align: center;
+        h1 {
+        padding-right: 20px;
+            padding-left: 20px;
+        height: 60px;
+        margin: auto;
+        margin-top: 150px;
+        margin-bottom: 45px;
+            display: inline-block;
+        background-color: rgba(255, 255, 255, 0.2);
+        text-align: center;
+        line-height: 60px;
+        font-family: $f_medium;
+        font-size: $f_30;
+    }
+    span {
+        line-height: 30px;
+        font-family: $f_regular;
+        font-size: $f_18;
+        }
+    
+    
+}
+
+.top_part {
+    height: 600px;
+    padding-top: $header_height;
+    position: relative;
+    box-sizing: border-box;
+    background-color: #475c67;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    &:before { @extend %blue_transparent;
+		background-color:  $dark_blue_transparent;
+      
+    }
+    .wrapper {
+        position: relative;
+      }
+    .top_page {@extend %half_transparent_top_header;
+        }
+    .scroll_button {
+        width: 100px;
+        height: 40px;
+        margin-left: -50px;
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        z-index: 2;
+        >div {
+            width: 10px;
+            height: 10px;
+            border-bottom: 2px solid white;
+            border-right: 2px solid white;
+            transform: rotate(45deg);
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            margin-left: -6px;
+        }
+    }
+    
+    .top_project { @extend %half_transparent_top_header;
+        
+        
+        
+    }
+    
+    .top_about {padding-top: 90px;
+        color: white;
+        @extend %half_gradient_h;
+        >h1 {
+            padding-right: 20px;
+            padding-left: 20px;
+            background-size: 150px 100%;
+            background-image: linear-gradient(to top, #00b0de, #0082db);
+        }
+        >p {line-height: 170%;
+            padding: 30px 65px 35px 65px;
+            font-size: $f_18;
+         
+        }
+        .numbers_about {padding-right: 135px;
+        padding-left: 135px;
+            text-align: left;
+          
+            >div{
+                >div {width: 33.33%;    
+                      min-height: 65px;
+            height: auto;
+                padding-top: 5px;
+            padding-left: 95px;
+                box-sizing: border-box;
+            float: left;
+                background-repeat: no-repeat;
+                >div {
+                    
+                    font-family: $f_bold;
+                    font-size: 30px;
+                }}}
+            &:after {@extend %clear}}
+    }
+}

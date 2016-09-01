@@ -1,0 +1,360 @@
+/* --------------------- Content about --------------------- */
+
+$block_width: 375px;
+$block_height: 180px;
+$block_margin: 5px;
+.content_about {
+    padding-top: 65px;
+    padding-bottom: 80px;
+    background-color: $bg_gray;
+    h1 {
+        padding-bottom: 45px;
+        font-family: $f_medium;
+        font-size: $f_30;
+        text-align: center
+    }
+    .mission {
+        >div {
+            width: $block_width;
+            padding-left: 90px;
+            padding-right: 20px;
+            padding-bottom: 80px;
+            position: relative;
+            box-sizing: border-box;
+            font-size: $f_16;
+            float: left;
+            >div {
+                position: absolute;
+                top: 10px;
+                left: 20px;
+                width: 60px;
+                height: 70px;
+                background-position: top left;
+                background-repeat: no-repeat;
+            }
+        }
+        &:after {
+            @extend %clear
+        }
+    }
+    .team {
+        .slider {
+            position: relative;
+            .arrow {
+                @extend %slider_arrow;
+                top: 60%;
+                border-bottom: 3px solid #b6b6b6;
+                border-left: 3px solid #b6b6b6;
+            }
+            .slider_nav {
+                @extend %slider_nav;
+                @include slider_nav(white)
+            }
+        }
+        .slide {
+            $span_color: #c0d5de;
+            $padding-left: 13px;
+            .title {
+               // display: none;
+                width: auto;
+                position: absolute;
+                padding-left: $padding-left;
+                background-color: $light_blue_transparent;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                color: white;
+                .name {
+                    display: inline-block;
+                    margin-right: 10px;
+                    font-size: $f_12;
+                    font-family: $f_medium;
+                }
+                span {
+                    font-size: 11px;
+                    color: $span_color
+                }
+            }
+            .hovered {display: none;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: $light_blue_transparent;
+                color: white;
+                text-align: center;
+                .name {
+                    font-family: $f_medium;
+                    font-size: 18px;
+                }
+                .about {
+                    font-size: 14px;
+                    color: $span_color
+                }
+                .description {position: relative;
+                    padding-top: 20px;
+                    font-size: 12px;
+                }
+                .icon {
+                    width: 20px;
+                    height: 20px;
+                    position: absolute;
+                    background-image: url(../images/linkedin.png);
+                    background-repeat: no-repeat;
+                }
+            }
+            >div {
+                width: $block_width;
+                margin-right: $block_margin;
+                margin-left: $block_margin;
+                float: left;
+                >div {
+                    float: left;
+                }
+            }
+            .cell_1,
+            .cell_2_w,
+            .cell_2_w_2_h {
+                position: relative;
+                background-size: cover; //auto 100%;
+                background-position: top center;
+                background-repeat: no-repeat;
+                margin-top: $block_margin;
+                margin-bottom: $block_margin;
+                @include bp(1200) {}
+            }
+            .cell_2_w,
+            .cell_2_w_2_h {
+                width: $block_width;
+            }
+            .cell_1,
+            .cell_2_w {
+                height: $block_height;
+            }
+            .cell_1 {
+                width: $block_width/2 - $block_margin;
+                .hovered {
+                    padding-top: 90px;
+                    .icon {top: 58px;
+                    left: 0;
+                    right: 0;
+                    margin:auto;}
+                }
+            }
+            .cell_2_w {
+                .title {
+                    padding-top: 10px;
+                    height: 30px
+                }
+                .hovered {
+                    padding-top: 35px;
+                    padding-left: $padding-left;
+                    text-align: left;
+                    .icon {bottom: 18px;
+                    left: $padding-left;}
+                }
+            }
+            .cell_1_margin {
+                margin-right: $block_margin *2;
+            }
+            .cell_2_w_2_h {
+                height: $block_height * 2 + $block_margin * 2;
+                .hovered {
+                    padding: 115px 25px 0 25px;
+                    .icon {bottom: -43px;
+                    left:0;
+                    right:0;
+                    margin:auto;}
+                }
+            }
+            .cell_1,
+            .cell_2_w_2_h {
+                .title {
+                    padding-top: 18px;
+                    height: 55px;
+                    line-height: 80%;
+                }
+            }
+            &:after {
+                @extend %clear
+            }
+        }
+    }
+    .history {
+        @extend %half_gradient_h;
+        >h1 {
+            padding-right: 10px;
+            padding-left: 10px;
+            background-size: 200px 100%;
+            background-image: linear-gradient(to top, #e3483a 50%, #bc262b);
+        }
+        >p {
+            padding: 60px 55px 90px 55px;
+            font-size: $f_20;
+            color: #666666;
+        }
+        .red_year {
+            float: left;
+            display: inline-block;
+            background-image: linear-gradient(to top, #e3483a 50%, #bc262b);
+            #red_year {
+                font-family: $f_bold;
+                font-size: 160px;
+                display: inline-block;
+                color: #000;
+                background: rgba(227, 227, 227, 1);
+                mix-blend-mode: lighten;
+            }
+            /* &:after {
+                content: ' ';
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;    
+                background: linear-gradient(to top, rgba(227, 227, 227, 1),rgba(227, 227, 227, 0) 50%);
+            }*/
+        }
+        .slider {
+            width: 710px;
+            max-width: 90vw;
+            margin-bottom: 90px;
+            height: 145px;
+            padding-left: 195px;
+            box-sizing: border-box;
+            position: relative;
+            background-color: white;
+            float: right;
+            @include bp(1200) {
+                float: none;
+                margin: auto;
+            }
+            >div.arrow {
+                width: 10px;
+                height: 10px;
+                border-bottom: 1px solid black;
+                border-left: 1px solid black;
+                position: absolute;
+                left: 30px;
+                &:nth-of-type(1) {
+                    top: 35px;
+                    transform: rotate(135deg)
+                }
+                &:nth-of-type(2) {
+                    bottom: 35px;
+                    transform: rotate(-45deg)
+                }
+            }
+            .slide_wrapper {
+                height: 100%;
+                .slide {
+                    width: 100%;
+                    height: 100%;
+                    padding-top: 35px;
+                    padding-bottom: 35px;
+                    padding-right: 95px;
+                    position: relative;
+                    display: table;
+                    box-sizing: border-box;
+                    font-size: $f_14;
+                    text-align: right;
+                    p {
+                        height: 100%;
+                        display: table-cell;
+                        vertical-align: middle;
+                    }
+                    .icon {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        width: 90px;
+                        height: 100%;
+                        background-position: center center;
+                        background-repeat: no-repeat;
+                    }
+                }
+            }
+            &:before {
+                content: ' ';
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                height: 100%;
+                background-image: linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 1) 0%)
+            }
+            &:after {
+                @extend %clear
+            }
+        }
+        .history_line {
+            width: 100%;
+            height: 2px;
+            background-color: #999999;
+            clear: both;
+            position: relative;
+            >div:not(:first-of-type) {
+                width: 10px;
+                height: 10px;
+                position: absolute;
+                top: -4px;
+                border-radius: 50%;
+                background-color: #999999;
+                @for $i from 0 through 9 {
+                    &#year_#{$i} {
+                        left: 11.11% * $i;
+                        $content: 2007 + $i;
+                        &:after {
+                            content: '#{$content}';
+                            position: absolute;
+                            left: -120%;
+                            top: 20px;
+                            font-size: $f_14;
+                        }
+                    }
+                    &#year_0 {
+                        &:after {
+                            content: 'Early';
+                            left: 0%
+                        }
+                    }
+                    &#year_9 {
+                        &:after {
+                            left: -230%;
+                        }
+                    }
+                }
+            }
+            #runner {
+                width: 26px;
+                height: 60px;
+                position: absolute;
+                top: -52px;
+                left: -8px;
+                background-image: url(../images/runner.png);
+                background-repeat: no-repeat;
+                z-index: 1;
+                >div.arrow {
+                    width: 7px;
+                    height: 7px;
+                    position: absolute;
+                    border-bottom: 1px solid black;
+                    border-right: 1px solid black;
+                    top: 10px;
+                    &:nth-of-type(1) {
+                        transform: rotate(135deg);
+                        left: -15px
+                    }
+                    &:nth-of-type(2) {
+                        transform: rotate(-45deg);
+                        right: -15px
+                    }
+                }
+            }
+        }
+        &:after {
+            @extend %clear
+        }
+    }
+}

@@ -1,0 +1,96 @@
+/* --------------------- Abstract --------------------- */
+
+$port_margin: 20px;
+$port_cell: 275px;
+$icon_size: 38px;
+$port_cell_vw: 22vw;
+$port_cell_min: 1px;
+$port_margin_vw: 0.8vw;
+$port_margin_min: 20px;
+
+@font-face {
+	font-family: GothamProLight;
+	src: url(../fonts/GothamProLight.ttf);
+}
+
+@font-face {
+	font-family: GothamProRegular;
+	src: url(../fonts/GothamProRegular.ttf);
+}
+
+@font-face {
+	font-family: GothamProMedium;
+	src: url(../fonts/GothamProMedium.ttf);
+}
+@font-face {
+	font-family: GothamProBold;
+	src: url(../fonts/GothamProBold.ttf);
+}
+
+$wrapper_paddings: 20px;
+$wrapper_width: 1200px;
+$header_padding_top: 25px;
+$header_height: 100px;
+//            ---             ---             ---             Fonts
+$f_light: GothamProLight;
+$f_regular: GothamProRegular;
+$f_medium: GothamProMedium;
+$f_bold: GothamProBold;
+$f_12: 12px;
+$f_14: 14px;
+$f_16: 16px;
+$f_18: 18px;
+$f_20: 20px;
+$f_24: 20px;
+$f_30: 30px;
+$f_red: #a9493a;
+$bg_red: #af3534;
+$bg_gray: #e3e3e3;
+$dark_blue_transparent: rgba(19, 53, 69, 0.9);
+$light_blue_transparent: rgba(74, 123, 146, 0.8);
+%clear {
+	content: ' ';
+	display: block;
+	clear: both;
+}
+
+@mixin bp($media) {
+	@if ($media==1300) {
+		@media screen and (max-width: 1300px) {
+			@content
+		}
+	}
+	@elseif ($media==1200) {
+		@media screen and (max-width: 1200px) {
+			@content
+		}
+	}
+	@elseif ($media==1000) {
+		@media screen and (max-width: 1000px) {
+			@content
+		}
+	}
+}
+
+@mixin slider_nav($bg_color) {
+	@if ($bg_color==white) {
+		&.on_white_bg {
+			.slider_nav_button {
+				background-color: #b6b6b6
+			}
+			.active {
+				background-image: linear-gradient(to top, #00a3dd, #0081db)
+			}
+		}
+	}
+	@elseif ($bg_color==blue) {
+		&.on_blue_bg {
+			.slider_nav_button {
+				background-color: #77a2b6
+			}
+			.active {
+				background-color: white
+			}
+		}
+	}
+}
