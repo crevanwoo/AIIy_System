@@ -6,13 +6,15 @@
 
 /*function calc_slider_size() {*/
 
-
-
+var width_num = parseInt($('.slide').css('width')) * ($('.slide').length),
+  width_px = width_num + 'px';
+ console.log(width_num);
     
-    $('.slide').each(function () {
+    $('.slider_port .slide').each(function () {
       var atrnum =  $(this).attr("data-index");
-        console.log(atrnum);
-        var slide_transition = atrnum * width + "px";
+       
+        var slide_transition = atrnum * width_num + "px";
+             console.log(slide_transition);
         $(this).css('left', slide_transition)
 
 
@@ -28,7 +30,7 @@
 	
 	
 	
-	var width = ($('.slide').css('width')) * ($('.slide').length) + 'px';
+	
 		console.log(width);
 	$('.slide_wrapper').css('width', width);
 	

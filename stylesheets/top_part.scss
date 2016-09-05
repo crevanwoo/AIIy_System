@@ -36,10 +36,27 @@
     color: white;
     &:before { @extend %blue_transparent;
 		background-color:  $dark_blue_transparent;
+        
+    
       
+    }
+    &.hide {overflow:hidden}
+    video {position: absolute;
+    top:0;
+    left:0;
+    &:before { @extend %blue_transparent;
+		background-color:  rgba(19, 53, 69, 0.6);
+             z-index: 1     
+    
+      
+    }
+          
+ 
     }
     .wrapper {
         position: relative;
+         
+   
       }
     .top_page {@extend %half_transparent_top_header;
         }
@@ -70,7 +87,8 @@
         
     }
     
-    .top_about {padding-top: 90px;
+    .top_about {
+        padding-top: 90px;
         color: white;
         @extend %half_gradient_h;
         >h1 {
