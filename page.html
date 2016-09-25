@@ -7,17 +7,130 @@
 	<link rel="stylesheet" href="stylesheets/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script defer type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	 <script defer src="js/config.js"></script>
 	<script defer src="js/header.js"></script>
 	<script defer src="js/hover.js"></script>
 	<script defer src="js/side_button.js"></script>
-	<script defer src="js/slider.js"></script>
+
 
 
 
 </head>
 
-<body>
 
+<body>
+ 
+ 
+ 
+
+    <!-- Modal window begins -->
+    <div id="red_button" data-modal-id="modal_order">KEEP IN TOUCH</div>
+    <div class="modal side_button_part" id="modal_order">
+        <div class="full_screen">
+            <div class="content">
+                <h2 id="job_seeker" class="active">JOB SEEKER</h2>
+                <h2 id="client" class="">CLIENT</h2>
+                <div class="job_seeker_part">
+                    <div class="contacts">Sales manager: <a href="mailto:hello@allysystem.com">hello@allysystem.com</a></div>
+                    <div class="contacts">Mobile Number: <a href="tel:+14087685273">+1 (408) 768-5273</a></div>
+                    <h4>OPENING COUNTS</h4>
+                    <div class="slider">
+                        <div class="arrow slider_arr arrow_left"></div>
+                        <div class="arrow slider_arr arrow_right"></div>
+                        <div class="slider_wrapper">
+                            <div class="slides_block">
+                                <div class="slide">
+                                    <div class="block_info">
+                                        <div class="picture" style="background-image:url(images/guy.png)"></div>
+                                        <div class="title">Mobile develop</div>
+                                        <div class="comment">4 post Avaliable</div>
+                                        <div class="red_button">APPLY NOW</div>
+                                    </div>
+                                    <div class="block_info">
+                                        <div class="picture" style="background-image:url(images/guy.png)"></div>
+                                        <div class="title">Mobile develop</div>
+                                        <div class="comment">4 post Avaliable</div>
+                                        <div class="red_button">APPLY NOW</div>
+                                    </div>
+                                    <div class="block_info">
+                                        <div class="picture" style="background-image:url(images/guy.png)"></div>
+                                        <div class="title">Mobile develop</div>
+                                        <div class="comment">4 post Avaliable</div>
+                                        <div class="red_button">APPLY NOW</div>
+                                    </div>
+                                    <div class="block_info">
+                                        <div class="picture" style="background-image:url(images/guy.png)"></div>
+                                        <div class="title">Mobile develop</div>
+                                        <div class="comment">4 post Avaliable</div>
+                                        <div class="red_button">APPLY NOW</div>
+                                    </div>
+                                    <div class="block_info">
+                                        <div class="picture" style="background-image:url(images/guy.png)"></div>
+                                        <div class="title">Mobile develop</div>
+                                        <div class="comment">4 post Avaliable</div>
+                                        <div class="red_button">APPLY NOW</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  <div class="slider_nav on_blue_bg">
+                            <div>
+                                <div class="slider_nav_button nav_button_1 active"></div>
+                                <div class=" slider_nav_button  nav_button_2"></div>
+                                <div class="slider_nav_button  nav_button_3"></div>
+                                <div class="slider_nav_button  nav_button_4"></div>
+                            </div>
+                        </div>-->
+                    </div>
+                </div>
+                <div class="client_part">
+                    <div class="contacts_wrapper">
+                        <div class="contacts">
+                            <div style="background-image:url(images/modal_icon1.png)"></div>Sales manager:
+                            <br><a href="mailto:hello@allysystem.com">hello@allysystem.com</a></div>
+                        <div class="contacts">
+                            <div style="background-image:url(images/modal_icon2.png)"></div>Mobile Number:
+                            <br><a href="tel:+14087685273">+1 (408) 768-5273</a></div>
+                        <div class="contacts">
+                            <div style="background-image:url(images/modal_icon3.png)"></div>skype:
+                            <br><span>ali-express-systems</span></div>
+                    </div>
+                    <form action="">
+                        <input type="text" placeholder="First name" required>
+                        <input type="tel" placeholder="Telephone" required>
+                        <textarea name="" id="" placeholder="message" required></textarea>
+                        <button type="submit" class="red_button">SEND REQUEST</button>
+                    </form>
+                </div>
+
+                <div class="close" id="close_modal_window">close window</div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal window ends -->
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+   <!-- header begins -->
 	<header>
 		<div class="wrapper">
 			<img src="images/logo.png" alt="Ally System" class="logo">
@@ -32,7 +145,7 @@
 			<div class="contact">
 				<div>
 					<div class="country">India</div>
-					<div style="padding-top: 20px;">
+					<div style="padding-top: 20rem;">
 						<div class="arrow" data-arrow="hide"></div><a href="tel:+911724345253">
 +91 (172) <span> 434-5253 </span>
 </a></div>
@@ -41,7 +154,7 @@
 
 				<div class="header_hidden_contact" data-arrow="spread">
 					<div class="country" data-arrow="spread">India</div>
-					<div style="padding-top: 20px;" data-arrow="spread">
+					<div style="padding-top: 20rem;" data-arrow="spread">
 						<a href="tel:+911724345253" data-arrow="spread">
 +91 (172) <span data-arrow="spread"> 434-5253 </span>
 </a></div>
@@ -50,7 +163,7 @@
 				</div>
 				<div class="header_hidden_contact" data-arrow="spread">
 					<div class="country" data-arrow="spread">India</div>
-					<div style="padding-top: 20px;" data-arrow="spread">
+					<div style="padding-top: 20rem;" data-arrow="spread">
 						<a href="tel:+911724345253" data-arrow="spread">
 +91 (172) <span data-arrow="spread"> 434-5253 </span>
 </a></div>
@@ -61,11 +174,18 @@
 		</div>
 
 	</header>
+	
+	
+	<!-- header ends  -->
+	
+	 <!-- top part begins  -->
+	
+	
 	<div class="top_part" style="background-image: url(images/top_bg_page.jpg)">
 
 		<div class="wrapper">
 			<section class="top_page">
-				<h1>WEB DEVELOPMENT SIMPLIFIED</h1>
+				<h1 class="main_h">WEB DEVELOPMENT SIMPLIFIED</h1>
 				<br><span>Beautiful and functional websites, products, portals and web applications built on latest technologies and</span>
 				<br>
 				<span>frameworks, delivered without cost and budget overruns</span>
@@ -73,6 +193,12 @@
 		</div>
 
 	</div>
+	
+	
+	  <!-- top part ends  -->
+
+
+    <!-- content begins  -->
 
 	<div class="content_page">
 		<div class="wrapper">
@@ -98,106 +224,164 @@
 
 		<div class="wrapper">
 			<div class="portfolio">
-				<h1 class="h_black_and_red">WEB DEVELOPMENT <span>PORTFOLIO</span></h1>
-				<div class="slider_port">
-					<div class="arrow slider_arr arrow_left"></div>
-					<div class="arrow slider_arr arrow_right"></div>
-
-
-					<div class="slide_wrapper">
-					
-					
-						<div class="slide" data-index="0">
-							<div class="cell_2_h hover_parent" style="background-image:url(images/port_5.jpg)">
-								<div class="hover_block">
-									<h4>VOICE CHAT</h4><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span>
-									<div class="blue_button">VIEW CASE</div>
-								</div>
-							</div>
-							<div class="cell_1 hover_parent" style="background-image:url(images/port_4.jpg)">
-								<div class="hover_block">
-									<h4>VOICE CHAT</h4><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span>
-									<div class="blue_button">VIEW CASE</div>
-								</div>
-							</div>
-							<div class="cell_2_w hover_parent" style="background-image:url(images/port_5.jpg)">
-								<div class="hover_block">
-									<h4>VOICE CHAT</h4><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span>
-									<div class="blue_button">VIEW CASE</div>
-								</div>
-							</div>
-							<div class="cell_2_w hover_parent" style="background-image:url(images/port_5.jpg)">
-								<div class="hover_block">
-									<h4>VOICE CHAT</h4><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span>
-									<div class="blue_button">VIEW CASE</div>
-								</div>
-							</div>
-							<div class="cell_1 hover_parent" style="background-image:url(images/port_4.jpg)">
-								<div class="hover_block">
-									<h4>VOICE CHAT</h4><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span>
-									<div class="blue_button">VIEW CASE</div>
-								</div>
-							</div>
-						</div>
-						
-						
-						
-						
-						
-						<div class="slide" data-index="1">
-							<div class="cell_2_h hover_parent" style="background-image:url(images/port_5.jpg)">
-								<div class="hover_block">
-									<h4>VOICE CHAT</h4><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span>
-									<div class="blue_button">VIEW CASE</div>
-								</div>
-							</div>
-							<div class="cell_1 hover_parent" style="background-image:url(images/port_4.jpg)">
-								<div class="hover_block">
-									<h4>VOICE CHAT</h4><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span>
-									<div class="blue_button">VIEW CASE</div>
-								</div>
-							</div>
-							<div class="cell_2_w hover_parent" style="background-image:url(images/port_5.jpg)">
-								<div class="hover_block">
-									<h4>VOICE CHAT</h4><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span>
-									<div class="blue_button">VIEW CASE</div>
-								</div>
-							</div>
-							<div class="cell_2_w hover_parent" style="background-image:url(images/port_5.jpg)">
-								<div class="hover_block">
-									<h4>VOICE CHAT</h4><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span>
-									<div class="blue_button">VIEW CASE</div>
-								</div>
-							</div>
-							<div class="cell_1 hover_parent" style="background-image:url(images/port_4.jpg)">
-								<div class="hover_block">
-									<h4>VOICE CHAT</h4><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span>
-									<div class="blue_button">VIEW CASE</div>
-								</div>
-							</div>
-						</div>
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-						
-					</div>
-					<div class="slider_nav on_white_bg">
-						<div>
-							<div class="slider_nav_button nav_button_1 active"></div>
-							<div class=" slider_nav_button  nav_button_2"></div>
-							<div class="slider_nav_button  nav_button_3"></div>
-							<div class="slider_nav_button  nav_button_4"></div>
-						</div>
-					</div>
-				</div>
-			</div>
+                <h1 class="h_black_and_red">VIEW OUR LATEST <span>WORK</span></h1>
+                <div class="slider_port">
+                   <div class="slider">
+                    <div class="arrow slider_arr"></div>
+                    <div class="arrow slider_arr"></div>
+                    
+                    <!-- slide begins -->
+                    <div class="slide active" data-slide-num="1">
+                        <div class="cell_2_h hover_parent" style="background-image:url(images/port_4.jpg)">
+                            <div class="hover_block">
+                                <h4>VOICE CHAT</h4><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span>
+                                <div class="blue_button">VIEW CASE</div>
+                            </div>
+                        </div>
+                        <div class="cell_1 hover_parent" style="background-image:url(images/port_4.jpg)">
+                            <div class="hover_block">
+                                <h4>VOICE CHAT</h4><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span>
+                                <div class="blue_button">VIEW CASE</div>
+                            </div>
+                        </div>
+                        <div class="cell_2_w hover_parent" style="background-image:url(images/port_5.jpg)">
+                            <div class="hover_block">
+                                <h4>VOICE CHAT</h4><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span>
+                                <div class="blue_button">VIEW CASE</div>
+                            </div>
+                        </div>
+                        <div class="cell_2_w hover_parent" style="background-image:url(images/port_5.jpg)">
+                            <div class="hover_block">
+                                <h4>VOICE CHAT</h4><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span>
+                                <div class="blue_button">VIEW CASE</div>
+                            </div>
+                        </div>
+                        <div class="cell_1 hover_parent" style="background-image:url(images/port_4.jpg)">
+                            <div class="hover_block">
+                                <h4>VOICE CHAT</h4><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span>
+                                <div class="blue_button">VIEW CASE</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- slide ends -->
+                     <!-- slide begins -->
+                    <div class="slide" hidden data-slide-num="2">
+                        <div class="cell_2_h hover_parent" style="background-image:url(images/port_6.jpg)">
+                            <div class="hover_block">
+                                <h4>VOICE CHAT</h4><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span>
+                                <div class="blue_button">VIEW CASE</div>
+                            </div>
+                        </div>
+                        <div class="cell_1 hover_parent" style="background-image:url(images/port_4.jpg)">
+                            <div class="hover_block">
+                                <h4>VOICE CHAT</h4><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span>
+                                <div class="blue_button">VIEW CASE</div>
+                            </div>
+                        </div>
+                        <div class="cell_2_w hover_parent" style="background-image:url(images/port_7.jpg)">
+                            <div class="hover_block">
+                                <h4>VOICE CHAT</h4><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span>
+                                <div class="blue_button">VIEW CASE</div>
+                            </div>
+                        </div>
+                        <div class="cell_2_w hover_parent" style="background-image:url(images/port_5.jpg)">
+                            <div class="hover_block">
+                                <h4>VOICE CHAT</h4><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span>
+                                <div class="blue_button">VIEW CASE</div>
+                            </div>
+                        </div>
+                        <div class="cell_1 hover_parent" style="background-image:url(images/port_4.jpg)">
+                            <div class="hover_block">
+                                <h4>VOICE CHAT</h4><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span>
+                                <div class="blue_button">VIEW CASE</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- slide ends -->
+                     <!-- slide begins -->
+                    <div class="slide" hidden data-slide-num="3">
+                        <div class="cell_2_h hover_parent" style="background-image:url(images/port_7.jpg)">
+                            <div class="hover_block">
+                                <h4>VOICE CHAT</h4><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span>
+                                <div class="blue_button">VIEW CASE</div>
+                            </div>
+                        </div>
+                        <div class="cell_1 hover_parent" style="background-image:url(images/port_4.jpg)">
+                            <div class="hover_block">
+                                <h4>VOICE CHAT</h4><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span>
+                                <div class="blue_button">VIEW CASE</div>
+                            </div>
+                        </div>
+                        <div class="cell_2_w hover_parent" style="background-image:url(images/port_6.jpg)">
+                            <div class="hover_block">
+                                <h4>VOICE CHAT</h4><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span>
+                                <div class="blue_button">VIEW CASE</div>
+                            </div>
+                        </div>
+                        <div class="cell_2_w hover_parent" style="background-image:url(images/port_5.jpg)">
+                            <div class="hover_block">
+                                <h4>VOICE CHAT</h4><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span>
+                                <div class="blue_button">VIEW CASE</div>
+                            </div>
+                        </div>
+                        <div class="cell_1 hover_parent" style="background-image:url(images/port_4.jpg)">
+                            <div class="hover_block">
+                                <h4>VOICE CHAT</h4><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span>
+                                <div class="blue_button">VIEW CASE</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- slide ends -->
+                     <!-- slide begins -->
+                    <div class="slide" hidden data-slide-num="4">
+                        <div class="cell_2_h hover_parent" style="background-image:url(images/port_5.jpg)">
+                            <div class="hover_block">
+                                <h4>VOICE CHAT</h4><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span>
+                                <div class="blue_button">VIEW CASE</div>
+                            </div>
+                        </div>
+                        <div class="cell_1 hover_parent" style="background-image:url(images/port_4.jpg)">
+                            <div class="hover_block">
+                                <h4>VOICE CHAT</h4><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span>
+                                <div class="blue_button">VIEW CASE</div>
+                            </div>
+                        </div>
+                        <div class="cell_2_w hover_parent" style="background-image:url(images/port_6.jpg)">
+                            <div class="hover_block">
+                                <h4>VOICE CHAT</h4><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span>
+                                <div class="blue_button">VIEW CASE</div>
+                            </div>
+                        </div>
+                        <div class="cell_2_w hover_parent" style="background-image:url(images/port_7.jpg)">
+                            <div class="hover_block">
+                                <h4>VOICE CHAT</h4><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span>
+                                <div class="blue_button">VIEW CASE</div>
+                            </div>
+                        </div>
+                        <div class="cell_1 hover_parent" style="background-image:url(images/port_4.jpg)">
+                            <div class="hover_block">
+                                <h4>VOICE CHAT</h4><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span>
+                                <div class="blue_button">VIEW CASE</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- slide ends -->
+                    
+                    
+                    <div class="slider_nav on_white_bg">
+                        <div>
+                            <div class="slider_nav_button active" data-slide-num="1"></div>
+                            <div class="slider_nav_button" data-slide-num="2"></div>
+                            <div class="slider_nav_button" data-slide-num="3"></div>
+                            <div class="slider_nav_button" data-slide-num="4"></div>
+                        </div>
+                    </div>
+                </div>
+            </div></div>
 		</div>
 	</div>
 
@@ -221,6 +405,8 @@
 		</div>
 	</div>
 
+
+   <!-- footer begins  -->
 	<footer>
 		<div class="wrapper">
 
@@ -346,78 +532,10 @@
 		</div>
 	</footer>
 	
+	   <!-- footer ends  -->
 	
-	<!-- Modal window -->
-	<div id="red_button">KEEP IN TOUCH</div>
-	<div class="side_button_part">
-		<div class="full_screen">
-			<div class="content">
-				<h2 id="job_seeker" class="active">JOB SEEKER</h2>
-				<h2 id="client" class="">CLIENT</h2>
-				<div class="job_seeker_part">
-					<div class="contacts">Sales manager: <a href="mailto:hello@allysystem.com">hello@allysystem.com</a></div>
-					<div class="contacts">Mobile Number: <a href="tel:+14087685273">+1 (408) 768-5273</a></div>
-					<h4>OPENING COUNTS</h4>
-					<div class="slider">
-						<div class="arrow slider_arr"></div>
-						<div class="arrow slider_arr"></div>
-						<div class="slide_wrapper">
-							<div class="slide">
-								<div class="block_info">
-									<div class="picture" style="background-image:url(images/guy.png)"></div>
-									<div class="title">Mobile develop</div>
-									<div class="comment">4 post Avaliable</div>
-									<div class="red_button">APPLY NOW</div>
-								</div>
-								<div class="block_info">
-									<div class="picture" style="background-image:url(images/guy.png)"></div>
-									<div class="title">Mobile develop</div>
-									<div class="comment">4 post Avaliable</div>
-									<div class="red_button">APPLY NOW</div>
-								</div>
-								<div class="block_info">
-									<div class="picture" style="background-image:url(images/guy.png)"></div>
-									<div class="title">Mobile develop</div>
-									<div class="comment">4 post Avaliable</div>
-									<div class="red_button">APPLY NOW</div>
-								</div>
-							</div>
-						</div>
-						<div class="slider_nav on_blue_bg">
-							<div>
-								<div class="slider_nav_button nav_button_1 active"></div>
-								<div class=" slider_nav_button  nav_button_2"></div>
-								<div class="slider_nav_button  nav_button_3"></div>
-								<div class="slider_nav_button  nav_button_4"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="client_part">
-					<div class="contacts_wrapper">
-						<div class="contacts">
-							<div style="background-image:url(images/modal_icon1.png)"></div>Sales manager:
-							<br><a href="mailto:hello@allysystem.com">hello@allysystem.com</a></div>
-						<div class="contacts">
-							<div style="background-image:url(images/modal_icon2.png)"></div>Mobile Number:
-							<br><a href="tel:+14087685273">+1 (408) 768-5273</a></div>
-						<div class="contacts">
-							<div style="background-image:url(images/modal_icon3.png)"></div>skype:
-							<br><span>ali-express-systems</span></div>
-					</div>
-					<form action="">
-						<input type="text" placeholder="First name" required>
-						<input type="tel" placeholder="Telephone" required>
-						<textarea name="" id="" placeholder="message" required></textarea>
-						<button type="submit" class="red_button">SEND REQUEST</button>
-					</form>
-				</div>
+	
 
-				<div id="close_modal_window">close window</div>
-
-			</div>
-		</div>
-	</div>
 	
 	
 	

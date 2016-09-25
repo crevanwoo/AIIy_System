@@ -17,21 +17,19 @@ header {
     }
     nav {float: left;
        /* position: absolute;
-        top: 60px;
-        margin-left: 300px;*/
+        top: 60rem;
+        margin-left: 300rem;*/
          position: relative;
-        top: 35px;
-        margin-left: 130px;
-          @include bp(1200) { margin-left: 30px;
-    
-}
+        top: 35rem;
+        margin-left: 130rem;
+       
         
         ul {
             li {
                 display: inline-block;
-                margin-right: 20px;
+                margin-right: 20rem;
                 &:first-child {
-                    margin-right: 25px
+                    margin-right: 25rem
                 }
             }
             a {
@@ -41,18 +39,16 @@ header {
         }
     }
     .contact {
-        width: 220px;
-		top:3px;
-        margin-left: 30px;
+        width: 220rem;
+		top:3rem;
+        margin-left: 30rem;
         position: relative;
         float: right;
         color: #cccccc;
-        @include bp(1200) { float: left;
-    
-}
+     
         >div {
-            padding-top: 10px;
-             padding-bottom: 27px //denends on .contact - top
+            padding-top: 10rem;
+             padding-bottom: 27rem //denends on .contact - top
         }
         .header_hidden_contact {
             position: relative;
@@ -60,14 +56,14 @@ header {
             opacity: 0;
             >div:last-of-type {
                 height: 100%;
-                width: 30px;
+                width: 30rem;
                 position: absolute;
                 top: 0;
-                right: -30px;
+                right: -30rem;
                 display: block;
                 background-color:$dark_blue_transparent;
                 clear: both;
-                 @include bp(1200) { display: none;}
+                
             }
             &.active {
                 opacity: 1;
@@ -79,11 +75,11 @@ header {
            @extend %clear
         }
         .arrow {
-            width: 10px;
-            height: 10px;
+            width: 10rem;
+            height: 10rem;
             float: left;
-            border-bottom: 2px solid white;
-            border-right: 2px solid white;
+            border-bottom: 2rem solid white;
+            border-right: 2rem solid white;
             transform: rotate(45deg)
         }
         a {
@@ -97,25 +93,25 @@ header {
         }
         .country {
             position: absolute;
-            right: 30px;
-            font-size: 14px;
+            right: 30rem;
+            font-size: 14rem;
             &:after {
                 content: ' ';
-                width: 20px;
-                height: 11px;
+                width: 20rem;
+                height: 11rem;
                 position: absolute;
-                right: -30px;
-                bottom: 3px;
+                right: -30rem;
+                bottom: 3rem;
                 background-image: url(../images/india.jpg);
                 background-size: contain;
                 background-repeat: no-repeat;
             }
         }
         .call_time {
-            padding-top: 5px;
+            padding-top: 5rem;
             clear: both;
             float: right;
-            font-size: 12px;
+            font-size: 12rem;
         }
     }
 }

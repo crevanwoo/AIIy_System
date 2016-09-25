@@ -1,14 +1,14 @@
 /* --------------------- Content about --------------------- */
 
-$block_width: 375px;
-$block_height: 180px;
-$block_margin: 5px;
+$block_width: 375rem;
+$block_height: 180rem;
+$block_margin: 5rem;
 .content_about {
-    padding-top: 65px;
-    padding-bottom: 80px;
+    padding-top: 65rem;
+    padding-bottom: 80rem;
     background-color: $bg_gray;
     h1 {
-        padding-bottom: 45px;
+        padding-bottom: 45rem;
         font-family: $f_medium;
         font-size: $f_30;
         text-align: center
@@ -16,19 +16,19 @@ $block_margin: 5px;
     .mission {
         >div {
             width: $block_width;
-            padding-left: 90px;
-            padding-right: 20px;
-            padding-bottom: 80px;
+            padding-left: 90rem;
+            padding-right: 20rem;
+            padding-bottom: 80rem;
             position: relative;
             box-sizing: border-box;
             font-size: $f_16;
             float: left;
             >div {
                 position: absolute;
-                top: 10px;
-                left: 20px;
-                width: 60px;
-                height: 70px;
+                top: 10rem;
+                left: 20rem;
+                width: 60rem;
+                height: 70rem;
                 background-position: top left;
                 background-repeat: no-repeat;
             }
@@ -43,8 +43,8 @@ $block_margin: 5px;
             .arrow {
                 @extend %slider_arrow;
                 top: 60%;
-                border-bottom: 3px solid #b6b6b6;
-                border-left: 3px solid #b6b6b6;
+                border-bottom: 3rem solid #b6b6b6;
+                border-left: 3rem solid #b6b6b6;
             }
             .slider_nav {
                 @extend %slider_nav;
@@ -53,9 +53,9 @@ $block_margin: 5px;
         }
         .slide {
             $span_color: #c0d5de;
-            $padding-left: 13px;
+            $padding-left: 13rem;
             .title {
-               // display: none;
+                // display: none;
                 width: auto;
                 position: absolute;
                 padding-left: $padding-left;
@@ -66,16 +66,58 @@ $block_margin: 5px;
                 color: white;
                 .name {
                     display: inline-block;
-                    margin-right: 10px;
+                    margin-right: 10rem;
                     font-size: $f_12;
-                    font-family: $f_medium;
+                    font-family: $f_medium;   
+                    transition-duration: 0.4s;
                 }
-                span {
-                    font-size: 11px;
-                    color: $span_color
+                .about{
+                    font-size: 11rem;
+                    color: $span_color;
+                    display: inline-block;  
+                    transition-duration: 0.4s;
+                }
+                .description, .icon { 
+                  opacity: 0;
+                      font-size: 12rem;
+                    transition-duration: 0.4s;
+                transform: scale(1.6)
+                }
+                .description {}
+                &.active {text-align: center;
+                    padding: 0 10rem;
+                    .name {
+                        font-family: $f_medium;
+                        font-size: 18rem;
+                        transition-duration: 0.4s;
+                    }
+                    .about {display: block;
+                        font-size: 14rem;
+                        line-height: 200%;
+                     
+                    }
+                    .description {opacity: 1;
+                        position: relative;
+                        padding-top: 20rem;
+                        font-size: 12rem;
+                           transition-delay: 0.4s;
+                          transition-duration: 0.4s;
+                         transform: scale(1)
+                       
+                    }
+                    .icon {opacity: 1;
+                        width: 20rem;
+                        height: 20rem;
+                        position: absolute;
+                        background-image: url(../images/linkedin.png);
+                        background-repeat: no-repeat;
+                        transition-delay: 0.4s;
+                              transition-duration: 0.4s;
+                         transform: scale(1)
+                    }
                 }
             }
-            .hovered {display: none;
+            /* .hovered {display: none;
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -86,24 +128,25 @@ $block_margin: 5px;
                 text-align: center;
                 .name {
                     font-family: $f_medium;
-                    font-size: 18px;
+                    font-size: 18rem;
+                    transition-duration: 0.4s;
                 }
                 .about {
-                    font-size: 14px;
+                    font-size: 14rem;
                     color: $span_color
                 }
                 .description {position: relative;
-                    padding-top: 20px;
-                    font-size: 12px;
+                    padding-top: 20rem;
+                    font-size: 12rem;
                 }
                 .icon {
-                    width: 20px;
-                    height: 20px;
+                    width: 20rem;
+                    height: 20rem;
                     position: absolute;
                     background-image: url(../images/linkedin.png);
                     background-repeat: no-repeat;
                 }
-            }
+            }*/
             >div {
                 width: $block_width;
                 margin-right: $block_margin;
@@ -122,7 +165,7 @@ $block_margin: 5px;
                 background-repeat: no-repeat;
                 margin-top: $block_margin;
                 margin-bottom: $block_margin;
-                @include bp(1200) {}
+                overflow: hidden;
             }
             .cell_2_w,
             .cell_2_w_2_h {
@@ -134,45 +177,61 @@ $block_margin: 5px;
             }
             .cell_1 {
                 width: $block_width/2 - $block_margin;
-                .hovered {
-                    padding-top: 90px;
-                    .icon {top: 58px;
-                    left: 0;
-                    right: 0;
-                    margin:auto;}
-                }
+                .title {
+                    height: auto;
+                    top: 120rem;
+                
+                &.active {
+                    padding-top: 90rem;
+                    .icon {
+                        top: 58rem;
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+                    }
+                }}
             }
             .cell_2_w {
                 .title {
-                    padding-top: 10px;
-                    height: 30px
-                }
-                .hovered {
-                    padding-top: 35px;
+                    padding-top: 10rem;
+                    height: auto;
+                    top: 140rem;
+                
+                    &.active  {
+                    padding-top: 35rem;
                     padding-left: $padding-left;
                     text-align: left;
-                    .icon {bottom: 18px;
-                    left: $padding-left;}
-                }
+                        .description {padding-top: 0;}
+                    .icon {
+                        bottom: 18rem;
+                        left: $padding-left;
+                    }
+                }}
             }
             .cell_1_margin {
                 margin-right: $block_margin *2;
             }
             .cell_2_w_2_h {
                 height: $block_height * 2 + $block_margin * 2;
-                .hovered {
-                    padding: 115px 25px 0 25px;
-                    .icon {bottom: -43px;
-                    left:0;
-                    right:0;
-                    margin:auto;}
-                }
+                .title {
+                    height: auto;
+                    top: 300rem;
+                
+                    &.active  {
+                        .name {padding-top: 60rem;}
+               
+                    .icon {
+                        bottom: -43rem;
+                        left: 0;
+                        right: 0;
+                        margin: auto;
+                    }
+                }}
             }
             .cell_1,
             .cell_2_w_2_h {
                 .title {
-                    padding-top: 18px;
-                    height: 55px;
+                    padding-top: 18rem;
                     line-height: 80%;
                 }
             }
@@ -184,13 +243,13 @@ $block_margin: 5px;
     .history {
         @extend %half_gradient_h;
         >h1 {
-            padding-right: 10px;
-            padding-left: 10px;
-            background-size: 200px 100%;
+            padding-right: 10rem;
+            padding-left: 10rem;
+            background-size: 200rem 100%;
             background-image: linear-gradient(to top, #e3483a 50%, #bc262b);
         }
         >p {
-            padding: 60px 55px 90px 55px;
+            padding: 60rem 55rem 90rem 55rem;
             font-size: $f_20;
             color: #666666;
         }
@@ -200,7 +259,7 @@ $block_margin: 5px;
             background-image: linear-gradient(to top, #e3483a 50%, #bc262b);
             #red_year {
                 font-family: $f_bold;
-                font-size: 160px;
+                font-size: 160rem;
                 display: inline-block;
                 color: #000;
                 background: rgba(227, 227, 227, 1);
@@ -217,32 +276,28 @@ $block_margin: 5px;
             }*/
         }
         .slider {
-            width: 710px;
+            width: 710rem;
             max-width: 90vw;
-            margin-bottom: 90px;
-            height: 145px;
-            padding-left: 195px;
+            margin-bottom: 90rem;
+            height: 145rem;
+            padding-left: 195rem;
             box-sizing: border-box;
             position: relative;
             background-color: white;
             float: right;
-            @include bp(1200) {
-                float: none;
-                margin: auto;
-            }
             >div.arrow {
-                width: 10px;
-                height: 10px;
-                border-bottom: 1px solid black;
-                border-left: 1px solid black;
+                width: 10rem;
+                height: 10rem;
+                border-bottom: 1rem solid black;
+                border-left: 1rem solid black;
                 position: absolute;
-                left: 30px;
+                left: 30rem;
                 &:nth-of-type(1) {
-                    top: 35px;
+                    top: 35rem;
                     transform: rotate(135deg)
                 }
                 &:nth-of-type(2) {
-                    bottom: 35px;
+                    bottom: 35rem;
                     transform: rotate(-45deg)
                 }
             }
@@ -251,9 +306,9 @@ $block_margin: 5px;
                 .slide {
                     width: 100%;
                     height: 100%;
-                    padding-top: 35px;
-                    padding-bottom: 35px;
-                    padding-right: 95px;
+                    padding-top: 35rem;
+                    padding-bottom: 35rem;
+                    padding-right: 95rem;
                     position: relative;
                     display: table;
                     box-sizing: border-box;
@@ -268,7 +323,7 @@ $block_margin: 5px;
                         position: absolute;
                         top: 0;
                         right: 0;
-                        width: 90px;
+                        width: 90rem;
                         height: 100%;
                         background-position: center center;
                         background-repeat: no-repeat;
@@ -278,8 +333,8 @@ $block_margin: 5px;
             &:before {
                 content: ' ';
                 position: absolute;
-                top: 0px;
-                left: 0px;
+                top: 0rem;
+                left: 0rem;
                 width: 100%;
                 height: 100%;
                 background-image: linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 1) 0%)
@@ -290,15 +345,15 @@ $block_margin: 5px;
         }
         .history_line {
             width: 100%;
-            height: 2px;
+            height: 2rem;
             background-color: #999999;
             clear: both;
             position: relative;
             >div:not(:first-of-type) {
-                width: 10px;
-                height: 10px;
+                width: 10rem;
+                height: 10rem;
                 position: absolute;
-                top: -4px;
+                top: -4rem;
                 border-radius: 50%;
                 background-color: #999999;
                 @for $i from 0 through 9 {
@@ -309,7 +364,7 @@ $block_margin: 5px;
                             content: '#{$content}';
                             position: absolute;
                             left: -120%;
-                            top: 20px;
+                            top: 20rem;
                             font-size: $f_14;
                         }
                     }
@@ -327,28 +382,28 @@ $block_margin: 5px;
                 }
             }
             #runner {
-                width: 26px;
-                height: 60px;
+                width: 26rem;
+                height: 60rem;
                 position: absolute;
-                top: -52px;
-                left: -8px;
+                top: -52rem;
+                left: -8rem;
                 background-image: url(../images/runner.png);
                 background-repeat: no-repeat;
                 z-index: 1;
                 >div.arrow {
-                    width: 7px;
-                    height: 7px;
+                    width: 7rem;
+                    height: 7rem;
                     position: absolute;
-                    border-bottom: 1px solid black;
-                    border-right: 1px solid black;
-                    top: 10px;
+                    border-bottom: 1rem solid black;
+                    border-right: 1rem solid black;
+                    top: 10rem;
                     &:nth-of-type(1) {
                         transform: rotate(135deg);
-                        left: -15px
+                        left: -15rem
                     }
                     &:nth-of-type(2) {
                         transform: rotate(-45deg);
-                        right: -15px
+                        right: -15rem
                     }
                 }
             }

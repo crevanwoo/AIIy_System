@@ -5,10 +5,11 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="stylesheets/style.css">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <script async type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-       <script defer src="js/header.js"></script>
-        <script defer src="js/hover.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script defer src="js/config.js"></script>
+    <!-- <script defer src="js/header.js"></script>
+    <script defer src="js/hover.js"></script>-->
 
 
 
@@ -16,6 +17,11 @@
 
 <body>
 
+
+
+
+
+    <!-- header begins -->
     <header>
         <div class="wrapper">
             <img src="images/logo.png" alt="Ally System" class="logo">
@@ -30,7 +36,7 @@
             <div class="contact">
                 <div>
                     <div class="country">India</div>
-                    <div style="padding-top: 20px;">
+                    <div style="padding-top: 20rem;">
                         <div class="arrow" data-arrow="hide"></div><a href="tel:+911724345253">
 +91 (172) <span> 434-5253 </span>
 </a></div>
@@ -39,7 +45,7 @@
 
                 <div class="header_hidden_contact" data-arrow="spread">
                     <div class="country" data-arrow="spread">India</div>
-                    <div style="padding-top: 20px;" data-arrow="spread">
+                    <div style="padding-top: 20rem;" data-arrow="spread">
                         <a href="tel:+911724345253" data-arrow="spread">
 +91 (172) <span data-arrow="spread"> 434-5253 </span>
 </a></div>
@@ -48,7 +54,7 @@
                 </div>
                 <div class="header_hidden_contact" data-arrow="spread">
                     <div class="country" data-arrow="spread">India</div>
-                    <div style="padding-top: 20px;" data-arrow="spread">
+                    <div style="padding-top: 20rem;" data-arrow="spread">
                         <a href="tel:+911724345253" data-arrow="spread">
 +91 (172) <span data-arrow="spread"> 434-5253 </span>
 </a></div>
@@ -59,14 +65,22 @@
         </div>
 
     </header>
+    <!-- header ends  -->
+
+    <!-- top part begins  -->
+
+
+
+
     <div class="top_part" style="background-image: url(images/top_bg_page.jpg)">
 
         <div class="wrapper">
-           <section class="top_project">
-            <h1>SMARTA DIGITAL</h1><br>
-            <span>Beautiful and functional websites, products, portals and web applications built on latest technologies and</span>
-            <br>
-            <span>frameworks, delivered without cost and budget overruns</span>
+            <section class="top_project">
+                <h1 class="main_h">SMARTA DIGITAL</h1>
+                <br>
+                <span>Beautiful and functional websites, products, portals and web applications built on latest technologies and</span>
+                <br>
+                <span>frameworks, delivered without cost and budget overruns</span>
             </section>
         </div>
 
@@ -77,15 +91,30 @@
     </div>
 
 
+    <!-- top part ends  -->
+
+
+    <!-- content begins  -->
+
+
     <div class="content">
         <div class="phone_template_part">
             <div class="wrapper">
                 <h3 class="h_black_and_red">PLEASE SWIPE <span>RIGHT</span> OR <span>LEFT</span></h3>
-                <div class="slider_phone">
-                    <div class="arrow"></div>
-                    <div class="arrow"></div>
+                <div class="slider_phone slider">
+                    <div class="arrow arrow_left"></div>
+                    <div class="arrow arrow_right"></div>
+                    <div class="slider_wrapper">
 
-                    <div class="slide" style="background-image: url(images/phone.png)"></div>
+
+                        <div class="slides_block">
+                            <div class="slide" style="background-image: url(images/phone.png)"></div>
+                            <div class="slide" style="background-image: url(images/phone.png)"></div>
+                            <div class="slide" style="background-image: url(images/phone.png)"></div>
+                        </div>
+
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -118,32 +147,30 @@
                 <div class="img1" style="background-image: url(images/services.png)"></div>
                 <div class="text text1">
                     <h1>LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISICING ELIT</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                     <h1>LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISICING ELIT</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                     <ul>
-                    <li>Excepteur sint occaecat </li>
-                    <li>Duis aute irure dolor </li>
-                    <li>Ut enim ad minim veniam</li></ul>
+                        <li>Excepteur sint occaecat </li>
+                        <li>Duis aute irure dolor </li>
+                        <li>Ut enim ad minim veniam</li>
+                    </ul>
                 </div>
             </div>
             <div class="wrapper">
-            
-            <div class="img2" style="background-image: url(images/phones.png)"></div>
-             
+
+                <div class="img2" style="background-image: url(images/phones.png)"></div>
+
                 <div class="text text2">
                     <h1>LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISICING ELIT</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                     <h1>LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISICING ELIT</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
                     <ul>
-                    <li>Excepteur sint occaecat </li>
-                    <li>Duis aute irure dolor </li>
-                    <li>Ut enim ad minim veniam</li></ul>
+                        <li>Excepteur sint occaecat </li>
+                        <li>Duis aute irure dolor </li>
+                        <li>Ut enim ad minim veniam</li>
+                    </ul>
                 </div>
 
 
@@ -175,6 +202,8 @@ tempor incididunt ut labore et dolore magna aliqua. </p>
             </div>
         </div>
     </div>
+
+    <!-- footer begins  -->
 
     <footer>
         <div class="wrapper">
@@ -304,16 +333,11 @@ tempor incididunt ut labore et dolore magna aliqua. </p>
         </div>
     </footer>
 
-    <div class="side_button_part">
-        <div class="red_button">KEEP IN TOUCH</div>
-         <div class="full_screen"></div>
-
-
-    </div>
+    <!-- footer ends  -->
 
 
 
-  
+
 
 </body>
 

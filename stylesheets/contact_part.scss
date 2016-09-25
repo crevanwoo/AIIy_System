@@ -1,9 +1,9 @@
 /* --------------------- Contact part --------------------- */
 
 .contact_part {
-    min-height: 415px;
+    min-height: 415rem;
     height: auto;
-    padding: 60px 0 20px 0;
+    padding: 60rem 0 20rem 0;
     position: relative;
     box-sizing: border-box;
     background-image: url(../images/contact_bg.jpg);
@@ -27,25 +27,22 @@
     }
     form {
         margin: auto;
-        margin-top: 40px;
-        margin-bottom: 40px;
+        margin-top: 40rem;
+        margin-bottom: 40rem;
         display: inline-block;
     }
     input {
-        width: 275px;
-        height: 45px;
-        margin-bottom: 20px;
-        padding-left: 20px;
+        width: 275rem;
+        height: 45rem;
+        margin-bottom: 20rem;
+        padding-left: 20rem;
         display: block;
         float: left;
         border: none;
-        border-radius: 25px;
+        border-radius: 25rem;
         background-color: rgba(255, 255, 255, 0.5);
         color: white;
-        @include bp(1200) {
-            margin: 0 auto 20px auto;
-            float: none;
-        }
+       
         &:focus {
             outline: none;
             background-color: rgba(158, 202, 227, 0.5);
@@ -73,15 +70,12 @@
             color: black
         }
         &:not(:last-of-type) {
-            margin-right: 20px;
-            @include bp(1200) {
-                margin: 0 auto 20px auto;
-                float: none;
-            }
+            margin-right: 20rem;
+           
         }
     }
     .blue_button {
-        width: 190px;
+        width: 190rem;
         margin: auto;
         display: block;
         border: none;
@@ -90,24 +84,24 @@
 		font-size: $f_18;
     }
     div:nth-last-of-type(2) {
-        margin-bottom: 10px;
+        margin-bottom: 10rem;
         font-size: $f_16;
     }
     div:last-of-type {
         display: inline-block;
         margin: auto;
         a {
-            width: 31px;
-            height: 31px;
+            width: 31rem;
+            height: 31rem;
             display: block;
             float: left;
             background-repeat: no-repeat;
             &:nth-of-type(1) {
-                margin-right: 15px;
+                margin-right: 15rem;
                 background-image: url(../images/soc_icon_1.png)
             }
             &:nth-of-type(2) {
-                margin-right: 15px;
+                margin-right: 15rem;
                 background-image: url(../images/soc_icon_2.png)
             }
             &:nth-of-type(3) {

@@ -1,8 +1,8 @@
     /* --------------------- Content page --------------------- */
     
     .content_page {
-        padding-top: 75px;
-        padding-bottom: 10px; //55px;
+        padding-top: 75rem;
+        padding-bottom: 10rem; //55rem;
         background-color: $bg_gray;
         font-size: $f_16;
         .wrapper:first-of-type {
@@ -12,28 +12,25 @@
         background-repeat: no-repeat;*/
             >img {
                 width: auto;
-                max-width: 470px;
+                max-width: 470rem;
                 height: auto;
-                max-width: 470px;
+                max-width: 470rem;
                 display: block;
                 float: right;
-                @include bp(1200) {
-                    margin: auto;
-                    float: none;
-                }
+                
             }
             .about {
-                width: 600px;
+                width: 600rem;
                 float: left;
                 ul {
-                    padding-top: 30px;
-                    padding-bottom: 30px;
+                    padding-top: 30rem;
+                    padding-bottom: 30rem;
                     overflow: hidden;
                     li {
-                        width: 138px;
-                        height: 138px;
-                        margin-right: 10px;
-                        margin-bottom: 10px;
+                        width: 138rem;
+                        height: 138rem;
+                        margin-right: 10rem;
+                        margin-bottom: 10rem;
                         display: table;
                         float: left;
                         background-image: url(../images/bg_little_screen.jpg);
@@ -47,10 +44,7 @@
                         }
                     }
                 }
-                @include bp(1200) {
-                    margin: auto;
-                    float: none;
-                }
+               
             }
             &:after {
                 @extend %clear
@@ -59,11 +53,11 @@
         .wrapper:last-of-type {
             h1 {
                 margin: 0;
-                padding-top: 55px;
-                padding-bottom: 45px;
+                padding-top: 55rem;
+                padding-bottom: 45rem;
                 
             }
         }
     }
     
-    @include bp(1200)
+  

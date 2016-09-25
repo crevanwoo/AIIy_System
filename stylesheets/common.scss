@@ -11,10 +11,16 @@ body {
 	overflow-x: hidden;
 }
 
-body {
+body { &.hidden {
+        //overflow: hidden //old scrolling
+        position: fixed; //new scrolling
+        left: 0; //new scrolling
+    }
+
 	//min-height: 100%;
 	//position: absolute;
 }
+html {font-size: 1px;}
 
 h1,
 h2,
@@ -29,18 +35,13 @@ p {
 }
 
 .wrapper {
-	min-width: 600px;
+	min-width: 600rem;
 	width: $wrapper_width;
 	margin: auto;
 	padding-left: $wrapper_paddings;
 	padding-right: $wrapper_paddings;
 	box-sizing: border-box;
-	@include bp(1200) {
-		width: 1000px;
-	}
-	@include bp(1000) {
-		width: 100%;
-	}
+	
 }
 
 a {
@@ -61,11 +62,11 @@ ul {
 }
 
 .blue_button {
-	height: 50px;
+	height: 50rem;
 	font-family: $f_medium;
-	font-size: 20px;
-	line-height: 50px;
-	border-radius: 30px;
+	font-size: 20rem;
+	line-height: 50rem;
+	border-radius: 30rem;
 	background-color: #56aed8;
 	&:hover {
 		background-color: $bg_red;
@@ -94,10 +95,10 @@ ul {
 
 %half_gradient_h {text-align: center; h1{  box-sizing: border-box;
  
-    height: 65px;
+    height: 65rem;
     position: relative;
     display: inline-block;
-    line-height: 65px;
+    line-height: 65rem;
     font-size: $f_30;
     background-position: right;
             background-repeat: no-repeat;

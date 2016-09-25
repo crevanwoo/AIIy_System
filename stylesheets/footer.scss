@@ -1,29 +1,29 @@
 /* --------------------- Footer --------------------- */
 
 footer {
-	min-height: 335px;
+	min-height: 335rem;
     height: auto;
-	padding-top: 30px;
-	padding-bottom: 35px;
+	padding-top: 30rem;
+	padding-bottom: 35rem;
 	box-sizing: border-box;
 	background-color: #e3e3e3;
 	.wrapper {
 		height: auto;
 	}
 	.map {
-		width: 405px;
-		height: 300px;
-		margin-right: 35px;
+		width: 405rem;
+		height: 300rem;
+		margin-right: 35rem;
 		float: left;
 		.img {
 			width: 100%;
 			height: 100%;
 			background-repeat: no-repeat;
 		}
-        @include bp(1200) {display: none;}
+       
 	}
 	nav {
-		width: 720px;
+		width: 720rem;
 		float: left;
 		ul {
 			font-family: $f_light;
@@ -31,7 +31,7 @@ footer {
 			color: black;
 			&:not(:last-of-type) {
 				float: left;
-				margin-right: 45px;
+				margin-right: 45rem;
 			}
        
 			&:last-of-type {
@@ -45,7 +45,7 @@ footer {
 				margin-top: 0;
 			}
 			h3 {
-				margin-top: 20px;
+				margin-top: 20rem;
 				font-family: $f_medium;
 			}
 			&:last-of-type {
@@ -60,29 +60,28 @@ footer {
 						background-image: url(../images/soc_color_3.jpg)
 					}
 					a {
-						width: 30px;
-						height: 30px;
+						width: 30rem;
+						height: 30rem;
 						display: block;
-						margin-bottom: 10px;
+						margin-bottom: 10rem;
 						background-repeat: no-repeat;
 					}
 				}
 			}
 		}
-             @include bp(1200) {margin: auto;
-        float: none;}
+           
 		&:after {
 			@extend %clear
 		}
 	}
 	.contacts {
-		width: 720px;
-		margin-top: 50px;
+		width: 720rem;
+		margin-top: 50rem;
 		float: left;
 		font-size: $f_12;
 		.col-1 {
 			div:last-of-type {
-				margin-top: 30px;
+				margin-top: 30rem;
 				color: #666;
 				span {
 					text-decoration: underline;
@@ -99,17 +98,17 @@ footer {
 			line-height: 130%;
 			&:before {
 				content: ' ';
-				width: 30px;
-				height: 30px;
+				width: 30rem;
+				height: 30rem;
 				display: block;
 				position: absolute;
 				top: 0;
-				left: -60px;
+				left: -60rem;
 				background-repeat: no-repeat;
 			}
 		}
 		.col-1 {
-			margin-right: 130px;
+			margin-right: 130rem;
 		}
 		.col-2 {
 			&:before {
@@ -127,8 +126,6 @@ footer {
 			color: black
 		}
         &:after {@extend %clear}
-             @include bp(1200) {margin-right: auto;
-                 margin-left: auto;
-                 float: none;}
+           
 	}
 }

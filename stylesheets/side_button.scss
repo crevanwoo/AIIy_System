@@ -1,15 +1,15 @@
 #red_button {
-	width: 160px;
-	height: 45px;
-	right: -58px;
-	top: 320px;
-	margin-top: 55px;
+	width: 160rem;
+	height: 45rem;
+	right: -58rem;
+	top: 320rem;
+	margin-top: 55rem;
 	position: fixed;
 	background-color: $bg_red;
-	line-height: 45px;
+	line-height: 45rem;
 	text-align: center;
 	font-family: $f_medium;
-	font-size: 14px;
+	font-size: 14rem;
 	color: white;
 	transform: rotate(-90deg);
 	z-index: 5
@@ -46,25 +46,48 @@
 
 %icon {
 	background: {
-		position: 15px center;
+		position: 15rem center;
 		repeat: no-repeat
 	}
 }
 
 .side_button_part {
-	//display:none;
+    
+    
+    
+    
+	display:none;
 	width: 100%;
 	height: 100vh;
-	min-height: 700px;
+	min-height: 700rem;
 	position: fixed; // absolute;
 	left: 0;
 	top: 0;
 	right: 0;
+    z-index: 1000;
+    overflow: auto; //add this
+    
+    
+    .slider {
+        
+        .slider_wrapper {overflow: hidden;
+        height: 100%;}
+        .slides_block {            
+            width: 166.66%;
+            height: 100%;
+            transition-duration: 1s;
+        }
+    }
+    
 	.full_screen {
 		@extend %blue_transparent;
 		background-color: $dark_blue_transparent;
-		z-index: 6;
-		overflow: auto; // doesn't work
+        position: absolute;
+        min-height: 720rem;//add this
+        height: 100%;//add this
+           overflow: auto; //add this
+		
+	
 		.content {
 			margin: auto;
 			position: absolute;
@@ -72,22 +95,26 @@
 			bottom: 0;
 			left: 0;
 			right: 0;
-			width: 720px;
-			height: 450px;
+			width: 720rem;
+			height: 450rem;
+    
+            min-height: 100rem;
 			text-align: center;
 			//height: auto;
+            
+		
 			h2 {
-				width: 340px;
-				margin-right: 10px;
-				margin-left: 10px;
+				width: 340rem;
+				margin-right: 10rem;
+				margin-left: 10rem;
 				float: left;
-				padding-bottom: 13px;
-				border-bottom: 3px solid #506168;
+				padding-bottom: 13rem;
+				border-bottom: 3rem solid #506168;
 				text-align: center;
 				font-size: $f_20;
 				color: white;
 				&.active {
-					border-bottom: 3px solid #54a9d2;
+					border-bottom: 3rem solid #54a9d2;
 					font-family: $f_medium;
 				}
 			}
@@ -95,9 +122,9 @@
 				
 				color: white;
 				.contacts {
-					width: 340px;
-					padding-top: 35px;
-					padding-bottom: 35px;
+					width: 340rem;
+					padding-top: 35rem;
+					padding-bottom: 35rem;
 					float: left;
 					font-size: $f_14;
 					&:nth-of-type(1) {
@@ -113,7 +140,7 @@
 					}
 				}
 				h4 {
-					padding-bottom: 25px;
+					padding-bottom: 25rem;
 					clear: both;
 					font-family: $f_medium;
 					font-size: $f_18;
@@ -121,41 +148,35 @@
 				.slider {position:relative;
 					.arrow { @extend %slider_arrow;
 				
-	margin-top: -55px;
+	margin-top: -55rem;
 	
 	top: 50%;
 
 	&:first-of-type {
-		left: 5px - 55px;
+		left: 5rem - 55rem;
 		transform: rotate(45deg);
-		border-bottom: 2px solid #475961;
-		border-left:  2px solid #475961;
-		@include bp(1300) {
-			left: 20px;
-			z-index: 2
-		}
+		border-bottom: 2rem solid #475961;
+		border-left:  2rem solid #475961;
+		
 	}
 	&:nth-of-type(2) {
-		border-bottom: 2px solid #475961;
-		border-left:  2px solid #475961;
-		right: 5px - 55px;
+		border-bottom: 2rem solid #475961;
+		border-left:  2rem solid #475961;
+		right: 5rem - 55rem;
 		transform: rotate(-135deg);
-		@include bp(1300) {
-			right: 20px;
-			z-index: 2
-		}
+		
 	}}
 					.slide {
-						width: 610px;
-						margin: auto;
+						//width: 610rem;
+						//margin: auto;
 						.block_info {
-							width: 33.33%;
+							width: 20%;
 							float: left;
 							text-align: center;
 							.picture {
 								width: 100%;
-								height: 60px;
-								margin-bottom: 5px;
+								height: 60rem;
+								margin-bottom: 5rem;
 								background: {
 									size: contain;
 									position: center center;
@@ -167,18 +188,18 @@
 								font-size: $f_18;
 							}
 							.comment {
-								padding-bottom: 17px;
+								padding-bottom: 17rem;
 								font-family: $f_light;
 								font-size: $f_12;
 							}
 							.red_button {
-								width: 135px;
-								margin: 0 auto 20px auto;
-								height: 35px;
+								width: 135rem;
+								margin: 0 auto 20rem auto;
+								height: 35rem;
 								font-family: $f_medium;
-								font-size: 12px;
-								line-height: 35px;
-								border-radius: 30px;
+								font-size: 12rem;
+								line-height: 35rem;
+								border-radius: 30rem;
 								background-color: $bg_red;
 								&:hover {
 									background-color: #56aed8;
@@ -202,7 +223,7 @@
 				color: white;
 				.contacts_wrapper {
 					margin: auto;
-					width: 700px;
+					width: 700rem;
 					&:after {
 						@extend %clear
 					}
@@ -210,9 +231,9 @@
 				.contacts {
 					position: relative;
 					width: 33.33%;
-					padding-top: 35px;
-					padding-bottom: 35px;
-					padding-left: 50px;
+					padding-top: 35rem;
+					padding-bottom: 35rem;
+					padding-left: 50rem;
 					box-sizing: border-box;
 					float: left;
 					font-size: $f_14;
@@ -221,8 +242,8 @@
 						position: absolute;
 						top: 40%;
 						left: 0;
-						width: 23px;
-						height: 22px;
+						width: 23rem;
+						height: 22rem;
 						background: {
 							position: center center;
 							repeat: no-repeat;
@@ -234,7 +255,7 @@
 					}
 				}
 				form {
-					$border-radius: 10px;
+					$border-radius: 10rem;
 					$bg-color: rgba(255, 255, 255, 0.3);
 					clear: both;
 					input {
@@ -244,12 +265,12 @@
 						display: block;
 						float: left;
 						box-sizing: border-box;
-						width: 340px;
-						margin-right: 10px;
-						margin-left: 10px;
-						height: 45px;
-						margin-bottom: 20px;
-						padding-left: 45px;
+						width: 340rem;
+						margin-right: 10rem;
+						margin-left: 10rem;
+						height: 45rem;
+						margin-bottom: 20rem;
+						padding-left: 45rem;
 						border: none;
 						border-radius: $border-radius;
 						background-color: $bg-color;
@@ -263,7 +284,7 @@
 							background-image: url(../images/modal_icon2.png)
 						}
 						@extend %form_style;
-						@include bp(1200) {}
+					
 					}
 					textarea {
 						font-family: $f_regular;
@@ -271,10 +292,10 @@
 						clear: both;
 						resize: none;
 						display: block;
-						width: 700px;
-						height: 85px;
-						margin: 0 auto 20px auto;
-						padding: 10px 10px 10px 20px;
+						width: 700rem;
+						height: 85rem;
+						margin: 0 auto 20rem auto;
+						padding: 10rem 10rem 10rem 20rem;
 						box-sizing: border-box;
 						border: none;
 						border-radius: $border-radius;
@@ -283,12 +304,12 @@
 						@extend %form_style;
 					}
 					.red_button {
-						width: 180px;
-						margin: 0 auto 10px auto;
-						height: 45px;
+						width: 180rem;
+						margin: 0 auto 10rem auto;
+						height: 45rem;
 						font-family: $f_medium;
-						font-size: 16px;
-						border-radius: 30px;
+						font-size: 16rem;
+						border-radius: 30rem;
 						background-color: $bg_red;
 						border: none;
 						color: white;
@@ -299,6 +320,7 @@
 				}
 			}
 			#close_modal_window {
+                padding-top: 20rem;
 				font-size: $f_14;
 				text-decoration: underline;
 				color: #b4c1bf
@@ -306,3 +328,4 @@
 		}
 	}
 }
+

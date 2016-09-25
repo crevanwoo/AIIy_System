@@ -7,13 +7,13 @@
 /*function calc_slider_size() {*/
 
 var width_num = parseInt($('.slide').css('width')) * ($('.slide').length),
-  width_px = width_num + 'px';
+  width_rem = width_num + 'rem';
  console.log(width_num);
     
     $('.slider_port .slide').each(function () {
       var atrnum =  $(this).attr("data-index");
        
-        var slide_transition = atrnum * width_num + "px";
+        var slide_transition = atrnum * width_num + "rem";
              console.log(slide_transition);
         $(this).css('left', slide_transition)
 
