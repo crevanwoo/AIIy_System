@@ -8,8 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script defer src="js/config.js"></script>
-    <!-- <script defer src="js/header.js"></script>
-    <script defer src="js/hover.js"></script>-->
+
 
 
 
@@ -18,6 +17,98 @@
 <body>
 
 
+ 
+
+    <!-- Modal window begins -->
+    <div id="red_button" data-modal-id="modal_order">KEEP IN TOUCH</div>
+    <div class="modal side_button_part" id="modal_order">
+        <div class="full_screen">
+            <div class="content">
+                <h2 id="job_seeker" class="active">JOB SEEKER</h2>
+                <h2 id="client" class="">CLIENT</h2>
+                <div class="job_seeker_part">
+                    <div class="contacts">Sales manager: <a href="mailto:hello@allysystem.com">hello@allysystem.com</a></div>
+                    <div class="contacts">Mobile Number: <a href="tel:+14087685273">+1 (408) 768-5273</a></div>
+                    <h4>OPENING COUNTS</h4>
+                    <div class="slider">
+                        <div class="arrow slider_arr arrow_left"></div>
+                        <div class="arrow slider_arr arrow_right"></div>
+                        <div class="slider_wrapper">
+                            <div class="slides_block">
+                                <div class="slide">
+                                    <div class="block_info">
+                                        <div class="picture" style="background-image:url(images/guy.png)"></div>
+                                        <div class="title">Mobile develop</div>
+                                        <div class="comment">4 post Avaliable</div>
+                                        <div class="red_button">APPLY NOW</div>
+                                    </div>
+                                    <div class="block_info">
+                                        <div class="picture" style="background-image:url(images/guy.png)"></div>
+                                        <div class="title">Mobile develop</div>
+                                        <div class="comment">4 post Avaliable</div>
+                                        <div class="red_button">APPLY NOW</div>
+                                    </div>
+                                    <div class="block_info">
+                                        <div class="picture" style="background-image:url(images/guy.png)"></div>
+                                        <div class="title">Mobile develop</div>
+                                        <div class="comment">4 post Avaliable</div>
+                                        <div class="red_button">APPLY NOW</div>
+                                    </div>
+                                    <div class="block_info">
+                                        <div class="picture" style="background-image:url(images/guy.png)"></div>
+                                        <div class="title">Mobile develop</div>
+                                        <div class="comment">4 post Avaliable</div>
+                                        <div class="red_button">APPLY NOW</div>
+                                    </div>
+                                    <div class="block_info">
+                                        <div class="picture" style="background-image:url(images/guy.png)"></div>
+                                        <div class="title">Mobile develop</div>
+                                        <div class="comment">4 post Avaliable</div>
+                                        <div class="red_button">APPLY NOW</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  <div class="slider_nav on_blue_bg">
+                            <div>
+                                <div class="slider_nav_button nav_button_1 active"></div>
+                                <div class=" slider_nav_button  nav_button_2"></div>
+                                <div class="slider_nav_button  nav_button_3"></div>
+                                <div class="slider_nav_button  nav_button_4"></div>
+                            </div>
+                        </div>-->
+                    </div>
+                </div>
+                <div class="client_part">
+                    <div class="contacts_wrapper">
+                        <div class="contacts">
+                            <div style="background-image:url(images/modal_icon1.png)"></div>Sales manager:
+                            <br><a href="mailto:hello@allysystem.com">hello@allysystem.com</a></div>
+                        <div class="contacts">
+                            <div style="background-image:url(images/modal_icon2.png)"></div>Mobile Number:
+                            <br><a href="tel:+14087685273">+1 (408) 768-5273</a></div>
+                        <div class="contacts">
+                            <div style="background-image:url(images/modal_icon3.png)"></div>skype:
+                            <br><span>ali-express-systems</span></div>
+                    </div>
+                    <form action="">
+                        <input type="text" placeholder="First name" required>
+                        <input type="tel" placeholder="Telephone" required>
+                        <textarea name="" id="" placeholder="message" required></textarea>
+                        <button type="submit" class="red_button">SEND REQUEST</button>
+                    </form>
+                </div>
+
+                <div class="close" id="close_modal_window">close window</div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal window ends -->
+  
+  
+  
 
 
 
@@ -27,10 +118,10 @@
             <img src="images/logo.png" alt="Ally System" class="logo">
             <nav>
                 <ul>
-                    <li><a href="">Services</a></li>
-                    <li><a href=""> Business model</a></li>
-                    <li><a href="">  Achievements</a></li>
-                    <li><a href="">     About us</a></li>
+                     <li><a href="page.html">Services</a></li>
+                    <li><a href="home.html"> Business model</a></li>
+                    <li><a href="project.html">  Achievements</a></li>
+                    <li><a href="about.html">     About us</a></li>
                 </ul>
             </nav>
             <div class="contact">
@@ -102,7 +193,7 @@
             <div class="wrapper">
                 <h3 class="h_black_and_red">PLEASE SWIPE <span>RIGHT</span> OR <span>LEFT</span></h3>
                 <div class="slider_phone slider">
-                    <div class="arrow arrow_left"></div>
+                    <div class="arrow arrow_left" hidden></div>
                     <div class="arrow arrow_right"></div>
                     <div class="slider_wrapper">
 

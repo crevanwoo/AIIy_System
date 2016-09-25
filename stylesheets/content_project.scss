@@ -77,22 +77,27 @@
             .icon1 {
                 width: 100rem;
                 height: 100rem;
-                background-image: url(../images/project_icon_1.png)
+                background-image: url(../images/project_icon_1.png);
+				background-size: contain;
             }
             .icon2 {
                 width: 88rem;
                 height: 101rem;
-                background-image: url(../images/project_icon_2.png)
+                background-image: url(../images/project_icon_2.png);
+				background-size: contain;
+					
             }
             .icon3 {
                 width: 100rem;
                 height: 83rem;
-                background-image: url(../images/project_icon_3.png)
+                background-image: url(../images/project_icon_3.png);
+				background-size: contain;
             }
             .icon4 {
                 width: 101rem;
                 height: 101rem;
-                background-image: url(../images/project_icon_4.png)
+                background-image: url(../images/project_icon_4.png);
+				background-size: contain;
             }
         }
         &:after {
@@ -112,6 +117,10 @@
             text2 {
                 float: right;
             }
+			.img1, .img2 {background-size: contain;
+				
+			}
+			
             .text,
             h1,
             p {
@@ -143,7 +152,8 @@
             li {
                 padding-left: 20rem;
                 list-style-type: none;
-                list-style-image: url(../images/check_icon.png)
+                list-style-image: url(../images/check_icon.png);
+				
             }
         }
         .img1 {

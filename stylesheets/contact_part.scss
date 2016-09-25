@@ -96,6 +96,7 @@
             display: block;
             float: left;
             background-repeat: no-repeat;
+			background-size: contain;
             &:nth-of-type(1) {
                 margin-right: 15rem;
                 background-image: url(../images/soc_icon_1.png)

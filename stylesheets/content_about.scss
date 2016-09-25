@@ -31,6 +31,7 @@ $block_margin: 5rem;
                 height: 70rem;
                 background-position: top left;
                 background-repeat: no-repeat;
+				background-size: contain
             }
         }
         &:after {
@@ -110,6 +111,7 @@ $block_margin: 5rem;
                         height: 20rem;
                         position: absolute;
                         background-image: url(../images/linkedin.png);
+						background-size: contain;
                         background-repeat: no-repeat;
                         transition-delay: 0.4s;
                               transition-duration: 0.4s;
@@ -303,9 +305,12 @@ $block_margin: 5rem;
             }
             .slide_wrapper {
                 height: 100%;
+				overflow: hidden;
+				.slides_container {height: 1000%;
+				position: relative;}
                 .slide {
                     width: 100%;
-                    height: 100%;
+                    height: 10%;
                     padding-top: 35rem;
                     padding-bottom: 35rem;
                     padding-right: 95rem;
@@ -386,9 +391,12 @@ $block_margin: 5rem;
                 height: 60rem;
                 position: absolute;
                 top: -52rem;
-                left: -8rem;
+                margin-left: -8rem;
+				
                 background-image: url(../images/runner.png);
                 background-repeat: no-repeat;
+				background-position: bottom center;
+				background-size: contain;
                 z-index: 1;
                 >div.arrow {
                     width: 7rem;

@@ -20,7 +20,11 @@ body { &.hidden {
 	//min-height: 100%;
 	//position: absolute;
 }
-html {font-size: 1px;}
+html {font-size: 1px;
+	@media screen and (max-width: 1250px) {
+		font-size: 0.083vw;
+		
+	}}
 
 h1,
 h2,

@@ -247,6 +247,7 @@
 						background: {
 							position: center center;
 							repeat: no-repeat;
+						 size: contain;
 						}
 					}
 					a,
@@ -277,11 +278,13 @@
 						color: white;
 						&[type=text] {
 							@extend %icon;
-							background-image: url(../images/modal_icon4.png)
+							background-image: url(../images/modal_icon4.png);
+							background-size: auto 50%;
 						}
 						&[type=tel] {
 							@extend %icon;
-							background-image: url(../images/modal_icon2.png)
+							background-image: url(../images/modal_icon2.png);
+							background-size: auto 20%;
 						}
 						@extend %form_style;
 					
