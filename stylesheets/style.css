@@ -101,14 +101,14 @@ ul {
   border-radius: 30rem;
   background-color: #56aed8; }
   .blue_button:hover {
-    background-color: #af3534; }
+    background-color: #2e598b; }
 
 .h_black_and_red {
   font-family: GothamProMedium;
   font-size: 20rem;
   text-align: center; }
   .h_black_and_red span {
-    color: #af3534; }
+    color: #2e598b; }
 
 .top_part:before, .slider_port .slide .hover_block, .content_home .about > div > div:first-of-type:before, .content_home .excellence .slide .cell_1:before, .testimonials .slide > div:before, .modal_video, .contact_part:before, .side_button_part .full_screen {
   content: ' ';
@@ -597,7 +597,7 @@ header {
       text-transform: uppercase;
       line-height: 200%; }
     .content_home .about span {
-      color: #b03734;
+      color: #2e598b;
       font-size: 36rem;
       font-family: GothamProMedium; }
       .content_home .about span.big {
@@ -630,7 +630,7 @@ header {
         padding-bottom: 20rem;
         font-family: GothamProMedium;
         font-size: 20rem;
-        color: #b03734;
+        color: #2e598b;
         text-transform: uppercase; }
     .content_home .about .item1 {
       top: -20rem;
@@ -922,7 +922,8 @@ background-repeat: no-repeat;*/ }
         color: #c0d5de;
         display: inline-block;
         transition-duration: 0.4s; }
-      .content_about .team .slide .title .description, .content_about .team .slide .title .icon {
+      .content_about .team .slide .title .description,
+      .content_about .team .slide .title .icon {
         opacity: 0;
         font-size: 12rem;
         transition-duration: 0.4s;
@@ -1027,7 +1028,7 @@ background-repeat: no-repeat;*/ }
     padding-right: 10rem;
     padding-left: 10rem;
     background-size: 200rem 100%;
-    background-image: linear-gradient(to top, #e3483a 50%, #bc262b); }
+    background-image: linear-gradient(to top, #2a5282 50%, #4078ba); }
   .content_about .history > p {
     padding: 60rem 55rem 90rem 55rem;
     font-size: 20rem;
@@ -1035,7 +1036,7 @@ background-repeat: no-repeat;*/ }
   .content_about .history .red_year {
     float: left;
     display: inline-block;
-    background-image: linear-gradient(to top, #e3483a 50%, #bc262b);
+    background-image: linear-gradient(to top, #2a5282 50%, #4078ba);
     /* &:after {
         content: ' ';
         width: 100%;
@@ -1389,7 +1390,7 @@ background-repeat: no-repeat;*/ }
     padding-bottom: 35rem;
     font-family: GothamProMedium;
     font-size: 20rem;
-    color: #a9493a; }
+    color: #2e598b; }
   .content .third_part ul {
     line-height: 22rem;
     padding-left: 30rem;
@@ -1507,7 +1508,7 @@ background-repeat: no-repeat;*/ }
   top: 320rem;
   margin-top: 55rem;
   position: fixed;
-  background-color: #af3534;
+  background-color: #2e598b;
   line-height: 45rem;
   text-align: center;
   font-family: GothamProMedium;
@@ -1515,6 +1516,11 @@ background-repeat: no-repeat;*/ }
   color: white;
   transform: rotate(-90deg);
   z-index: 5; }
+
+.side_button_part .full_screen .content .job_seeker_part .slider .slide .block_info .red_button, .side_button_part .full_screen .content .client_part form .red_button {
+  background-color: #56aed8; }
+  .side_button_part .full_screen .content .job_seeker_part .slider .slide .block_info .red_button:hover, .side_button_part .full_screen .content .client_part form .red_button:hover {
+    background-color: #2e598b; }
 
 .side_button_part .full_screen .content .client_part form input, .side_button_part .full_screen .content .client_part form textarea {
   /* Firefox 19+ */
@@ -1652,10 +1658,7 @@ background-repeat: no-repeat;*/ }
               font-family: GothamProMedium;
               font-size: 12rem;
               line-height: 35rem;
-              border-radius: 30rem;
-              background-color: #af3534; }
-              .side_button_part .full_screen .content .job_seeker_part .slider .slide .block_info .red_button:hover {
-                background-color: #56aed8; }
+              border-radius: 30rem; }
           .side_button_part .full_screen .content .job_seeker_part .slider .slider_nav.on_blue_bg .slider_nav_button {
             background-color: #77a2b6; }
           .side_button_part .full_screen .content .job_seeker_part .slider .slider_nav.on_blue_bg .active {
@@ -1734,11 +1737,8 @@ background-repeat: no-repeat;*/ }
             font-family: GothamProMedium;
             font-size: 16rem;
             border-radius: 30rem;
-            background-color: #af3534;
             border: none;
             color: white; }
-            .side_button_part .full_screen .content .client_part form .red_button:hover {
-              background-color: #56aed8; }
       .side_button_part .full_screen .content #close_modal_window {
         padding-top: 20rem;
         font-size: 14rem;

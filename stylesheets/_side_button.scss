@@ -15,6 +15,13 @@
     z-index: 5
 }
 
+%red_button {
+    background-color: #56aed8; //$bg_red;
+    &:hover {
+        background-color: $bg_red; //#56aed8;
+    }
+}
+
 %form_style {
     &:focus {
         outline: none;
@@ -179,6 +186,7 @@
                                 font-size: $f_12;
                             }
                             .red_button {
+                                @extend %red_button;
                                 width: 135rem;
                                 margin: 0 auto 20rem auto;
                                 height: 35rem;
@@ -186,10 +194,6 @@
                                 font-size: 12rem;
                                 line-height: 35rem;
                                 border-radius: 30rem;
-                                background-color: $bg_red;
-                                &:hover {
-                                    background-color: #56aed8;
-                                }
                             }
                         }
                         &:after {
@@ -292,18 +296,15 @@
                         @extend %form_style;
                     }
                     .red_button {
+                        @extend %red_button;
                         width: 180rem;
                         margin: 0 auto 10rem auto;
                         height: 45rem;
                         font-family: $f_medium;
                         font-size: 16rem;
                         border-radius: 30rem;
-                        background-color: $bg_red;
                         border: none;
                         color: white;
-                        &:hover {
-                            background-color: #56aed8;
-                        }
                     }
                 }
             }

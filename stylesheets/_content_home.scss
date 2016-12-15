@@ -13,7 +13,7 @@
             line-height: 200%;
         }
         span {
-            color: #b03734;
+            color: $text_red;
             font-size: 36rem;
             font-family: $f_medium;
             &.big {
@@ -53,7 +53,7 @@
                 padding-bottom: 20rem;
                 font-family: $f_medium;
                 font-size: $f_24;
-                color: #b03734;
+                color: $text_red;
                 text-transform: uppercase;
             }
         }

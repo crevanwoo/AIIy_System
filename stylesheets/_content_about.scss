@@ -31,7 +31,7 @@ $block_margin: 5rem;
                 height: 70rem;
                 background-position: top left;
                 background-repeat: no-repeat;
-				background-size: contain
+                background-size: contain
             }
         }
         &:after {
@@ -69,53 +69,56 @@ $block_margin: 5rem;
                     display: inline-block;
                     margin-right: 10rem;
                     font-size: $f_12;
-                    font-family: $f_medium;   
+                    font-family: $f_medium;
                     transition-duration: 0.4s;
                 }
-                .about{
+                .about {
                     font-size: 11rem;
                     color: $span_color;
-                    display: inline-block;  
+                    display: inline-block;
                     transition-duration: 0.4s;
                 }
-                .description, .icon { 
-                  opacity: 0;
-                      font-size: 12rem;
+                .description,
+                .icon {
+                    opacity: 0;
+                    font-size: 12rem;
                     transition-duration: 0.4s;
-                transform: scale(1.6)
+                    transform: scale(1.6)
                 }
                 .description {}
-                &.active {text-align: center;
+                &.active {
+                    text-align: center;
                     padding: 0 10rem;
                     .name {
                         font-family: $f_medium;
                         font-size: 18rem;
                         transition-duration: 0.4s;
                     }
-                    .about {display: block;
+                    .about {
+                        display: block;
                         font-size: 14rem;
                         line-height: 200%;
-                     
                     }
-                    .description {opacity: 1;
+                    .description {
+                        opacity: 1;
                         position: relative;
                         padding-top: 20rem;
                         font-size: 12rem;
-                           transition-delay: 0.4s;
-                          transition-duration: 0.4s;
-                         transform: scale(1)
-                       
+                        transition-delay: 0.4s;
+                        transition-duration: 0.4s;
+                        transform: scale(1)
                     }
-                    .icon {opacity: 1;
+                    .icon {
+                        opacity: 1;
                         width: 20rem;
                         height: 20rem;
                         position: absolute;
                         background-image: url(../images/linkedin.png);
-						background-size: contain;
+                        background-size: contain;
                         background-repeat: no-repeat;
                         transition-delay: 0.4s;
-                              transition-duration: 0.4s;
-                         transform: scale(1)
+                        transition-duration: 0.4s;
+                        transform: scale(1)
                     }
                 }
             }
@@ -182,33 +185,35 @@ $block_margin: 5rem;
                 .title {
                     height: auto;
                     top: 120rem;
-                
-                &.active {
-                    padding-top: 90rem;
-                    .icon {
-                        top: 58rem;
-                        left: 0;
-                        right: 0;
-                        margin: auto;
+                    &.active {
+                        padding-top: 90rem;
+                        .icon {
+                            top: 58rem;
+                            left: 0;
+                            right: 0;
+                            margin: auto;
+                        }
                     }
-                }}
+                }
             }
             .cell_2_w {
                 .title {
                     padding-top: 10rem;
                     height: auto;
                     top: 140rem;
-                
-                    &.active  {
-                    padding-top: 35rem;
-                    padding-left: $padding-left;
-                    text-align: left;
-                        .description {padding-top: 0;}
-                    .icon {
-                        bottom: 18rem;
-                        left: $padding-left;
+                    &.active {
+                        padding-top: 35rem;
+                        padding-left: $padding-left;
+                        text-align: left;
+                        .description {
+                            padding-top: 0;
+                        }
+                        .icon {
+                            bottom: 18rem;
+                            left: $padding-left;
+                        }
                     }
-                }}
+                }
             }
             .cell_1_margin {
                 margin-right: $block_margin *2;
@@ -218,17 +223,18 @@ $block_margin: 5rem;
                 .title {
                     height: auto;
                     top: 300rem;
-                
-                    &.active  {
-                        .name {padding-top: 60rem;}
-               
-                    .icon {
-                        bottom: -43rem;
-                        left: 0;
-                        right: 0;
-                        margin: auto;
+                    &.active {
+                        .name {
+                            padding-top: 60rem;
+                        }
+                        .icon {
+                            bottom: -43rem;
+                            left: 0;
+                            right: 0;
+                            margin: auto;
+                        }
                     }
-                }}
+                }
             }
             .cell_1,
             .cell_2_w_2_h {
@@ -248,7 +254,7 @@ $block_margin: 5rem;
             padding-right: 10rem;
             padding-left: 10rem;
             background-size: 200rem 100%;
-            background-image: linear-gradient(to top, #e3483a 50%, #bc262b);
+            background-image: $color_gradient;
         }
         >p {
             padding: 60rem 55rem 90rem 55rem;
@@ -258,7 +264,7 @@ $block_margin: 5rem;
         .red_year {
             float: left;
             display: inline-block;
-            background-image: linear-gradient(to top, #e3483a 50%, #bc262b);
+            background-image: $color_gradient;
             #red_year {
                 font-family: $f_bold;
                 font-size: 160rem;
@@ -305,9 +311,11 @@ $block_margin: 5rem;
             }
             .slide_wrapper {
                 height: 100%;
-				overflow: hidden;
-				.slides_container {height: 1000%;
-				position: relative;}
+                overflow: hidden;
+                .slides_container {
+                    height: 1000%;
+                    position: relative;
+                }
                 .slide {
                     width: 100%;
                     height: 10%;
@@ -392,11 +400,10 @@ $block_margin: 5rem;
                 position: absolute;
                 top: -52rem;
                 margin-left: -8rem;
-				
                 background-image: url(../images/runner.png);
                 background-repeat: no-repeat;
-				background-position: bottom center;
-				background-size: contain;
+                background-position: bottom center;
+                background-size: contain;
                 z-index: 1;
                 >div.arrow {
                     width: 7rem;

@@ -43,11 +43,13 @@ $f_18: 18rem;
 $f_20: 20rem;
 $f_24: 20rem;
 $f_30: 30rem;
-$f_red: #a9493a;
-$bg_red: #af3534;
+$f_red: #2e598b;//#a9493a;
+$bg_red: #2e598b;//#af3534;
 $bg_gray: #e3e3e3;
+$text_red: #2e598b;//#b03734;
 $dark_blue_transparent: rgba(19, 53, 69, 0.9);
 $light_blue_transparent: rgba(74, 123, 146, 0.8);
+$color_gradient: linear-gradient(to top, #2a5282 50%, #4078ba);//linear-gradient(to top, #e3483a 50%, #bc262b);
 %clear {
 	content: ' ';
 	display: block;
