@@ -16,7 +16,7 @@
     /* second_slider */
 
     ;
-    (function () { /*slider*/
+    (function () {
         var nav_button = document.querySelectorAll('.slider_nav_button');
         for (var i = 0; i < nav_button.length; i++) {
             nav_button[i].addEventListener('click', sliderMove)
@@ -43,14 +43,14 @@
         }
 
 
-        /* structure: slider, slide, data-slide-num in slider_nav_button and slide; numerable from 1*/
+
 
 
     })();
 
 
     ;
-    (function () { //slider_arrow
+    (function () {
 
 
 
@@ -126,7 +126,6 @@
         }
 
     })();
-
 
 
 
@@ -305,7 +304,7 @@
 
 
 
-;
+
 (function () {
     'use strict';
     var header_menu_item = document.getElementsByClassName('header_hidden_contact');
@@ -395,13 +394,6 @@
 ;
 (function () {
     'use strict';
-    /*var pageY_offset = window.pageYOffset;
-    window.onscroll = function () {
-    	pageY_offset = window.pageYOffset;
-    	$('.side_button_part').css('top', pageY_offset);
-    	
-
-    }*/
 
     $('.side_button_part').attr('hidden', 'hidden');
     $('#red_button').on('click', function () { //$('.side_button_part').css('top', pageY_offset);
@@ -435,3 +427,57 @@
 
 
 })();
+
+$(document).ready(function () {
+    $('.about_page_slider').slick({
+        dots: true,
+        swipeToSlide: true,
+    });
+});
+
+
+
+$(document).ready(function () {
+    $('.slider_excellense').slick({
+        dots: true,
+        swipeToSlide: true,
+    });
+});
+
+$(document).ready(function () {
+    $('.home_page_portfolio_slider').slick({
+        dots: true,
+        swipeToSlide: true,
+    });
+});
+
+$(document).ready(function () {
+    $('.testimonials_slider').slick({
+        dots: true,
+        swipeToSlide: true,
+    });
+});
+
+
+$(document).ready(function () {
+    $('.modal_carousel_slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        swipeToSlide: true,
+    });
+});
+
+$(document).ready(function () {
+    $('.page_portfolio_slider').slick({
+        dots: true,
+        swipeToSlide: true,
+    });
+});
+
+
+
+$(document).ready(function () {
+    $('.smartphone_slider').slick({     
+        swipeToSlide: true,
+    });
+});

@@ -9,6 +9,10 @@
     <script defer type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script defer src="js/config.js"></script>
 
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
+
+
+    <script defer type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 
 
 
@@ -18,8 +22,9 @@
 <body>
 
 
+ 
 
-    <!-- Modal window begins -->
+  <!-- Modal window begins -->
     <div id="red_button" data-modal-id="modal_order">KEEP IN TOUCH</div>
     <div class="modal side_button_part" id="modal_order">
         <div class="full_screen">
@@ -30,54 +35,50 @@
                     <div class="contacts">Sales manager: <a href="mailto:hello@allysystem.com">hello@allysystem.com</a></div>
                     <div class="contacts">Mobile Number: <a href="tel:+14087685273">+1 (408) 768-5273</a></div>
                     <h4>OPENING COUNTS</h4>
-                    <div class="slider">
-                        <div class="arrow slider_arr arrow_left"></div>
-                        <div class="arrow slider_arr arrow_right"></div>
-                        <div class="slider_wrapper">
-                            <div class="slides_block">
-                                <div class="slide">
-                                    <div class="block_info">
+                        <div class="modal_carousel_slider">
+                                   <!-- slide begins -->
+                                    <div class="slide_info">
                                         <div class="picture" style="background-image:url(images/guy.png)"></div>
                                         <div class="title">Mobile develop</div>
                                         <div class="comment">4 post Avaliable</div>
                                         <div class="red_button">APPLY NOW</div>
                                     </div>
-                                    <div class="block_info">
+                                    <!-- slide ends -->
+                                       <!-- slide begins -->
+                                    <div class="slide_info">
                                         <div class="picture" style="background-image:url(images/guy.png)"></div>
                                         <div class="title">Mobile develop</div>
                                         <div class="comment">4 post Avaliable</div>
                                         <div class="red_button">APPLY NOW</div>
                                     </div>
-                                    <div class="block_info">
+                                    <!-- slide ends -->
+                                       <!-- slide begins -->
+                                    <div class="slide_info">
                                         <div class="picture" style="background-image:url(images/guy.png)"></div>
                                         <div class="title">Mobile develop</div>
                                         <div class="comment">4 post Avaliable</div>
                                         <div class="red_button">APPLY NOW</div>
                                     </div>
-                                    <div class="block_info">
+                                    <!-- slide ends -->
+                                       <!-- slide begins -->
+                                    <div class="slide_info">
                                         <div class="picture" style="background-image:url(images/guy.png)"></div>
                                         <div class="title">Mobile develop</div>
                                         <div class="comment">4 post Avaliable</div>
                                         <div class="red_button">APPLY NOW</div>
                                     </div>
-                                    <div class="block_info">
+                                    <!-- slide ends -->
+                                       <!-- slide begins -->
+                                    <div class="slide_info">
                                         <div class="picture" style="background-image:url(images/guy.png)"></div>
                                         <div class="title">Mobile develop</div>
                                         <div class="comment">4 post Avaliable</div>
                                         <div class="red_button">APPLY NOW</div>
                                     </div>
+                                    <!-- slide ends -->
+                                   
                                 </div>
-                            </div>
-                        </div>
-                        <!--  <div class="slider_nav on_blue_bg">
-                            <div>
-                                <div class="slider_nav_button nav_button_1 active"></div>
-                                <div class=" slider_nav_button  nav_button_2"></div>
-                                <div class="slider_nav_button  nav_button_3"></div>
-                                <div class="slider_nav_button  nav_button_4"></div>
-                            </div>
-                        </div>-->
-                    </div>
+                     
                 </div>
                 <div class="client_part">
                     <div class="contacts_wrapper">
@@ -106,8 +107,6 @@
     </div>
 
     <!-- Modal window ends -->
-
-
 
 
 
@@ -171,15 +170,6 @@
 
 
         <div class="wrapper top_home">
-
-
-            <!--<h1 class="main_h">SMART WEB DEVELOPMENT</h1>
-			<br>
-			<span>Beautiful and functional websites, products, portals and web applications built on latest technologies and</span>
-			<br>
-			<span>frameworks, delivered without cost and budget overruns</span>-->
-
-
 
             <div class="slider">
                 <div class="slide active" data-slide-num="1">
@@ -328,10 +318,8 @@
             <div class="portfolio">
                 <h1 class="h_black_and_red">VIEW OUR LATEST <span>WORK</span></h1>
                 <div class="slider_port">
-                    <div class="slider">
-                        <div class="arrow slider_arr"></div>
-                        <div class="arrow slider_arr"></div>
-
+                    <div class="slider home_page_portfolio_slider">
+                     
                         <!-- slide begins -->
                         <div class="slide active" data-slide-num="1">
                             <div class="cell_2_h hover_parent" style="background-image:url(images/port_4.jpg)">
@@ -474,15 +462,7 @@
                         <!-- slide ends -->
 
 
-                        <div class="slider_nav on_white_bg">
-                            <div>
-                                <div class="slider_nav_button active" data-slide-num="1"></div>
-                                <div class="slider_nav_button" data-slide-num="2"></div>
-                                <div class="slider_nav_button" data-slide-num="3"></div>
-                                <div class="slider_nav_button" data-slide-num="4"></div>
-                            </div>
-                        </div>
-                    </div>
+                                           </div>
                 </div>
             </div>
         </div>
@@ -491,11 +471,10 @@
 
         <div class="wrapper">
             <div class="excellence">
-                <div class="slider">
-                    <div class="arrow slider_arr"></div>
-                    <div class="arrow slider_arr"></div>
+                <div class="slider slider_excellense">
+                
                     <!-- slide begins -->
-                    <div class="slide active" data-slide-num="1">
+                    <div class="slide" data-slide-num="1">
                         <div class="cell_1" style="background-image:url(images/excellence_1.jpg)">
                             <div>Healthcare Solutions
                                 <br> along pharmacy</div>
@@ -601,14 +580,7 @@
                     </div>
 
                     <!-- slide ends -->
-                    <div class="slider_nav on_white_bg">
-                        <div>
-                            <div class="slider_nav_button active" data-slide-num="1"></div>
-                            <div class=" slider_nav_button" data-slide-num="2"></div>
-                            <div class="slider_nav_button" data-slide-num="3"></div>
-                            <div class="slider_nav_button" data-slide-num="4"></div>
-                        </div>
-                    </div>
+                   
                 </div>
             </div>
         </div>
@@ -630,14 +602,12 @@
 
 
             <h1 class="big_h">testimonials</h1>
-
-            <div class="slider">
-                <div class="arrow slider_arr"></div>
-                <div class="arrow slider_arr"></div>
-
+            
+            <div class="slider testimonials_slider">
+             
 
                 <!-- slide begins -->
-                <div class="slide active" data-slide-num="1">
+                <div class="slide" data-slide-num="1">
 
 
 
@@ -653,12 +623,7 @@
                             Play
                         </div>
 
-                        <div class="modal modal_video" id="video_1">
-                            <div class="slider_video">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/YyUpmzZ9vzw" frameborder="0" allowfullscreen></iframe>
-                            </div>
-                            <div class="close">&#x2716;</div>
-                        </div>
+                   
 
                    
                    
@@ -695,12 +660,6 @@
                         
                         
                         
-                           <div class="modal modal_video" id="video_2">
-                            <div class="slider_video">
-                          <iframe width="560" height="315" src="https://www.youtube.com/embed/3gIdMEAvQk0" frameborder="0" allowfullscreen></iframe>
-                            </div>
-                            <div class="close">&#x2716;</div>
-                        </div>
 
 
                     </div>
@@ -826,14 +785,7 @@
                 <!-- slide ends -->
 
 
-                <div class="slider_nav on_blue_bg">
-                    <div>
-                        <div class="slider_nav_button active" data-slide-num="1"></div>
-                        <div class=" slider_nav_button" data-slide-num="2"></div>
-                        <div class="slider_nav_button" data-slide-num="3"></div>
-                        <div class="slider_nav_button" data-slide-num="4"></div>
-                    </div>
-                </div>
+              
             </div>
 
 
@@ -981,7 +933,22 @@
         </div>
     </footer>
     <!-- footer ends  -->
+    
+    
+                           <div class="modal modal_video" id="video_2">
+                            <div class="slider_video">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/3gIdMEAvQk0" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div class="close">&#x2716;</div>
+                        </div>
 
+
+     <div class="modal modal_video" id="video_1">
+                            <div class="slider_video">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/YyUpmzZ9vzw" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <div class="close">&#x2716;</div>
+                        </div>
 
 
 

@@ -1,234 +1,223 @@
 /* --------------------- Slider --------------------- */
 
 %slider_cell {
-	width: $port_cell;
-	height: $port_cell;
-	
+    width: $port_cell;
+    height: $port_cell;
 }
 
 %slider_wide_cell {
-	width: $port_cell * 2 + $port_margin;
-	height: $port_cell;
-	
+    width: $port_cell * 2 + $port_margin;
+    height: $port_cell;
 }
 
 %slider_long_cell {
-	width: $port_cell;
-	height: $port_cell * 2 + $port_margin;
-	
+    width: $port_cell;
+    height: $port_cell * 2 + $port_margin;
 }
 
 %for_all_slide_cells {
-	position: relative;
-	margin: 10rem;
-	overflow: hidden;
-	float: left;
-	background-size: auto 100%;
-	background-repeat: no-repeat;
-	
+    position: relative;
+    margin: 10rem;
+    overflow: hidden;
+    float: left;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
 }
 
 %slider_nav {
-    clear:both;
-	padding-top: 38rem - 5rem;
-	padding-bottom: 38rem;
-	text-align: center;
-	>div {
-		display: inline-block;
-	}
-	div.slider_nav_button {
-		width: 20rem;
-		height: 3rem;
-        padding:10rem 0;
-		float: left;
+    display: none;
+    clear: both;
+    padding-top: 38rem - 5rem;
+    padding-bottom: 38rem;
+    text-align: center;
+    >div {
+        display: inline-block;
+    }
+    div.slider_nav_button {
+        width: 20rem;
+        height: 3rem;
+        padding: 10rem 0;
+        float: left;
         background-clip: content-box;
-		&:not(:first-of-type) {
-			margin-left: 10rem;
-		}
-	}
+        &:not(:first-of-type) {
+            margin-left: 10rem;
+        }
+    }
 }
 
 %slide_common_style {
-	margin: -$port_margin/2;
-	&:after {
-		@extend %clear
-	}
+    margin: -$port_margin/2;
+    &:after {
+        @extend %clear
+    }
 }
 
 %slider_arrow {
-	$size: 28rem;
-	width: $size;
-	height: $size;
-	margin-top: -55rem; ///-$size/2;
-	position: absolute;
-	top: 50%;
-	border-bottom-left-radius: 4rem;
-	&:first-of-type {
-		left: 5rem - 75rem;
-		transform: rotate(45deg);
-		
-	}
-	&:nth-of-type(2) {
-		right: 5rem - 75rem;
-		transform: rotate(-135deg);
-		
-	}
+    $size: 28rem;
+    width: $size;
+    height: $size;
+    margin-top: -55rem;
+    position: absolute;
+    top: 50%;
+    border-bottom-left-radius: 4rem;
+    &:first-of-type {
+        left: 5rem - 75rem;
+        transform: rotate(45deg);
+    }
+    &:nth-of-type(2) {
+        right: 5rem - 75rem;
+        transform: rotate(-135deg);
+    }
 }
 
 .slider_port {
-	
-	
-	@extend %slide_common_style;
-	/*margin: -10rem;*/
-	//margin: auto;
-	position: relative;
-	.slide_wrapper {position: relative;}
-	>div.arrow {
-		@extend %slider_arrow;
-		border-bottom: 3rem solid #b6b6b6;
-		border-left: 3rem solid #b6b6b6;
-	}
-	.slide {//position:absolute;
-		
-		>div {
-			@extend %for_all_slide_cells;
-			opacity: 0.5;
-			&.active {opacity: 1}
-		}
-		>div.cell_2_h {
-			@extend %slider_long_cell;
-			span {
-				position: relative;
-				display: inline-block;
-				padding-top: 80rem;
-				&:first-of-type {
-					margin-top: 30rem;
-				}
-				&:first-of-type:before {
-					content: ' ';
-					width: $icon_size;
-					height: $icon_size;
-					display: block;
-					position: absolute;
-					top: 20rem;
-					left: 50%;
-					margin-left: -$icon_size/2;
-					background-image: url(../images/settings_icon.png);
-					background-repeat: no-repeat;
-					background-size: contain;
-				}
-				&:first-of-type:after {
-					content: ' ';
-					width: $icon_size;
-					height: $icon_size;
-					display: block;
-					position: absolute;
-					bottom: -60rem;
-					left: 50%;
-					margin-left: -$icon_size/2;
-					background-image: url(../images/system_icon.png);
-					background-repeat: no-repeat;
-					background-size: contain;
-				}
-			}
-		}
-		>div.cell_2_w {
-			@extend %slider_wide_cell;
-			span {
-				position: relative;
-				width: 30%;
-				display: inline-block;
-				padding-top: 10rem;
-				padding-left: 70rem;
-				padding-right: 30rem;
-				&:first-of-type:before {
-					content: ' ';
-					width: $icon_size;
-					height: $icon_size;
-					display: block;
-					position: absolute;
-					top: 50%;
-					left: 10rem;
-					margin-top: -$icon_size / 2;
-					background-image: url(../images/settings_icon.png);
-					background-repeat: no-repeat;
-					background-size: contain;
-				}
-				&:first-of-type:after {
-					content: ' ';
-					width: $icon_size;
-					height: $icon_size;
-					display: block;
-					position: absolute;
-					top: 50%;
-					right: -40rem;
-					margin-top: -$icon_size / 2;
-					background-image: url(../images/system_icon.png);
-					background-repeat: no-repeat;
-					background-size: contain;
-				}
-			}
-		}
-		>div.cell_1 {
-			@extend %slider_cell;
+    @extend %slide_common_style;
+    position: relative;
+    .slide_wrapper {
+        position: relative;
+    }
+    .slide {
+        >div {
+            @extend %for_all_slide_cells;
+            opacity: 0.5;
+            &.active {
+                opacity: 1
+            }
+        }
+        >div.cell_2_h {
+            @extend %slider_long_cell;
             span {
-				position: relative;
-				display: inline-block;
-				//padding-top: 80rem;
-				&:first-of-type {
-					margin-top: 40rem;
-				}
-				&:first-of-type:before {
-					content: ' ';
-					width: $icon_size;
-					height: $icon_size;
-					display: block;
-					position: absolute;
-					top: -45rem;
-					left: 50%;
-					margin-left: -$icon_size/2;
-					background-image: url(../images/settings_icon.png);
-					background-repeat: no-repeat;
-					background-size: contain;
-                }}
-            
-		}
-		
-		.hover_block {
-			@extend %blue_transparent;
-			//display: none;
-			opacity: 0;
-			padding-right: 20rem;
-			padding-left: 20rem;
-			box-sizing: border-box;
-			background-color: $light_blue_transparent;
-			text-align: center;
-			font-size: $f_14;
-			color: white;
-			&:hover {opacity:1;
-			transition-duration: 0.3s;}
-			h4 {
-				margin-top: 40rem;
-				margin-bottom: 20rem;
-				font-family: $f_medium;
-				font-size: 20rem;
-			}
-		}
-		/*&:after {
+                position: relative;
+                display: inline-block;
+                padding-top: 80rem;
+                &:first-of-type {
+                    margin-top: 30rem;
+                }
+                &:first-of-type:before {
+                    content: ' ';
+                    width: $icon_size;
+                    height: $icon_size;
+                    display: block;
+                    position: absolute;
+                    top: 20rem;
+                    left: 50%;
+                    margin-left: -$icon_size/2;
+                    background-image: url(../images/settings_icon.png);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+                &:first-of-type:after {
+                    content: ' ';
+                    width: $icon_size;
+                    height: $icon_size;
+                    display: block;
+                    position: absolute;
+                    bottom: -60rem;
+                    left: 50%;
+                    margin-left: -$icon_size/2;
+                    background-image: url(../images/system_icon.png);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+            }
+        }
+        >div.cell_2_w {
+            @extend %slider_wide_cell;
+            span {
+                position: relative;
+                width: 30%;
+                display: inline-block;
+                padding-top: 10rem;
+                padding-left: 70rem;
+                padding-right: 30rem;
+                &:first-of-type:before {
+                    content: ' ';
+                    width: $icon_size;
+                    height: $icon_size;
+                    display: block;
+                    position: absolute;
+                    top: 50%;
+                    left: 10rem;
+                    margin-top: -$icon_size / 2;
+                    background-image: url(../images/settings_icon.png);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+                &:first-of-type:after {
+                    content: ' ';
+                    width: $icon_size;
+                    height: $icon_size;
+                    display: block;
+                    position: absolute;
+                    top: 50%;
+                    right: -40rem;
+                    margin-top: -$icon_size / 2;
+                    background-image: url(../images/system_icon.png);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+            }
+        }
+        >div.cell_1 {
+            @extend %slider_cell;
+            span {
+                position: relative;
+                display: inline-block;
+                //padding-top: 80rem;
+                &:first-of-type {
+                    margin-top: 40rem;
+                }
+                &:first-of-type:before {
+                    content: ' ';
+                    width: $icon_size;
+                    height: $icon_size;
+                    display: block;
+                    position: absolute;
+                    top: -45rem;
+                    left: 50%;
+                    margin-left: -$icon_size/2;
+                    background-image: url(../images/settings_icon.png);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                }
+            }
+        }
+        .hover_block {
+            @extend %blue_transparent;
+            //display: none;
+            opacity: 0;
+            padding-right: 20rem;
+            padding-left: 20rem;
+            box-sizing: border-box;
+            background-color: $light_blue_transparent;
+            text-align: center;
+            font-size: $f_14;
+            color: white;
+            &:hover {
+                opacity: 1;
+                transition-duration: 0.3s;
+            }
+            h4 {
+                margin-top: 40rem;
+                margin-bottom: 20rem;
+                font-family: $f_medium;
+                font-size: 20rem;
+            }
+        }
+        /*&:after {
 			@extend %clear
 		}*/
-		
-	}
-	.slider_nav {
-		@extend %slider_nav;
-		@include slider_nav(white)
-	}
-	.blue_button {
-		$width: 170rem;
-		width: $width;
-		margin-left: -$width/2;
-		position: absolute;
-		bottom: 30rem;
-		left: 50%;
-	}
+    }
+    .slider_nav {
+        @extend %slider_nav;
+        @include slider_nav(white)
+    }
+    .blue_button {
+        $width: 170rem;
+        width: $width;
+        margin-left: -$width/2;
+        position: absolute;
+        bottom: 30rem;
+        left: 50%;
+    }
 }
