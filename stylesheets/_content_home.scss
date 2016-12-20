@@ -1,6 +1,11 @@
 /* --------------------- Content home --------------------- */
 
 .content_home {
+    @media screen and (max-width: 1250px) {
+        .slick-slide {
+            width: 100vw !important
+        }
+    }
     padding-top: 40rem;
     padding-bottom: 60rem;
     background-color: $bg_gray;
@@ -261,6 +266,7 @@
         top: 5%;
         right: 10%;
         font-size: 30rem;
+        cursor: pointer;
     }
 }
 

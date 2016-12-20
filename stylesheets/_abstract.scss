@@ -1,5 +1,15 @@
 /* --------------------- Abstract --------------------- */
 
+
+@mixin bp {
+    @media (max-width: 700px) {
+        @content;
+    }
+    
+}
+
+
+
 $port_margin: 20rem;
 $port_cell: 275rem;
 $icon_size: 38rem;

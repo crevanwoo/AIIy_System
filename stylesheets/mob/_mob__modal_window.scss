@@ -1,0 +1,320 @@
+#red_button {
+    width: auto;
+    padding: 3vw;
+    right: -150rem;
+    top: 400rem;
+    position: fixed;
+    background-color: $bg_red;
+    line-height: 45rem;
+    text-align: center;
+    font-family: $f_medium;
+    font-size: 40rem;
+    color: white;
+    transform: rotate(-90deg);
+    z-index: 5
+}
+
+%red_button {
+    background-color: #56aed8; //$bg_red;
+    &:hover {
+        background-color: $bg_red; //#56aed8;
+    }
+}
+
+%form_style {
+    &:focus {
+        outline: none;
+        background-color: rgba(158, 202, 227, 0.5);
+    }
+    &::-webkit-input-placeholder {
+        font-family: $f_regular;
+        font-size: $f_16;
+        color: white
+    }
+    &::-moz-placeholder {
+        font-family: $f_regular;
+        font-size: $f_16;
+        color: white
+    }
+    /* Firefox 19+ */
+    &:-moz-placeholder {
+        font-family: $f_regular;
+        font-size: $f_16;
+        color: white
+    }
+    /* Firefox 18- */
+    &:-ms-input-placeholder {
+        font-family: $f_regular;
+        font-size: $f_16;
+        color: white
+    }
+}
+
+%icon {
+    background: {
+        position: 15rem center;
+        repeat: no-repeat
+    }
+}
+
+.side_button_part {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    min-height: 700rem;
+    position: fixed; // absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    overflow: auto; //add this
+    .slider {
+        .slider_wrapper {
+            overflow: hidden;
+            height: 100%;
+        }
+        .slides_block {
+            width: 166.66%;
+            height: 100%;
+            transition-duration: 1s;
+        }
+    }
+    .full_screen {
+        @extend %blue_transparent;
+        background-color: $dark_blue_transparent;
+        position: absolute;
+        min-height: 720rem; //add this
+        height: 100%; //add this
+        overflow: auto; //add this
+        .content {
+            margin: auto;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 90vw;
+            height: 450rem;
+            min-height: 100vw;
+            text-align: center;
+            //height: auto;
+            .tabs {
+                transform: rotate(-90deg);
+                position: absolute;
+                height: 15vw;
+                width: 80vw;
+                left: -40vw;
+                top: 40vw;
+                h2 {
+                    position: absolute;
+                    width: 35vw;
+                    bottom: 0;
+                    padding-bottom: 13rem;
+                    border-bottom: 3rem solid $line_normal;
+                    text-align: center;
+                    font-size: $f_20;
+                    color: white;
+                    &:first-of-type {
+                        left: 0;
+                    }
+                    &:last-of-type {
+                        right: 0;
+                    }
+                    &.active {
+                        border-bottom: 3rem solid #54a9d2;
+                        font-family: $f_medium;
+                    }
+                    &:hover {
+                        border-bottom: 3rem solid $line_hover;
+                    }
+                }
+            }
+            .job_seeker_part {
+                width: 75vw;
+                float: right;
+                color: white;
+                .contacts {
+                    width: 100%;
+                    padding-top: 35rem;
+                    padding-bottom: 35rem;
+                    float: left;
+                    font-size: $f_14;
+                    text-align: center;
+                    a {
+                        font-family: $f_medium;
+                    }
+                }
+                h4 {
+                    padding-top: 70rem;
+                    padding-bottom: 25rem;
+                    clear: both;
+                    font-family: $f_medium;
+                    font-size: $f_18;
+                }
+                .modal_carousel_slider {
+                    position: relative;
+                    height: 49vw;
+                    .slick-list {
+                        height: 100%;
+                        overflow: hidden;
+                    }
+                    .slick-track {
+                        min-width: 100%;
+                    }
+                    .slide_info {
+                        //width: 240rem !important;  
+                        width: 75vw !important;
+                        text-align: center;
+                        .picture {
+                            width: 100%;
+                            height: 30vw;
+                            margin-bottom: 5rem;
+                            background: {
+                                size: contain;
+                                position: center center;
+                                repeat: no-repeat
+                            }
+                        }
+                        .title {
+                            font-family: $f_medium;
+                            font-size: 5vw;
+                        }
+                        .comment {
+                            padding-bottom: 17rem;
+                            font-family: $f_light;
+                            font-size: 3vw;
+                        }
+                        .red_button {
+                            width: 60vw;
+                            @extend %red_button;
+                            margin: 0 auto 20rem auto;
+                            padding: 2vw 3vw;
+                            font-family: $f_medium;
+                            font-size: 40rem;
+                            line-height: 35rem;
+                            border-radius: 30rem;
+                        }
+                    }
+                }
+            }
+            .client_part {
+                width: 75vw;
+                float: right;
+                color: white;
+                .contacts_wrapper {
+                    margin: auto;
+                    width: 700rem;
+                    &:after {
+                        @extend %clear
+                    }
+                }
+                .contacts {
+                    position: relative;
+                    width: 100%;
+                    padding-top: 35rem;
+                    padding-bottom: 35rem;
+                    padding-left: 50rem;
+                    box-sizing: border-box;
+                    float: left;
+                    font-size: $f_14;
+                    text-align: left;
+                    >div:first-child {
+                        position: absolute;
+                        top: 40%;
+                        left: -5vw;
+                        width: 5vw;
+                        height: 5vw;
+                        background: {
+                            position: center center;
+                            repeat: no-repeat;
+                            size: contain;
+                        }
+                    }
+                    a,
+                    span {
+                        font-family: $f_medium;
+                    }
+                }
+                form {
+                    $border-radius: 10rem;
+                    $bg-color: rgba(255, 255, 255, 0.3);
+                    clear: both;
+                    padding-top: 50rem;
+                    input {
+                        font-family: $f_regular;
+                        font-size: $f_16;
+                        position: relative;
+                        display: block;
+                      margin-bottom:20rem ;
+                        margin-left: 20rem;
+                        box-sizing: border-box;
+                        width: 80%;
+                   
+                        height: 7vw;
+                        
+                        padding-left: 8vw;
+                        border: none;
+                        border-radius: $border-radius;
+                        background-color: $bg-color;
+                        color: white;
+                        &[type=text] {
+                            @extend %icon;
+                            background-image: url(../images/modal_icon4.png);
+                            background-size: auto 50%;
+                        }
+                        &[type=tel] {
+                            @extend %icon;
+                            background-image: url(../images/modal_icon2.png);
+                            background-size: auto 20%;
+                        }
+                        @extend %form_style;
+                    }
+                    textarea {
+                        font-family: $f_regular;
+                        font-size: $f_16;
+                        clear: both;
+                        resize: none;
+                        display: block;
+                     width: 80%;
+                        height: 14vw;
+                       margin-left: 20rem;
+                        margin-bottom: 20rem;
+                        padding: 10rem 10rem 10rem 20rem;
+                        box-sizing: border-box;
+                        border: none;
+                        border-radius: $border-radius;
+                        background-color: $bg-color;
+                        color: white;
+                        @extend %form_style;
+                    }
+                    .red_button {
+                        @extend %red_button;
+                        width: 80%;
+                        margin: 30rem 0 10rem 20rem;
+                        height: 7vw;
+                        font-family: $f_medium;
+                        font-size: 30rem;
+                        border-radius: 30rem;
+                        border: none;
+                        color: white;
+                        display: block;
+                    }
+                }
+            }
+            #close_modal_window {
+                position: absolute;
+                bottom: 20rem;
+                margin: auto;
+                right: 0;
+                left: 0;
+                //padding-top: 60rem;
+                font-size: $f_14;
+                text-decoration: underline;
+                color: #b4c1bf;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

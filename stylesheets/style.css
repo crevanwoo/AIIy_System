@@ -777,7 +777,7 @@ header {
       padding-left: 20rem;
       box-sizing: border-box;
       background-color: rgba(74, 123, 146, 0.8);
-      text-align: center;
+      text-align: justify;
       font-size: 14rem;
       color: white; }
       .slider_port .slide .hover_block:hover {
@@ -787,7 +787,8 @@ header {
         margin-top: 40rem;
         margin-bottom: 20rem;
         font-family: GothamProMedium;
-        font-size: 20rem; }
+        font-size: 20rem;
+        text-align: center; }
   .slider_port .slider_nav.on_white_bg .slider_nav_button {
     background-color: #b6b6b6; }
   .slider_port .slider_nav.on_white_bg .active {
@@ -797,7 +798,8 @@ header {
     margin-left: -85rem;
     position: absolute;
     bottom: 30rem;
-    left: 50%; }
+    left: 50%;
+    text-align: center; }
 
 /* --------------------- Content home --------------------- */
 .content_home {
@@ -805,6 +807,9 @@ header {
   padding-bottom: 60rem;
   background-color: #e3e3e3;
   /*slider 2*/ }
+  @media screen and (max-width: 1250px) {
+    .content_home .slick-slide {
+      width: 100vw !important; } }
   .content_home .about {
     font-variant: small-caps;
     font-size: 20rem; }
@@ -990,7 +995,8 @@ header {
     position: absolute;
     top: 5%;
     right: 10%;
-    font-size: 30rem; }
+    font-size: 30rem;
+    cursor: pointer; }
 
 .slide.active {
   opacity: 1;
@@ -1009,6 +1015,9 @@ header {
   padding-bottom: 10rem;
   background-color: #e3e3e3;
   font-size: 16rem; }
+  @media screen and (max-width: 1250px) {
+    .content_page .slick-slide {
+      width: 100vw !important; } }
   .content_page .wrapper:first-of-type {
     /* background-image: url();
 background-size: auto auto;
@@ -1053,6 +1062,9 @@ background-repeat: no-repeat;*/ }
   padding-top: 65rem;
   padding-bottom: 80rem;
   background-color: #e3e3e3; }
+  @media screen and (max-width: 1250px) {
+    .content_about .slick-slide {
+      width: 100vw !important; } }
   .content_about h1 {
     padding-bottom: 45rem;
     font-family: GothamProMedium;
@@ -1572,7 +1584,8 @@ background-repeat: no-repeat;*/ }
     .content .third_part .wrapper .img2,
     .content .third_part .wrapper text2 {
       float: right; }
-    .content .third_part .wrapper .img1, .content .third_part .wrapper .img2 {
+    .content .third_part .wrapper .img1,
+    .content .third_part .wrapper .img2 {
       background-size: contain; }
     .content .third_part .wrapper .text,
     .content .third_part .wrapper h1,

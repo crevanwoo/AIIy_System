@@ -4,6 +4,12 @@ $block_width: 375rem;
 $block_height: 180rem;
 $block_margin: 5rem;
 .content_about {
+      @media screen and (max-width: 1250px) {
+        .slick-slide {
+            width: 100vw !important
+        }
+    }
+  
     padding-top: 65rem;
     padding-bottom: 80rem;
     background-color: $bg_gray;

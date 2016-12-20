@@ -368,6 +368,8 @@
 
 
 
+
+
 ;
 (function () {
     'use strict';
@@ -427,6 +429,10 @@
 
 
 })();
+
+
+
+
 
 $(document).ready(function () {
     $('.about_page_slider').slick({

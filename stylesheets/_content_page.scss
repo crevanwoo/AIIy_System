@@ -1,6 +1,11 @@
     /* --------------------- Content page --------------------- */
     
     .content_page {
+        @media screen and (max-width: 1250px) {
+            .slick-slide {
+                width: 100vw !important
+            }
+        }
         padding-top: 75rem;
         padding-bottom: 10rem; //55rem;
         background-color: $bg_gray;
@@ -17,7 +22,6 @@
                 max-width: 470rem;
                 display: block;
                 float: right;
-                
             }
             .about {
                 width: 600rem;
@@ -44,7 +48,6 @@
                         }
                     }
                 }
-               
             }
             &:after {
                 @extend %clear
@@ -55,9 +58,6 @@
                 margin: 0;
                 padding-top: 55rem;
                 padding-bottom: 45rem;
-                
             }
         }
     }
-    
-  

@@ -1,0 +1,30 @@
+/* --------------------- Slider --------------------- */
+
+.slider_port {
+    @extend %slide_common_style;
+    position: relative;
+    .slide_wrapper {
+        position: relative;
+    }
+    .slide {
+        @extend %for_all_slide_cells;
+        @extend %slider_cell;
+        opacity: 0.5;
+        &.active {
+            opacity: 1
+        }
+    }
+    .slider_nav {
+        @extend %slider_nav;
+        @include slider_nav(white)
+    }
+    .blue_button {
+        $width: 170rem;
+        width: $width;
+        margin-left: -$width/2;
+        position: absolute;
+        bottom: 30rem;
+        left: 50%;
+        text-align: center;
+    }
+}

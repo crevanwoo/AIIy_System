@@ -1,0 +1,217 @@
+/* --------------------- Top part --------------------- */
+
+%half_transparent_top_header {
+    text-align: center;
+    h1 {
+        padding-right: 20rem;
+        padding-left: 20rem;
+        display: inline-block;
+        background-color: rgba(255, 255, 255, 0.2);
+        text-align: center;
+        margin-bottom: 70rem;
+        font-family: $f_medium;
+        font-size: $f_30;
+    }
+    span {
+        line-height: 30rem;
+        font-family: $f_regular;
+        font-size: $f_18;
+    }
+}
+
+.top_part {
+    min-height: 600rem;
+    padding-top: $header_height;
+    padding-bottom: 5vw;
+    position: relative;
+    box-sizing: border-box;
+    background-color: #475c67;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    &:before {
+        @extend %blue_transparent;
+        background-color: $dark_blue_transparent;
+    }
+    &.hide {
+        overflow: hidden
+    }
+    video {
+        min-width: 100%;
+        min-height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .wrapper {
+        position: relative;
+    }
+    .scroll_button {
+        width: 100rem;
+        height: 40rem;
+        margin-left: -50rem;
+        position: absolute;
+        bottom: -20rem;
+        left: 50%;
+        z-index: 2;
+        >div {
+            width: 10rem;
+            height: 10rem;
+            border-bottom: 2rem solid white;
+            border-right: 2rem solid white;
+            transform: rotate(45deg);
+            position: absolute;
+            top: 10rem;
+            left: 50%;
+            margin-left: -6rem;
+        }
+    }
+    .top_project,
+    .top_page,
+    .top_home {
+        @extend %half_transparent_top_header;
+    }
+    .top_about {
+        padding-top: 90rem;
+        color: white;
+        @extend %half_gradient_h;
+        >h1 {
+            padding-right: 20rem;
+            padding-left: 20rem;
+            background-size: 150rem 100%;
+            background-image: linear-gradient(to top, #00b0de, #0082db);
+        }
+        >p {
+            line-height: 170%;
+            padding: 30rem 65rem 35rem 65rem;
+            font-size: $f_18;
+        }
+        .numbers_about {
+            padding-right: 135rem;
+            padding-left: 135rem;
+            text-align: left;
+            >div {
+                >div {
+                    width: 33.33%;
+                    min-height: 65rem;
+                    height: auto;
+                    padding-top: 5rem;
+                    padding-left: 95rem;
+                    box-sizing: border-box;
+                    float: left;
+                    background-repeat: no-repeat;
+                    background-size: auto 100%;
+                    >div {
+                        font-family: $f_bold;
+                        font-size: 30rem;
+                    }
+                }
+            }
+            &:after {
+                @extend %clear
+            }
+        }
+    }
+}
+
+.page_home {
+    height: 700rem;
+}
+
+.top_home {
+    .picture {
+        .screen {
+            float: left;
+            position: relative;
+            top: 90rem;
+            .screen_top {
+                width: 475rem;
+                height: 270rem;
+                border: 10rem solid black;
+                border-top-left-radius: 10rem;
+                border-top-right-radius: 10rem;
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                }
+            }
+            .screen_bottom {
+                position: absolute;
+                top: 290rem;
+                width: 495rem;
+                height: 101rem;
+                background-image: url(../images/screen_bottom.png);
+                background-position: bottom center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+            .ipad {
+                width: 135rem;
+                height: 195rem;
+                position: absolute;
+                top: 210rem;
+                left: -20rem;
+                background-image: url(../images/ipad.png);
+                background-position: bottom center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                div {
+                    width: 119rem;
+                    height: 158rem;
+                    overflow: hidden;
+                    position: absolute;
+                    top: 19rem;
+                    left: 8rem;
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+    .title {
+        float: left;
+        font-size: 25rem;
+        line-height: 200%;
+        text-align: left;
+        width: 600rem;
+        span {
+            padding-top: 180rem;
+            display: inline-block;
+            font-family: $f_bold;
+            font-size: 70rem
+        }
+        .blue_button {
+            width: 195rem;
+            margin-top: 20rem;
+            font-size: $f_18;
+            text-align: center;
+        }
+    }
+    .navigation {
+        width: 10rem;
+        height: 500rem;
+        padding-top: 200rem;
+        float: right;
+        .slider_nav_button {
+            width: 6rem;
+            height: 6rem;
+            margin: 15rem auto;
+            border-radius: 50%;
+            background-clip: padding-box;
+            border: 2rem solid rgba(255, 255, 255, 0);
+            background-color: white;
+            cursor: pointer;
+            &.active {
+                background-color: transparent;
+                border: 2rem solid white;
+                margin: 18rem auto;
+            }
+        }
+    }
+}

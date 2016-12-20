@@ -1,0 +1,64 @@
+/* --------------------- Footer --------------------- */
+
+footer {
+    height: auto;
+    padding-top: 30rem;
+    padding-bottom: 35rem;
+    box-sizing: border-box;
+    background-color: #e3e3e3;
+    .wrapper {
+        height: auto;
+    }
+    nav {
+        width: 90vw;
+        float: left;
+        ul {
+            font-family: $f_light;
+            font-size: $f_12;
+            color: black;
+            &:not(:last-of-type) {
+                float: left;
+                margin-right: 45rem;
+            }
+            &:last-of-type {
+                float: right;
+            }
+            a,
+            a:link {
+                color: black !important;
+            }
+            li:first-of-type h3:first-child {
+                margin-top: 0;
+            }
+            h3 {
+                padding-top: 20rem;
+                margin-bottom: 20rem;
+                font-family: $f_medium;
+            }
+            &:last-of-type {
+                li {
+                    &:nth-of-type(1) a {
+                        background-image: url(../images/soc_color_1.jpg)
+                    }
+                    &:nth-of-type(2) a {
+                        background-image: url(../images/soc_color_2.jpg)
+                    }
+                    &:nth-of-type(3) a {
+                        background-image: url(../images/soc_color_3.jpg)
+                    }
+                    a {
+                        width: 5vw;
+                        height: 5vw;
+                        display: block;
+                        margin-bottom: 10rem;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                    }
+                }
+            }
+        }
+    }
+    .clear {
+        clear: both
+    }
+}

@@ -1,0 +1,131 @@
+/* --------------------- Header --------------------- */
+
+header {
+    width: 100%;
+    height: $header_height;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    &.active {
+        background-color: $dark_blue_transparent;
+    }
+    .logo {
+        margin: $header_padding_top auto 0 auto;
+        width: auto;
+        height: 15vw;
+        display: block;
+    }
+    nav {
+        &.active {ul {display: block;
+            }}
+        position: relative;
+        .icon_menu {position: absolute;
+           
+            padding: $wrapper_padding $wrapper_padding 0 $wrapper_padding;
+            height: $header_height - $wrapper_padding ;
+            
+            
+            font-size: 90rem;
+            color:white;
+        }
+        ul {display: none;
+            
+            position: absolute;
+            width: 100%;
+            margin-top: $header_height;
+            color: white;
+            li {
+                padding: 30rem 0;
+                text-align: center;
+                background-color: $dark_blue_transparent;
+                border-bottom: 1rem solid white;
+                .country {
+                    padding: 10rem;
+                }
+                .call_time {
+                    padding: 10rem;
+                    font-size: $f_12;
+                }
+            }
+            a {
+                font-family: $f_light;
+                font-size: $f_16;
+            }
+        }
+    }
+    .contact {
+        width: 220rem;
+        top: 3rem;
+        margin-left: 30rem;
+        position: relative;
+        float: right;
+        color: #cccccc;
+        >div {
+            padding-top: 10rem;
+            padding-bottom: 27rem //denends on .contact - top
+        }
+        .header_hidden_contact {
+            position: relative;
+            background-color: $dark_blue_transparent;
+            opacity: 0;
+            >div:last-of-type {
+                height: 100%;
+                width: 30rem;
+                position: absolute;
+                top: 0;
+                right: -30rem;
+                display: block;
+                background-color: $dark_blue_transparent;
+                clear: both;
+            }
+            &.active {
+                opacity: 1;
+                transition-duration: 0.5s;
+            }
+        }
+        >div:before,
+        >div:after {
+            @extend %clear
+        }
+        .arrow {
+            width: 10rem;
+            height: 10rem;
+            float: left;
+            border-bottom: 2rem solid white;
+            border-right: 2rem solid white;
+            transform: rotate(45deg)
+        }
+        a {
+            float: right;
+            font-size: $f_20;
+            color: #cccccc;
+            span {
+                font-family: $f_regular;
+                color: white
+            }
+        }
+        .country {
+            position: absolute;
+            right: 30rem;
+            font-size: 14rem;
+            &:after {
+                content: ' ';
+                width: 20rem;
+                height: 11rem;
+                position: absolute;
+                right: -30rem;
+                bottom: 3rem;
+                background-image: url(../images/india.jpg);
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+        .call_time {
+            padding-top: 5rem;
+            clear: both;
+            float: right;
+            font-size: 12rem;
+        }
+    }
+}

@@ -1,0 +1,114 @@
+/* --------------------- Contact part --------------------- */
+
+.contact_part {
+    min-height: 415rem;
+    height: auto;
+    padding: 60rem 0 20rem 0;
+    position: relative;
+    box-sizing: border-box;
+    background-image: url(../images/contact_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-size: $f_14;
+    font-family: $f_regular;
+    color: white;
+ &:before { @extend %blue_transparent;
+	 background-color:  $dark_blue_transparent;
+      
+    }
+    .wrapper {
+        position: relative;
+    
+    }
+    h1 {
+        font-size: $f_24;
+        font-family: $f_medium;
+    }
+    p {padding-top: 40rem;}
+    form {
+        margin: auto;
+        margin-top: 40rem;
+        margin-bottom: 40rem;
+        display: inline-block;
+    }
+    input {
+        width: 60vw;
+        height: 60rem;
+        margin-bottom: 20rem;
+        padding-left: 30rem;
+        display: block;
+        
+        border: none;
+        border-radius: 25rem;
+        background-color: rgba(255, 255, 255, 0.5);
+        color: white;
+       
+        &:focus {
+            outline: none;
+            background-color: rgba(158, 202, 227, 0.5);
+        }
+        &::-webkit-input-placeholder {
+            font-family: $f_regular;
+            font-size: $f_14;
+            color: black
+        }
+        &::-moz-placeholder {
+            font-family: $f_regular;
+            font-size: $f_14;
+            color: black
+        }
+        /* Firefox 19+ */
+        &:-moz-placeholder {
+            font-family: $f_regular;
+            font-size: $f_14;
+            color: black
+        }
+        /* Firefox 18- */
+        &:-ms-input-placeholder {
+            font-family: $f_regular;
+            font-size: $f_14;
+            color: black
+        }
+        &:not(:last-of-type) {
+            margin-right: 20rem;
+           
+        }
+    }
+    .blue_button {
+     padding: 2vw 3vw;
+        margin: 70rem auto 0 auto;
+        display: block;
+        border: none;
+        clear: both;
+        color: white;
+		font-size: $f_18;
+    }
+    div:nth-last-of-type(2) {
+        margin-bottom: 10rem;
+        font-size: $f_16;
+    }
+    div:last-of-type {
+        display: inline-block;
+        margin: 20rem auto;
+        a {
+            width: 5vw;
+            height: 5vw;
+            display: block;
+            float: left;
+            background-repeat: no-repeat;
+			background-size: contain;
+            &:nth-of-type(1) {
+                margin-right: 15rem;
+                background-image: url(../images/soc_icon_1.png)
+            }
+            &:nth-of-type(2) {
+                margin-right: 15rem;
+                background-image: url(../images/soc_icon_2.png)
+            }
+            &:nth-of-type(3) {
+                background-image: url(../images/soc_icon_3.png)
+            }
+        }
+    }
+}

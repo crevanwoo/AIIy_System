@@ -1,0 +1,49 @@
+    /* --------------------- Content page --------------------- */
+    
+    .content_page {
+        @media screen and (max-width: 1250px) {
+            .slick-slide {}
+        }
+        padding-top: 75rem;
+        padding-bottom: 10rem; //55rem;
+        background-color: $bg_gray;
+        font-size: $f_16;
+        .wrapper:first-of-type {
+            .about {
+                width: 100%;
+                ul {
+                    padding: 30rem 4vw;
+                    overflow: hidden;
+                    li {
+                        width: 40vw;
+                        height: 40vw;
+                        margin-bottom: 2vw;
+                        display: table;
+                        float: left;
+                        background-image: url(../images/bg_little_screen.jpg);
+                        text-align: center;
+                        font-family: $f_medium;
+                        font-size: $f_14;
+                        color: white;
+                        &:nth-of-type(odd) {
+                            margin-right: 2vw;
+                        }
+                        span {
+                            display: table-cell;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+            }
+            &:after {
+                @extend %clear
+            }
+        }
+        .wrapper:last-of-type {
+            h1 {
+                margin: 0;
+                padding-top: 55rem;
+                padding-bottom: 45rem;
+            }
+        }
+    }
