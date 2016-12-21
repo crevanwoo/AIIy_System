@@ -78,8 +78,8 @@
         color: white;
         @extend %half_gradient_h;
         >h1 {
-            padding-right: 20rem;
-            padding-left: 20rem;
+            padding: 2vw 20rem;
+        
             background-size: 150rem 100%;
             background-image: linear-gradient(to top, #00b0de, #0082db);
         }
@@ -94,18 +94,18 @@
             text-align: left;
             >div {
                 >div {
-                    width: 33.33%;
-                    min-height: 65rem;
+         
+                    min-height: 200rem;
                     height: auto;
                     padding-top: 5rem;
-                    padding-left: 95rem;
+                    padding-left: 200rem;
                     box-sizing: border-box;
-                    float: left;
+             
                     background-repeat: no-repeat;
-                    background-size: auto 100%;
+                    background-size: auto 150rem;
                     >div {
                         font-family: $f_bold;
-                        font-size: 30rem;
+                        font-size: 50rem;
                     }
                 }
             }
@@ -116,18 +116,18 @@
     }
 }
 
-.page_home {
-    height: 700rem;
-}
 
-.top_home {
+.top_home {padding-bottom: 10vw;
+    .slide {&:after{content:'';
+        display: block;
+        clear:both;}}
     .picture {
         .screen {
             float: left;
             position: relative;
             top: 90rem;
             .screen_top {
-                width: 475rem;
+                width: 45vw;
                 height: 270rem;
                 border: 10rem solid black;
                 border-top-left-radius: 10rem;
@@ -179,29 +179,33 @@
         font-size: 25rem;
         line-height: 200%;
         text-align: left;
-        width: 600rem;
+        width: 35vw;
         span {
             padding-top: 180rem;
             display: inline-block;
             font-family: $f_bold;
             font-size: 70rem
         }
-        .blue_button {
-            width: 195rem;
+        .blue_button {padding: 2vw;
+            width: 60%;
             margin-top: 20rem;
             font-size: $f_18;
             text-align: center;
         }
     }
     .navigation {
-        width: 10rem;
-        height: 500rem;
-        padding-top: 200rem;
-        float: right;
-        .slider_nav_button {
-            width: 6rem;
-            height: 6rem;
-            margin: 15rem auto;
+        position: absolute;
+        left:0;
+        right:0;
+        margin: auto;
+        bottom: -10vw;
+        
+      
+font-size: 0;
+        .slider_nav_button {display: inline-block;
+            width: 2vw;
+            height: 2vw;
+            margin: auto 15rem;
             border-radius: 50%;
             background-clip: padding-box;
             border: 2rem solid rgba(255, 255, 255, 0);
@@ -210,7 +214,7 @@
             &.active {
                 background-color: transparent;
                 border: 2rem solid white;
-                margin: 18rem auto;
+                margin:  auto 18rem;
             }
         }
     }

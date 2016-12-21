@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="stylesheets/mob/mob_style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <script defer src="js/config.js"></script>
+    <script defer src="js/mob_config.js"></script>
 
     <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
 
@@ -23,61 +23,48 @@
 <body>
 
 
-  <!-- Modal window begins -->
+
+    <!-- Modal window begins -->
     <div id="red_button" data-modal-id="modal_order">KEEP IN TOUCH</div>
     <div class="modal side_button_part" id="modal_order">
         <div class="full_screen">
             <div class="content">
-                <h2 id="job_seeker" class="active">JOB SEEKER</h2>
-                <h2 id="client" class="">CLIENT</h2>
+                <div class="tabs">
+                    <h2 id="job_seeker">JOB SEEKER</h2>
+                    <h2 id="client" class="active">CLIENT</h2>
+                </div>
                 <div class="job_seeker_part">
                     <div class="contacts">Sales manager: <a href="mailto:hello@AdaptIT.com">hello@AdaptIT.com</a></div>
                     <div class="contacts">Mobile Number: <a href="tel:+14087685273">+1 (408) 768-5273</a></div>
                     <h4>OPENING COUNTS</h4>
-                        <div class="modal_carousel_slider">
-                                   <!-- slide begins -->
-                                    <div class="slide_info">
-                                        <div class="picture" style="background-image:url(images/guy.png)"></div>
-                                        <div class="title">Mobile develop</div>
-                                        <div class="comment">4 post Avaliable</div>
-                                        <div class="red_button">APPLY NOW</div>
-                                    </div>
-                                    <!-- slide ends -->
-                                       <!-- slide begins -->
-                                    <div class="slide_info">
-                                        <div class="picture" style="background-image:url(images/guy.png)"></div>
-                                        <div class="title">Mobile develop</div>
-                                        <div class="comment">4 post Avaliable</div>
-                                        <div class="red_button">APPLY NOW</div>
-                                    </div>
-                                    <!-- slide ends -->
-                                       <!-- slide begins -->
-                                    <div class="slide_info">
-                                        <div class="picture" style="background-image:url(images/guy.png)"></div>
-                                        <div class="title">Mobile develop</div>
-                                        <div class="comment">4 post Avaliable</div>
-                                        <div class="red_button">APPLY NOW</div>
-                                    </div>
-                                    <!-- slide ends -->
-                                       <!-- slide begins -->
-                                    <div class="slide_info">
-                                        <div class="picture" style="background-image:url(images/guy.png)"></div>
-                                        <div class="title">Mobile develop</div>
-                                        <div class="comment">4 post Avaliable</div>
-                                        <div class="red_button">APPLY NOW</div>
-                                    </div>
-                                    <!-- slide ends -->
-                                       <!-- slide begins -->
-                                    <div class="slide_info">
-                                        <div class="picture" style="background-image:url(images/guy.png)"></div>
-                                        <div class="title">Mobile develop</div>
-                                        <div class="comment">4 post Avaliable</div>
-                                        <div class="red_button">APPLY NOW</div>
-                                    </div>
-                                    <!-- slide ends -->
-                                   
-                                </div>
-                     
+                    <div class="modal_carousel_slider">
+                        <!-- slide begins -->
+                        <div class="slide_info">
+                            <div class="picture" style="background-image:url(images/guy.png)"></div>
+                            <div class="title">Mobile develop</div>
+                            <div class="comment">4 post Avaliable</div>
+                            <div class="red_button">APPLY NOW</div>
+                        </div>
+                        <!-- slide ends -->
+                        <!-- slide begins -->
+                        <div class="slide_info">
+                            <div class="picture" style="background-image:url(images/guy.png)"></div>
+                            <div class="title">Mobile develop</div>
+                            <div class="comment">4 post Avaliable</div>
+                            <div class="red_button">APPLY NOW</div>
+                        </div>
+                        <!-- slide ends -->
+                        <!-- slide begins -->
+                        <div class="slide_info">
+                            <div class="picture" style="background-image:url(images/guy.png)"></div>
+                            <div class="title">Mobile develop</div>
+                            <div class="comment">4 post Avaliable</div>
+                            <div class="red_button">APPLY NOW</div>
+                        </div>
+                        <!-- slide ends -->
+
+                    </div>
+
                 </div>
                 <div class="client_part">
                     <div class="contacts_wrapper">
@@ -111,66 +98,49 @@
 
 
 
+
+
+
+
+
     <!-- header begins -->
-
     <header>
-        <div class="wrapper">
-            <img src="images/logo.png" alt="AdaptIT" class="logo">
-            <nav>
-                <ul>
-                    <li><a href="page.html">Services</a></li>
-                    <li><a href="home.html"> Business model</a></li>
-                    <li><a href="project.html">  Achievements</a></li>
-                    <li><a href="about.html">     About us</a></li>
-                </ul>
-            </nav>
-            <div class="contact">
-                <div>
-                    <div class="country">India</div>
-                    <div style="padding-top: 20rem;">
-                        <div class="arrow" data-arrow="hide"></div><a href="tel:+911724345253">
-+91 (172) <span> 434-5253 </span>
-</a></div>
-                    <div class="call_time">9.30 AM - 7.00 PM (IST)</div>
-                </div>
 
-                <div class="header_hidden_contact" data-arrow="spread">
+        <nav>
+            <div class="icon_menu">&#9776;</div>
+            <ul>
+                <li><a href="page.html">Services</a></li>
+                <li><a href="home.html"> Business model</a></li>
+                <li><a href="project.html">  Achievements</a></li>
+                <li><a href="about.html">     About us</a></li>
+                <li>
                     <div class="country" data-arrow="spread">India</div>
-                    <div style="padding-top: 20rem;" data-arrow="spread">
-                        <a href="tel:+911724345253" data-arrow="spread">
+                    <a href="tel:+911724345253" data-arrow="spread">
 +91 (172) <span data-arrow="spread"> 434-5253 </span>
-</a></div>
-                    <div class="call_time" data-arrow="spread">9.30 AM - 7.00 PM (IST)</div>
-                    <div data-arrow="spread"></div>
-                </div>
-                <div class="header_hidden_contact" data-arrow="spread">
-                    <div class="country" data-arrow="spread">India</div>
-                    <div style="padding-top: 20rem;" data-arrow="spread">
-                        <a href="tel:+911724345253" data-arrow="spread">
-+91 (172) <span data-arrow="spread"> 434-5253 </span>
-</a></div>
-                    <div class="call_time" data-arrow="spread">9.30 AM - 7.00 PM (IST)</div>
-                    <div data-arrow="spread"></div>
-                </div>
-            </div>
-        </div>
+</a>
+                    <div class="call_time">9.30 AM - 7.00 PM (IST)</div>
+                </li>
+            </ul>
+
+
+
+
+
+
+        </nav>
+        <a href=""><img src="images/logo.png" alt="AdaptIT" class="logo"></a>
+
+
+
 
     </header>
 
 
-    <!-- header ends -->
+    <!-- header ends  -->
 
     <!-- top part begins -->
 
-    <div class="top_part hide">
-        <video autoplay muted loop>
-            <source src="video/sunrise.mp4" type="video/mp4">
-        </video>
-
-
-
-
-
+    <div class="top_part hide" style="background-image: url(images/top_bg_page.jpg)">
 
 
         <div class="wrapper">
@@ -232,335 +202,33 @@
 
             <div class="team">
                 <h1>OUR TEAM</h1>
-                <div class="slider">          
+                <div class="slider">
 
                     <div class="slide_wrapper about_page_slider">
 
-                        <!-- slide begins -->
 
-                        <div class="slide" data-slide-num="1">
-                            <div>
-                                <div class="cell_2_w" style="background-image: url(images/testimonials_1.jpg)">
-                                    <div class="title">
+                        <div class="slide" style="background-image: url(images/testimonials_1.jpg)">
+                            <div class="title">
 
-                                        <div class="name">JOHN SMITH</div>
-                                        <div class="about">CTO</div>
-                                        <div class="icon"></div>
-                                        <div class="description">Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.</div>
-                                    </div>
+                                <div class="name">JOHN SMITH</div>
+                                <div class="icon"></div>
+                                <div class="about">CTO</div>
 
-
-                                </div>
-                                <div class="cell_1 cell_1_margin" style="background-image: url(images/testimonials_3.jpg)">
-                                    <div class="title">
-
-                                        <div class="name">JOHN SMITH</div>
-                                        <div class="about">Chief product officer</div>
-                                        <div class="icon"></div>
-
-                                    </div>
-                                </div>
-                                <div class="cell_1" style="background-image: url(images/testimonials_2.jpg)">
-                                    <div class="title">
-
-                                        <div class="name">JOHN SMITH</div>
-                                        <div class="about">Chief product officer</div>
-                                        <div class="icon"></div>
-                                    </div>
-                                </div>
-
+                                <div class="description">Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.</div>
                             </div>
-                            <div class="cell_2_w_2_h" style="background-image: url(images/testimonials_1.jpg)">
-                                <div class="title">
 
-                                    <div class="name">JOHN SMITH</div>
-                                    <div class="about">Chief product officer</div>
 
-                                    <div class="description">Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.
-                                        <div class="icon"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="cell_1 cell_1_margin" style="background-image: url(images/testimonials_2.jpg)">
-                                    <div class="title">
+                        </div>
+                        <div class="slide" style="background-image: url(images/testimonials_3.jpg)">
+                            <div class="title">
 
-                                        <div class="name">JOHN SMITH</div>
-                                        <div class="about">Chief product officer</div>
-                                        <div class="icon"></div>
-                                    </div>
-                                </div>
-                                <div class="cell_1" style="background-image: url(images/testimonials_3.jpg)">
-                                    <div class="title">
+                                <div class="name">JOHN SMITH</div>
+                                <div class="icon"></div>
+                                <div class="about">Chief product officer</div>
 
-                                        <div class="name">JOHN SMITH</div>
-                                        <div class="about">Chief product officer</div>
-                                        <div class="icon"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cell_2_w" style="background-image: url(images/testimonials_1.jpg)">
-                                <div class="title">
 
-                                    <div class="name">JOHN SMITH</div>
-                                    <div class="about">CTO</div>
-                                    <div class="icon"></div>
-                                    <div class="description">Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.</div>
-                                </div>
                             </div>
                         </div>
-
-                        <!-- slide ends -->
-
-
-
-
-
-
-
-
-
-
-                        <!-- slide begins -->
-
-                        <div class="slide" data-slide-num="2" hidden>
-                            <div>
-                                <div class="cell_2_w" style="background-image: url(images/testimonials_1.jpg)">
-                                    <div class="title">
-
-                                        <div class="name">JOHN SMITH</div>
-                                        <div class="about">CTO</div>
-                                        <div class="icon"></div>
-                                        <div class="description">Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.</div>
-                                    </div>
-
-
-                                </div>
-                                <div class="cell_1 cell_1_margin" style="background-image: url(images/testimonials_5.jpg)">
-                                    <div class="title">
-
-                                        <div class="name">JOHN SMITH</div>
-                                        <div class="about">Chief product officer</div>
-                                        <div class="icon"></div>
-
-                                    </div>
-                                </div>
-                                <div class="cell_1" style="background-image: url(images/testimonials_2.jpg)">
-                                    <div class="title">
-
-                                        <div class="name">JOHN SMITH</div>
-                                        <div class="about">Chief product officer</div>
-                                        <div class="icon"></div>
-
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="cell_2_w_2_h" style="background-image: url(images/testimonials_4.jpg)">
-                                <div class="title">
-
-                                    <div class="name">JOHN SMITH</div>
-                                    <div class="about">Chief product officer</div>
-
-                                    <div class="description">Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.
-                                        <div class="icon"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="cell_1 cell_1_margin" style="background-image: url(images/testimonials_3.jpg)">
-                                    <div class="title">
-
-                                        <div class="name">JOHN SMITH</div>
-                                        <div class="about">Chief product officer</div>
-                                        <div class="icon"></div>
-
-                                    </div>
-                                </div>
-                                <div class="cell_1" style="background-image: url(images/testimonials_1.jpg)">
-                                    <div class="title">
-
-                                        <div class="name">JOHN SMITH</div>
-                                        <div class="about">Chief product officer</div>
-                                        <div class="icon"></div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cell_2_w" style="background-image: url(images/testimonials_2.jpg)">
-                                <div class="title">
-
-                                    <div class="name">JOHN SMITH</div>
-                                    <div class="about">CTO</div>
-                                    <div class="icon"></div>
-                                    <div class="description">Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- slide ends -->
-
-
-
-
-                        <!-- slide begins -->
-
-                        <div class="slide" data-slide-num="3" hidden>
-                            <div>
-                                <div class="cell_2_w" style="background-image: url(images/testimonials_2.jpg)">
-                                    <div class="title">
-
-                                        <div class="name">JOHN SMITH</div>
-                                        <div class="about">CTO</div>
-                                        <div class="icon"></div>
-                                        <div class="description">Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.</div>
-                                    </div>
-
-                                </div>
-                                <div class="cell_1 cell_1_margin" style="background-image: url(images/testimonials_5.jpg)">
-                                    <div class="title">
-
-                                        <div class="name">JOHN SMITH</div>
-                                        <div class="about">Chief product officer</div>
-                                        <div class="icon"></div>
-
-                                    </div>
-                                </div>
-                                <div class="cell_1" style="background-image: url(images/testimonials_4.jpg)">
-                                    <div class="title">
-
-                                        <div class="name">JOHN SMITH</div>
-                                        <div class="about">Chief product officer</div>
-                                        <div class="icon"></div>
-
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="cell_2_w_2_h" style="background-image: url(images/testimonials_3.jpg)">
-                                <div class="title">
-
-                                    <div class="name">JOHN SMITH</div>
-                                    <div class="about">Chief product officer</div>
-
-                                    <div class="description">Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.
-                                        <div class="icon"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="cell_1 cell_1_margin" style="background-image: url(images/testimonials_2.jpg)">
-                                    <div class="title">
-
-                                        <div class="name">JOHN SMITH</div>
-                                        <div class="about">Chief product officer</div>
-                                        <div class="icon"></div>
-
-                                    </div>
-                                </div>
-                                <div class="cell_1" style="background-image: url(images/testimonials_1.jpg)">
-                                    <div class="title">
-
-                                        <div class="name">JOHN SMITH</div>
-                                        <div class="about">Chief product officer</div>
-                                        <div class="icon"></div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cell_2_w" style="background-image: url(images/testimonials_5.jpg)">
-                                <div class="title">
-
-                                    <div class="name">JOHN SMITH</div>
-                                    <div class="about">CTO</div>
-                                    <div class="icon"></div>
-                                    <div class="description">Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- slide ends -->
-
-
-
-
-                        <!-- slide begins -->
-
-                        <div class="slide" data-slide-num="4" hidden>
-                            <div>
-                                <div class="cell_2_w" style="background-image: url(images/testimonials_3.jpg)">
-                                    <div class="title">
-
-                                        <div class="name">JOHN SMITH</div>
-                                        <div class="about">CTO</div>
-                                        <div class="icon"></div>
-                                        <div class="description">Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.</div>
-                                    </div>
-
-                                </div>
-                                <div class="cell_1 cell_1_margin" style="background-image: url(images/testimonials_2.jpg)">
-                                    <div class="title">
-
-                                        <div class="name">JOHN SMITH</div>
-                                        <div class="about">Chief product officer</div>
-                                        <div class="icon"></div>
-
-                                    </div>
-                                </div>
-                                <div class="cell_1" style="background-image: url(images/testimonials_1.jpg)">
-                                    <div class="title">
-
-                                        <div class="name">JOHN SMITH</div>
-                                        <div class="about">Chief product officer</div>
-                                        <div class="icon"></div>
-
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="cell_2_w_2_h" style="background-image: url(images/testimonials_4.jpg)">
-                                <div class="title">
-
-                                    <div class="name">JOHN SMITH</div>
-                                    <div class="about">Chief product officer</div>
-
-                                    <div class="description">Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.
-                                        <div class="icon"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="cell_1 cell_1_margin" style="background-image: url(images/testimonials_5.jpg)">
-                                    <div class="title">
-
-                                        <div class="name">JOHN SMITH</div>
-                                        <div class="about">Chief product officer</div>
-                                        <div class="icon"></div>
-
-                                    </div>
-                                </div>
-                                <div class="cell_1" style="background-image: url(images/testimonials_2.jpg)">
-                                    <div class="title">
-
-                                        <div class="name">JOHN SMITH</div>
-                                        <div class="about">Chief product officer</div>
-                                        <div class="icon"></div>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cell_2_w" style="background-image: url(images/testimonials_3.jpg)">
-                                <div class="title">
-
-                                    <div class="name">JOHN SMITH</div>
-                                    <div class="about">CTO</div>
-                                    <div class="icon"></div>
-                                    <div class="description">Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- slide ends -->
 
 
 
@@ -592,150 +260,159 @@
                 <h1>AdaptIT.<span>THE STORY</span></h1>
                 <p>AdaptIT began in the late 90s became bored with the family business and wanted to do something with this new fangled thing called Internet. After more than 15 years, 3000 clients across all 6 continent and 10000 projects we are a nearly 200 strong design and development agency working on web, mobile and product development with a vast bouquet of services</p>
 
+<div class="ex_slider">
+
+                <!-- slide begins -->
                 <div class="red_year">
-                    <h3 id="red_year">2007</h3></div>
-
-                <div class="slider vert_slider">
-                    <div class="arrow arrow_right_"></div>
-                    <div class="arrow arrow_left_" hidden></div>
-
-                    <div class="slide_wrapper">
-
-                        <div class="slides_container">
-
-                            <!-- slide begins -->
-
-                            <div class="slide">
-                                <p> SiliconIndia recognizes AdaptIT as one of the Top 100 Mobile Apps Vendors in India for 2013.</p>
-
-                                <div class="icon" style="background-image:url(images/icon.png)"></div>
-                            </div>
-
-                            <!-- slide ends -->
-
-                            <!-- slide begins -->
-
-                            <div class="slide">
-                                <p> SiliconIndia recognizes AdaptIT as one of the Top 100 Mobile Apps Vendors in India for 2013.</p>
-
-                                <div class="icon" style="background-image:url(images/icon.png)"></div>
-                            </div>
-
-                            <!-- slide ends -->
-
-
-                            <!-- slide begins -->
-
-                            <div class="slide">
-                                <p> SiliconIndia recognizes AdaptIT as one of the Top 100 Mobile Apps Vendors in India for 2013.</p>
-
-                                <div class="icon" style="background-image:url(images/icon.png)"></div>
-                            </div>
-
-                            <!-- slide ends -->
-                            <!-- slide begins -->
-
-                            <div class="slide">
-                                <p> SiliconIndia recognizes AdaptIT as one of the Top 100 Mobile Apps Vendors in India for 2013.</p>
-
-                                <div class="icon" style="background-image:url(images/icon.png)"></div>
-                            </div>
-
-                            <!-- slide ends -->
-
-                            <!-- slide begins -->
-
-                            <div class="slide">
-                                <p> SiliconIndia recognizes AdaptIT as one of the Top 100 Mobile Apps Vendors in India for 2013.</p>
-
-                                <div class="icon" style="background-image:url(images/icon.png)"></div>
-                            </div>
-
-                            <!-- slide ends -->
-
-                            <!-- slide begins -->
-
-                            <div class="slide">
-                                <p> SiliconIndia recognizes AdaptIT as one of the Top 100 Mobile Apps Vendors in India for 2013.</p>
-
-                                <div class="icon" style="background-image:url(images/icon.png)"></div>
-                            </div>
-
-                            <!-- slide ends -->
-
-                            <!-- slide begins -->
-
-                            <div class="slide">
-                                <p> SiliconIndia recognizes AdaptIT as one of the Top 100 Mobile Apps Vendors in India for 2013.</p>
-
-                                <div class="icon" style="background-image:url(images/icon.png)"></div>
-                            </div>
-
-                            <!-- slide ends -->
-                            <!-- slide begins -->
-
-                            <div class="slide">
-                                <p> SiliconIndia recognizes AdaptIT as one of the Top 100 Mobile Apps Vendors in India for 2013.</p>
-
-                                <div class="icon" style="background-image:url(images/icon.png)"></div>
-                            </div>
-
-                            <!-- slide ends -->
-
-                            <!-- slide begins -->
-
-                            <div class="slide">
-                                <p> SiliconIndia recognizes AdaptIT as one of the Top 100 Mobile Apps Vendors in India for 2013.</p>
-
-                                <div class="icon" style="background-image:url(images/icon.png)"></div>
-                            </div>
-
-                            <!-- slide ends -->
-
-                            <!-- slide begins -->
-
-                            <div class="slide">
-                                <p> SiliconIndia recognizes AdaptIT as one of the Top 100 Mobile Apps Vendors in India for 2013.</p>
-
-                                <div class="icon" style="background-image:url(images/icon.png)"></div>
-                            </div>
-
-                            <!-- slide ends -->
-
-
-
-
-
-                        </div>
-
-
-
-
-
-                    </div>
+                    <h3>2016</h3>
                 </div>
 
+                <div class="slide">
+                    <p> SiliconIndia recognizes AdaptIT as one of the Top 100 Mobile Apps Vendors in India for 2013.</p>
 
 
+                </div>
 
+                <!-- slide ends -->
+
+                <!-- slide begins -->
+                <div class="red_year">
+                    <h3>2015</h3>
+                </div>
+
+                <div class="slide">
+                    <p> SiliconIndia recognizes AdaptIT as one of the Top 100 Mobile Apps Vendors in India for 2013.</p>
+
+
+                </div>
+
+                <!-- slide ends -->
+
+
+                <!-- slide begins -->
+                <div class="red_year">
+                    <h3>2014</h3>
+                </div>
+
+                <div class="slide">
+                    <p> SiliconIndia recognizes AdaptIT as one of the Top 100 Mobile Apps Vendors in India for 2013.</p>
+
+
+                </div>
+
+                <!-- slide ends -->
+                <!-- slide begins -->
+                <div class="red_year">
+                    <h3>2013</h3>
+                </div>
+
+                <div class="slide">
+                    <p> SiliconIndia recognizes AdaptIT as one of the Top 100 Mobile Apps Vendors in India for 2013.</p>
+
+
+                </div>
+
+                <!-- slide ends -->
+
+                <!-- slide begins -->
+                <div class="red_year">
+                    <h3>2012</h3>
+                </div>
+
+                <div class="slide">
+                    <p> SiliconIndia recognizes AdaptIT as one of the Top 100 Mobile Apps Vendors in India for 2013.</p>
+
+
+                </div>
+
+                <!-- slide ends -->
+
+                <!-- slide begins -->
+                <div class="red_year">
+                    <h3>2011</h3>
+                </div>
+
+                <div class="slide">
+                    <p> SiliconIndia recognizes AdaptIT as one of the Top 100 Mobile Apps Vendors in India for 2013.</p>
+
+
+                </div>
+
+                <!-- slide ends -->
+
+                <!-- slide begins -->
+                <div class="red_year">
+                    <h3>2010</h3>
+                </div>
+
+                <div class="slide">
+                    <p> SiliconIndia recognizes AdaptIT as one of the Top 100 Mobile Apps Vendors in India for 2013.</p>
+
+
+                </div>
+
+                <!-- slide ends -->
+                <!-- slide begins -->
+                <div class="red_year">
+                    <h3>2009 <div></div></h3>
+                </div>
+
+                <div class="slide">
+                    <p> SiliconIndia recognizes AdaptIT as one of the Top 100 Mobile Apps Vendors in India for 2013.</p>
+
+
+                </div>
+
+                <!-- slide ends -->
+
+                <!-- slide begins -->
+
+                <div class="red_year">
+                    <h3>2008 <div></div></h3>
+                </div>
+                <div class="slide">
+                    <p> SiliconIndia recognizes AdaptIT as one of the Top 100 Mobile Apps Vendors in India for 2013.</p>
+
+
+                </div>
+
+                <!-- slide ends -->
+                
+                
+                
                 <div class="history_line">
+                   <div></div>
+                   <div></div>
+                   <div></div>
+                   <div></div>
+                   <div></div>
+                   <div></div>
+                   <div></div>
+                   <div></div>
+                   <div></div>
+                   <div></div>
 
-                    <div id="runner">
-                        <div class="arrow arrow_left_" hidden></div>
-                        <div class="arrow arrow_right_"></div>
-                    </div>
-                    <div id="year_0"></div>
-                    <div id="year_1"></div>
-                    <div id="year_2"></div>
-                    <div id="year_3"></div>
-                    <div id="year_4"></div>
-                    <div id="year_5"></div>
-                    <div id="year_6"></div>
-                    <div id="year_7"></div>
-                    <div id="year_8"></div>
-                    <div id="year_9"></div>
+                   
 
                 </div>
+                </div>
+
+                <!-- slide begins -->
+
+                <div class="red_year">
+                    <h3>Early</h3>
+                </div>
+
+                <div class="slide">
+                    <p> SiliconIndia recognizes AdaptIT as one of the Top 100 Mobile Apps Vendors in India for 2013.</p>
+
+
+                </div>
+
+                <!-- slide ends -->
+
+
+
 
 
 
@@ -756,11 +433,10 @@
 
     <!-- contact begins -->
 
-
     <div class="contact_part">
         <div class="wrapper">
             <h1>WANT TO WORK WITH US?</h1>
-            <div>We propose you work with big clients, foreign customers, our own projects and cookies.</div>
+            <p>We propose you work with big clients, foreign customers, our own projects and cookies.</p>
             <form action="">
                 <input type="text" placeholder="First name">
                 <input type="email" placeholder="Email">
@@ -776,15 +452,14 @@
         </div>
     </div>
 
+
+
     <!-- contact ends -->
 
-    <!-- footer begins -->
+    <!-- footer begins  -->
     <footer>
         <div class="wrapper">
 
-            <div class="map">
-                <div class="img" style="background-image:url(images/map.jpg)"></div>
-            </div>
             <nav>
                 <ul>
                     <li>
@@ -876,39 +551,11 @@
                     </li>
                 </ul>
             </nav>
-            <div class="contacts">
-                <div class="col-1">D-174 Industrial Area Phase 8-B
-                    <br> Mohali, Punjab, Landine
-
-                    <div> Made by: <span>Creative Planet</span></div>
-
-                </div>
-                <div class="col-2">
-                    <span>INDIA</span>
-                    <br>
-                    <a href="tel:+911724345253">+91 (172) 434-5253</a>
-                    <br>
-                    <br>
-                    <span>USA</span>
-                    <br>
-                    <a href="tel:+14087685273">+1 (408) 768-5273</a>
-                </div>
-                <div class="col-3"><span>HR</span>
-                    <br>
-                    <a href="mailto:hr@AdaptIT.com">hr@AdaptIT.com</a>
-                    <br>
-                    <br>
-                    <span>SUPPORT</span>
-                    <br>
-                    <a href="mailto:hello@AdaptIT.com">hello@AdaptIT.com</a>
-                </div>
-
-            </div>
+            <div class="clear"></div>
         </div>
     </footer>
 
-
-    <!-- footer ends -->
+    <!-- footer ends  -->
 
 
 

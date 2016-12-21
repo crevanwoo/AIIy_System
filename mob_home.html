@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 
-    <script defer src="js/config.js"></script>
+    <script defer src="js/mob_config.js"></script>
 
     <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css" />
 
@@ -23,63 +23,48 @@
 <body>
 
 
- 
 
-  <!-- Modal window begins -->
+    <!-- Modal window begins -->
     <div id="red_button" data-modal-id="modal_order">KEEP IN TOUCH</div>
     <div class="modal side_button_part" id="modal_order">
         <div class="full_screen">
             <div class="content">
-                <h2 id="job_seeker" class="active">JOB SEEKER</h2>
-                <h2 id="client" class="">CLIENT</h2>
+               <div class="tabs">
+                <h2 id="job_seeker" >JOB SEEKER</h2>
+                <h2 id="client" class="active">CLIENT</h2>
+                </div>
                 <div class="job_seeker_part">
                     <div class="contacts">Sales manager: <a href="mailto:hello@AdaptIT.com">hello@AdaptIT.com</a></div>
                     <div class="contacts">Mobile Number: <a href="tel:+14087685273">+1 (408) 768-5273</a></div>
                     <h4>OPENING COUNTS</h4>
-                        <div class="modal_carousel_slider">
-                                   <!-- slide begins -->
-                                    <div class="slide_info">
-                                        <div class="picture" style="background-image:url(images/guy.png)"></div>
-                                        <div class="title">Mobile develop</div>
-                                        <div class="comment">4 post Avaliable</div>
-                                        <div class="red_button">APPLY NOW</div>
-                                    </div>
-                                    <!-- slide ends -->
-                                       <!-- slide begins -->
-                                    <div class="slide_info">
-                                        <div class="picture" style="background-image:url(images/guy.png)"></div>
-                                        <div class="title">Mobile develop</div>
-                                        <div class="comment">4 post Avaliable</div>
-                                        <div class="red_button">APPLY NOW</div>
-                                    </div>
-                                    <!-- slide ends -->
-                                       <!-- slide begins -->
-                                    <div class="slide_info">
-                                        <div class="picture" style="background-image:url(images/guy.png)"></div>
-                                        <div class="title">Mobile develop</div>
-                                        <div class="comment">4 post Avaliable</div>
-                                        <div class="red_button">APPLY NOW</div>
-                                    </div>
-                                    <!-- slide ends -->
-                                       <!-- slide begins -->
-                                    <div class="slide_info">
-                                        <div class="picture" style="background-image:url(images/guy.png)"></div>
-                                        <div class="title">Mobile develop</div>
-                                        <div class="comment">4 post Avaliable</div>
-                                        <div class="red_button">APPLY NOW</div>
-                                    </div>
-                                    <!-- slide ends -->
-                                       <!-- slide begins -->
-                                    <div class="slide_info">
-                                        <div class="picture" style="background-image:url(images/guy.png)"></div>
-                                        <div class="title">Mobile develop</div>
-                                        <div class="comment">4 post Avaliable</div>
-                                        <div class="red_button">APPLY NOW</div>
-                                    </div>
-                                    <!-- slide ends -->
-                                   
-                                </div>
-                     
+                    <div class="modal_carousel_slider">
+                        <!-- slide begins -->
+                        <div class="slide_info">
+                            <div class="picture" style="background-image:url(images/guy.png)"></div>
+                            <div class="title">Mobile develop</div>
+                            <div class="comment">4 post Avaliable</div>
+                            <div class="red_button">APPLY NOW</div>
+                        </div>
+                        <!-- slide ends -->      
+                          <!-- slide begins -->
+                        <div class="slide_info">
+                            <div class="picture" style="background-image:url(images/guy.png)"></div>
+                            <div class="title">Mobile develop</div>
+                            <div class="comment">4 post Avaliable</div>
+                            <div class="red_button">APPLY NOW</div>
+                        </div>
+                        <!-- slide ends -->   
+                          <!-- slide begins -->
+                        <div class="slide_info">
+                            <div class="picture" style="background-image:url(images/guy.png)"></div>
+                            <div class="title">Mobile develop</div>
+                            <div class="comment">4 post Avaliable</div>
+                            <div class="red_button">APPLY NOW</div>
+                        </div>
+                        <!-- slide ends -->                    
+
+                    </div>
+
                 </div>
                 <div class="client_part">
                     <div class="contacts_wrapper">
@@ -116,50 +101,41 @@
 
 
 
+
+
     <!-- header begins -->
     <header>
-        <div class="wrapper">
-            <img src="images/logo.png" alt="AdaptIT" class="logo">
-            <nav>
-                <ul>
-                    <li><a href="page.html">Services</a></li>
-                    <li><a href="home.html"> Business model</a></li>
-                    <li><a href="project.html">  Achievements</a></li>
-                    <li><a href="about.html">     About us</a></li>
-                </ul>
-            </nav>
-            <div class="contact">
-                <div>
-                    <div class="country">India</div>
-                    <div style="padding-top: 20rem;">
-                        <div class="arrow" data-arrow="hide"></div><a href="tel:+911724345253">
-+91 (172) <span> 434-5253 </span>
-</a></div>
-                    <div class="call_time">9.30 AM - 7.00 PM (IST)</div>
-                </div>
 
-                <div class="header_hidden_contact" data-arrow="spread">
+        <nav>
+           <div class="icon_menu">&#9776;</div>     
+            <ul>
+                <li><a href="page.html">Services</a></li>
+                <li><a href="home.html"> Business model</a></li>
+                <li><a href="project.html">  Achievements</a></li>
+                <li><a href="about.html">     About us</a></li>
+                <li>
                     <div class="country" data-arrow="spread">India</div>
-                    <div style="padding-top: 20rem;" data-arrow="spread">
-                        <a href="tel:+911724345253" data-arrow="spread">
+                    <a href="tel:+911724345253" data-arrow="spread">
 +91 (172) <span data-arrow="spread"> 434-5253 </span>
-</a></div>
-                    <div class="call_time" data-arrow="spread">9.30 AM - 7.00 PM (IST)</div>
-                    <div data-arrow="spread"></div>
-                </div>
-                <div class="header_hidden_contact" data-arrow="spread">
-                    <div class="country" data-arrow="spread">India</div>
-                    <div style="padding-top: 20rem;" data-arrow="spread">
-                        <a href="tel:+911724345253" data-arrow="spread">
-+91 (172) <span data-arrow="spread"> 434-5253 </span>
-</a></div>
-                    <div class="call_time" data-arrow="spread">9.30 AM - 7.00 PM (IST)</div>
-                    <div data-arrow="spread"></div>
-                </div>
-            </div>
-        </div>
+</a>
+                    <div class="call_time">9.30 AM - 7.00 PM (IST)</div>
+                </li>
+            </ul>
+
+
+
+
+
+
+        </nav>
+        <a href=""><img src="images/logo.png" alt="AdaptIT" class="logo"></a>
+
+
+
 
     </header>
+
+
     <!-- header ends  -->
 
     <!-- top part begins  -->
@@ -271,35 +247,30 @@
         <!-- grid block begins -->
         <div class="wrapper">
             <div class="about">
-
-
-                <div class="cell_2_w">
+            <div>
                     <span class="big">We build</span> omni-channe digital experiences using emerging technologies in <span>Social, </span>
                     <span>Mobile,</span>
-                    <br> <span>Analytics </span>
-                    <br>and <span>Cloud.</span>
-                </div>
-
-                <div class="cell_2_w">
-                    <div style="background-image:url(images/about_1.jpg)"></div>
-                    <div class="additional_text item1">
+                  <span>Analytics </span>
+                    and <span>Cloud.</span>
+                    </div>
+               
+         <div>
+                    <div class="additional_text">
                         <h3 class="service_h">Design studio</h3>Lorem ipsum dolor sit amet consectetur adipiscing elit.</div>
-                </div>
-                <div class="cell_1">
-                    <div style="background-image:url(images/about_2.jpg)"></div>
-                    <div class="additional_text item2">
+             
+                  
+                    <div class="additional_text">
                         <h3 class="service_h">marketing</h3>Lorem ipsum dolor sit amet consectetur adipiscing elit.</div>
-                </div>
-                <div class="cell_2_w">
-                    <div style="background-image:url(images/about_1.jpg)"></div>
-                    <div class="additional_text item3">
+              
+          
+                    <div class="additional_text">
                         <h3 class="service_h">development</h3>Lorem ipsum dolor sit amet consectetur adipiscing elit.</div>
-                </div>
-                <div class="cell_1">
-                    <div style="background-image:url(images/about_3.jpg)"></div>
-                    <div class="additional_text item4">
+             
+      
+           
+                    <div class="additional_text">
                         <h3 class="service_h">mobile app</h3>Lorem ipsum dolor sit amet consectetur adipiscing elit.</div>
-                </div>
+          </div>
 
 
 
@@ -315,272 +286,85 @@
 
 
         <!-- first slider begins  -->
-        <div class="wrapper">
+
+               <div class="wrapper">
             <div class="portfolio">
                 <h1 class="h_black_and_red">VIEW OUR LATEST <span>WORK</span></h1>
                 <div class="slider_port">
-                    <div class="slider home_page_portfolio_slider">
-                     
-                        <!-- slide begins -->
-                        <div class="slide active" data-slide-num="1">
-                            <div class="cell_2_h hover_parent" style="background-image:url(images/port_4.jpg)">
-                                <div class="hover_block">
-                                    <h4>VOICE CHAT</h4><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span>
-                                    <div class="blue_button">VIEW CASE</div>
-                                </div>
-                            </div>
-                            <div class="cell_1 hover_parent" style="background-image:url(images/port_4.jpg)">
-                                <div class="hover_block">
-                                    <h4>VOICE CHAT</h4><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span>
-                                    <div class="blue_button">VIEW CASE</div>
-                                </div>
-                            </div>
-                            <div class="cell_2_w hover_parent" style="background-image:url(images/port_5.jpg)">
-                                <div class="hover_block">
-                                    <h4>VOICE CHAT</h4><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span>
-                                    <div class="blue_button">VIEW CASE</div>
-                                </div>
-                            </div>
-                            <div class="cell_2_w hover_parent" style="background-image:url(images/port_5.jpg)">
-                                <div class="hover_block">
-                                    <h4>VOICE CHAT</h4><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span>
-                                    <div class="blue_button">VIEW CASE</div>
-                                </div>
-                            </div>
-                            <div class="cell_1 hover_parent" style="background-image:url(images/port_4.jpg)">
-                                <div class="hover_block">
-                                    <h4>VOICE CHAT</h4><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span>
-                                    <div class="blue_button">VIEW CASE</div>
-                                </div>
-                            </div>
+                    <div class="slider page_portfolio_slider">
+
+                        <div class="slide" style="background-image:url(images/port_4.jpg)">
+
                         </div>
 
-                        <!-- slide ends -->
-                        <!-- slide begins -->
-                        <div class="slide" hidden data-slide-num="2">
-                            <div class="cell_2_h hover_parent" style="background-image:url(images/port_6.jpg)">
-                                <div class="hover_block">
-                                    <h4>VOICE CHAT</h4><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span>
-                                    <div class="blue_button">VIEW CASE</div>
-                                </div>
-                            </div>
-                            <div class="cell_1 hover_parent" style="background-image:url(images/port_4.jpg)">
-                                <div class="hover_block">
-                                    <h4>VOICE CHAT</h4><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span>
-                                    <div class="blue_button">VIEW CASE</div>
-                                </div>
-                            </div>
-                            <div class="cell_2_w hover_parent" style="background-image:url(images/port_7.jpg)">
-                                <div class="hover_block">
-                                    <h4>VOICE CHAT</h4><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span>
-                                    <div class="blue_button">VIEW CASE</div>
-                                </div>
-                            </div>
-                            <div class="cell_2_w hover_parent" style="background-image:url(images/port_5.jpg)">
-                                <div class="hover_block">
-                                    <h4>VOICE CHAT</h4><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span>
-                                    <div class="blue_button">VIEW CASE</div>
-                                </div>
-                            </div>
-                            <div class="cell_1 hover_parent" style="background-image:url(images/port_4.jpg)">
-                                <div class="hover_block">
-                                    <h4>VOICE CHAT</h4><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span>
-                                    <div class="blue_button">VIEW CASE</div>
-                                </div>
-                            </div>
+
+                        <div class="slide" style="background-image:url(images/port_4.jpg)">
+
                         </div>
 
-                        <!-- slide ends -->
-                        <!-- slide begins -->
-                        <div class="slide" hidden data-slide-num="3">
-                            <div class="cell_2_h hover_parent" style="background-image:url(images/port_7.jpg)">
-                                <div class="hover_block">
-                                    <h4>VOICE CHAT</h4><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span>
-                                    <div class="blue_button">VIEW CASE</div>
-                                </div>
-                            </div>
-                            <div class="cell_1 hover_parent" style="background-image:url(images/port_4.jpg)">
-                                <div class="hover_block">
-                                    <h4>VOICE CHAT</h4><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span>
-                                    <div class="blue_button">VIEW CASE</div>
-                                </div>
-                            </div>
-                            <div class="cell_2_w hover_parent" style="background-image:url(images/port_6.jpg)">
-                                <div class="hover_block">
-                                    <h4>VOICE CHAT</h4><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span>
-                                    <div class="blue_button">VIEW CASE</div>
-                                </div>
-                            </div>
-                            <div class="cell_2_w hover_parent" style="background-image:url(images/port_5.jpg)">
-                                <div class="hover_block">
-                                    <h4>VOICE CHAT</h4><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span>
-                                    <div class="blue_button">VIEW CASE</div>
-                                </div>
-                            </div>
-                            <div class="cell_1 hover_parent" style="background-image:url(images/port_4.jpg)">
-                                <div class="hover_block">
-                                    <h4>VOICE CHAT</h4><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span>
-                                    <div class="blue_button">VIEW CASE</div>
-                                </div>
-                            </div>
+
+                        <div class="slide" style="background-image:url(images/port_5.jpg)">
+
                         </div>
 
-                        <!-- slide ends -->
-                        <!-- slide begins -->
-                        <div class="slide" hidden data-slide-num="4">
-                            <div class="cell_2_h hover_parent" style="background-image:url(images/port_5.jpg)">
-                                <div class="hover_block">
-                                    <h4>VOICE CHAT</h4><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span>
-                                    <div class="blue_button">VIEW CASE</div>
-                                </div>
-                            </div>
-                            <div class="cell_1 hover_parent" style="background-image:url(images/port_4.jpg)">
-                                <div class="hover_block">
-                                    <h4>VOICE CHAT</h4><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span>
-                                    <div class="blue_button">VIEW CASE</div>
-                                </div>
-                            </div>
-                            <div class="cell_2_w hover_parent" style="background-image:url(images/port_6.jpg)">
-                                <div class="hover_block">
-                                    <h4>VOICE CHAT</h4><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span>
-                                    <div class="blue_button">VIEW CASE</div>
-                                </div>
-                            </div>
-                            <div class="cell_2_w hover_parent" style="background-image:url(images/port_7.jpg)">
-                                <div class="hover_block">
-                                    <h4>VOICE CHAT</h4><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span>
-                                    <div class="blue_button">VIEW CASE</div>
-                                </div>
-                            </div>
-                            <div class="cell_1 hover_parent" style="background-image:url(images/port_4.jpg)">
-                                <div class="hover_block">
-                                    <h4>VOICE CHAT</h4><span>Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate.</span>
-                                    <div class="blue_button">VIEW CASE</div>
-                                </div>
-                            </div>
+
+                        <div class="slide" style="background-image:url(images/port_5.jpg)">
+
                         </div>
 
-                        <!-- slide ends -->
 
 
-                                           </div>
+
+
+
+
+                    </div>
                 </div>
             </div>
         </div>
+       
         <!-- first slider ends  -->
         <!-- second slider begins  -->
 
         <div class="wrapper">
             <div class="excellence">
+               
+               <div class="text_slide"><span>excellence</span>
+                            <br>Being outstanding</div>
                 <div class="slider slider_excellense">
+                  
                 
-                    <!-- slide begins -->
-                    <div class="slide" data-slide-num="1">
-                        <div class="cell_1" style="background-image:url(images/excellence_1.jpg)">
+                       
+                       
+                       
+                        <div class="slide" style="background-image:url(images/excellence_1.jpg)">
                             <div>Healthcare Solutions
                                 <br> along pharmacy</div>
                         </div>
-                        <div class="cell_2_w text_slide"><span>excellence</span>
-                            <br>Being outstanding</div>
-                        <div class="cell_1" style="background-image:url(images/excellence_2.jpg)">
+                      
+                        <div class="slide" style="background-image:url(images/excellence_2.jpg)">
                             <div>Constructions Management System</div>
                         </div>
-                        <div class="cell_1" style="background-image:url(images/excellence_3.jpg)">
+                        
+                        <div class="slide" style="background-image:url(images/excellence_3.jpg)">
                             <div>Constructions Management System</div>
                         </div>
-                        <div class="cell_1" style="background-image:url(images/excellence_4.jpg)">
+                        
+                        <div class="slide" style="background-image:url(images/excellence_4.jpg)">
                             <div>Enterprise Solutions
                                 <br> (CRM & ERP)</div>
                         </div>
-                        <div class="cell_1" style="background-image:url(images/excellence_1.jpg)">
+                        
+                        <div class="slide" style="background-image:url(images/excellence_1.jpg)">
                             <div>EVENT</div>
                         </div>
-                        <div class="cell_1" style="background-image:url(images/excellence_2.jpg)">
+                        
+                        <div class="slide" style="background-image:url(images/excellence_2.jpg)">
                             <div>Healthcare Solutions
                                 <br> along pharmacy</div>
-                        </div>
-                    </div>
+                        </div>            
 
-                    <!-- slide ends -->
-
-                    <!-- slide begins -->
-                    <div class="slide" hidden data-slide-num="2">
-                        <div class="cell_1" style="background-image:url(images/excellence_4.jpg)">
-                            <div>Healthcare Solutions
-                                <br> along pharmacy</div>
-                        </div>
-                        <div class="cell_2_w text_slide"><span>excellence</span>
-                            <br>Being outstanding</div>
-                        <div class="cell_1" style="background-image:url(images/excellence_5.jpg)">
-                            <div>Constructions Management System</div>
-                        </div>
-                        <div class="cell_1" style="background-image:url(images/excellence_3.jpg)">
-                            <div>Constructions Management System</div>
-                        </div>
-                        <div class="cell_1" style="background-image:url(images/excellence_2.jpg)">
-                            <div>Enterprise Solutions
-                                <br> (CRM & ERP)</div>
-                        </div>
-                        <div class="cell_1" style="background-image:url(images/excellence_6.jpg)">
-                            <div>EVENT</div>
-                        </div>
-                        <div class="cell_1" style="background-image:url(images/excellence_4.jpg)">
-                            <div>Healthcare Solutions
-                                <br> along pharmacy</div>
-                        </div>
-                    </div>
-
-                    <!-- slide ends -->
-                    <!-- slide begins -->
-                    <div class="slide" hidden data-slide-num="3">
-                        <div class="cell_1" style="background-image:url(images/excellence_2.jpg)">
-                            <div>Constructions Management System</div>
-                        </div>
-                        <div class="cell_2_w text_slide"><span>excellence</span>
-                            <br>Being outstanding</div>
-                        <div class="cell_1" style="background-image:url(images/excellence_7.jpg)">
-                            <div>Constructions Management System</div>
-                        </div>
-                        <div class="cell_1" style="background-image:url(images/excellence_6.jpg)">
-                            <div>Constructions Management System</div>
-                        </div>
-                        <div class="cell_1" style="background-image:url(images/excellence_3.jpg)">
-                            <div>Constructions Management System</div>
-                        </div>
-                        <div class="cell_1" style="background-image:url(images/excellence_5.jpg)">
-                            <div>Constructions Management System</div>
-                        </div>
-                        <div class="cell_1" style="background-image:url(images/excellence_1.jpg)">
-                            <div>Constructions Management System</div>
-                        </div>
-                    </div>
-
-                    <!-- slide ends -->
-                    <!-- slide begins -->
-                    <div class="slide" hidden data-slide-num="4">
-                        <div class="cell_1" style="background-image:url(images/excellence_5.jpg)">
-                            <div>Constructions Management System</div>
-                        </div>
-                        <div class="cell_2_w text_slide"><span>excellence</span>
-                            <br>Being outstanding</div>
-                        <div class="cell_1" style="background-image:url(images/excellence_7.jpg)">
-                            <div>Constructions Management System</div>
-                        </div>
-                        <div class="cell_1" style="background-image:url(images/excellence_3.jpg)">
-                            <div>Constructions Management System</div>
-                        </div>
-                        <div class="cell_1" style="background-image:url(images/excellence_4.jpg)">
-                            <div>Constructions Management System</div>
-                        </div>
-                        <div class="cell_1" style="background-image:url(images/excellence_2.jpg)">
-                            <div>Constructions Management System</div>
-                        </div>
-                        <div class="cell_1" style="background-image:url(images/excellence_5.jpg)">
-                            <div>Constructions Management System</div>
-                        </div>
-                    </div>
-
-                    <!-- slide ends -->
+                    
                    
                 </div>
             </div>
@@ -607,13 +391,12 @@
             <div class="slider testimonials_slider">
              
 
-                <!-- slide begins -->
-                <div class="slide" data-slide-num="1">
+            
 
 
 
 
-                    <div class="cell_2_w thin" style="background-image:url(images/testimonials_2.jpg)">
+                    <div class="slide" style="background-image:url(images/testimonials_2.jpg)">
                         <div class="name">ALISON SMITH</div>
                         <div class="about">SEO/AdaptIT</div>
                         <br>
@@ -622,34 +405,14 @@
 
                         <div class="play" data-modal-id="video_1">
                             Play
-                        </div>
+                        </div>             
 
                    
-
                    
-                   
-                    </div>
-                    <div class="cell_1 thin" style="background-image:url(images/testimonials_1.jpg)">
-                        <div class="name">ALISON SMITH</div>
-                        <div class="about">SEO/AdaptIT</div>
-                        <br>
-                    </div>
-                    <div class="cell_1 thin" style="background-image:url(images/testimonials_3.jpg)">
-                        <div class="name">ALISON SMITH</div>
-                        <div class="about">SEO/AdaptIT</div>
-                        <br>
-                    </div>
-                    <div class="cell_1 thin" style="background-image:url(images/testimonials_1.jpg)">
-                        <div class="name">ALISON SMITH</div>
-                        <div class="about">SEO/AdaptIT</div>
-                        <br>
-                    </div>
-                    <div class="cell_1 thin" style="background-image:url(images/testimonials_1.jpg)">
-                        <div class="name">ALISON SMITH</div>
-                        <div class="about">SEO/AdaptIT</div>
-                        <br>
-                    </div>
-                    <div class="cell_2_w thin" style="background-image:url(images/testimonials_2.jpg)">
+                    </div>               
+                
+           
+                    <div class="slide" style="background-image:url(images/testimonials_2.jpg)">
                         <div class="name">ALISON SMITH</div>
                         <div class="about">SEO/AdaptIT</div>
                         <br>
@@ -657,133 +420,20 @@
                         <div class="description">Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.</div>
                         <div class="play" data-modal-id="video_2">
                             Play
-                        </div>
-                        
-                        
-                        
-
+                        </div>      
 
                     </div>
-                </div>
+                    
+                    
+                    
+                    
+         
 
-                <!-- slide ends -->
+               
 
-                <!-- slide begins -->
-                <div class="slide" hidden data-slide-num="2">
+               
 
-
-
-                    <div class="cell_2_w thin" style="background-image:url(images/testimonials_2.jpg)">
-                        <div class="name">ALISON SMITH</div>
-                        <div class="about">SEO/AdaptIT</div>
-                        <br>
-
-                        <div class="description">Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.</div>
-                    </div>
-                    <div class="cell_1 thin" style="background-image:url(images/testimonials_5.jpg)">
-                        <div class="name">ALISON SMITH</div>
-                        <div class="about">SEO/AdaptIT</div>
-                    </div>
-                    <div class="cell_1 thin" style="background-image:url(images/testimonials_1.jpg)">
-                        <div class="name">ALISON SMITH</div>
-                        <div class="about">SEO/AdaptIT</div>
-                    </div>
-                    <div class="cell_1 thin" style="background-image:url(images/testimonials_3.jpg)">
-                        <div class="name">ALISON SMITH</div>
-                        <div class="about">SEO/AdaptIT</div>
-                    </div>
-                    <div class="cell_1 thin" style="background-image:url(images/testimonials_1.jpg)">
-                        <div class="name">ALISON SMITH</div>
-                        <div class="about">SEO/AdaptIT</div>
-                    </div>
-                    <div class="cell_2_w thin" style="background-image:url(images/testimonials_4.jpg)">
-                        <div class="name">ALISON SMITH</div>
-                        <div class="about">SEO/AdaptIT</div>
-                        <br>
-
-                        <div class="description">Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.</div>
-                    </div>
-                </div>
-
-                <!-- slide ends -->
-
-                <!-- slide begins -->
-                <div class="slide" hidden data-slide-num="3">
-
-
-
-                    <div class="cell_2_w thin" style="background-image:url(images/testimonials_4.jpg)">
-                        <div class="name">ALISON SMITH</div>
-                        <div class="about">SEO/AdaptIT</div>
-                        <br>
-
-                        <div class="description">Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.</div>
-                    </div>
-                    <div class="cell_1 thin" style="background-image:url(images/testimonials_3.jpg)">
-                        <div class="name">ALISON SMITH</div>
-                        <div class="about">SEO/AdaptIT</div>
-                    </div>
-                    <div class="cell_1 thin" style="background-image:url(images/testimonials_2.jpg)">
-                        <div class="name">ALISON SMITH</div>
-                        <div class="about">SEO/AdaptIT</div>
-                    </div>
-                    <div class="cell_1 thin" style="background-image:url(images/testimonials_1.jpg)">
-                        <div class="name">ALISON SMITH</div>
-                        <div class="about">SEO/AdaptIT</div>
-                    </div>
-                    <div class="cell_1 thin" style="background-image:url(images/testimonials_5.jpg)">
-                        <div class="name">ALISON SMITH</div>
-                        <div class="about">SEO/AdaptIT</div>
-                    </div>
-                    <div class="cell_2_w thin" style="background-image:url(images/testimonials_2.jpg)">
-                        <div class="name">ALISON SMITH</div>
-                        <div class="about">SEO/AdaptIT</div>
-                        <br>
-
-                        <div class="description">Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.</div>
-                    </div>
-                </div>
-
-                <!-- slide ends -->
-
-                <!-- slide begins -->
-                <div class="slide" hidden data-slide-num="4">
-
-
-
-                    <div class="cell_2_w thin" style="background-image:url(images/testimonials_5.jpg)">
-                        <div class="name">ALISON SMITH</div>
-                        <div class="about">SEO/AdaptIT</div>
-                        <br>
-
-                        <div class="description">Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.</div>
-                    </div>
-                    <div class="cell_1 thin" style="background-image:url(images/testimonials_4.jpg)">
-                        <div class="name">ALISON SMITH</div>
-                        <div class="about">SEO/AdaptIT</div>
-                    </div>
-                    <div class="cell_1 thin" style="background-image:url(images/testimonials_3.jpg)">
-                        <div class="name">ALISON SMITH</div>
-                        <div class="about">SEO/AdaptIT</div>
-                    </div>
-                    <div class="cell_1 thin" style="background-image:url(images/testimonials_2.jpg)">
-                        <div class="name">ALISON SMITH</div>
-                        <div class="about">SEO/AdaptIT</div>
-                    </div>
-                    <div class="cell_1 thin" style="background-image:url(images/testimonials_1.jpg)">
-                        <div class="name">ALISON SMITH</div>
-                        <div class="about">SEO/AdaptIT</div>
-                    </div>
-                    <div class="cell_2_w thin" style="background-image:url(images/testimonials_5.jpg)">
-                        <div class="name">ALISON SMITH</div>
-                        <div class="about">SEO/AdaptIT</div>
-                        <br>
-
-                        <div class="description">Lorem ipsum dolor sit amet, cnsectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.</div>
-                    </div>
-                </div>
-
-                <!-- slide ends -->
+                
 
 
               
@@ -804,14 +454,10 @@
 
 
 
-
-    <!-- footer begins  -->
+ <!-- footer begins  -->
     <footer>
         <div class="wrapper">
 
-            <div class="map">
-                <div class="img" style="background-image:url(images/map.jpg)"></div>
-            </div>
             <nav>
                 <ul>
                     <li>
@@ -903,36 +549,10 @@
                     </li>
                 </ul>
             </nav>
-            <div class="contacts">
-                <div class="col-1">D-174 Industrial Area Phase 8-B
-                    <br> Mohali, Punjab, Landine
-
-                    <div> Made by: <span>Creative Planet</span></div>
-
-                </div>
-                <div class="col-2">
-                    <span>INDIA</span>
-                    <br>
-                    <a href="tel:+911724345253">+91 (172) 434-5253</a>
-                    <br>
-                    <br>
-                    <span>USA</span>
-                    <br>
-                    <a href="tel:+14087685273">+1 (408) 768-5273</a>
-                </div>
-                <div class="col-3"><span>HR</span>
-                    <br>
-                    <a href="mailto:hr@AdaptIT.com">hr@AdaptIT.com</a>
-                    <br>
-                    <br>
-                    <span>SUPPORT</span>
-                    <br>
-                    <a href="mailto:hello@AdaptIT.com">hello@AdaptIT.com</a>
-                </div>
-
-            </div>
+            <div class="clear"></div>
         </div>
     </footer>
+
     <!-- footer ends  -->
     
     

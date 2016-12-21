@@ -97,9 +97,9 @@ ul {
 
 %half_gradient_h {
     text-align: center;
-    h1 {
-        box-sizing: border-box;
-        height: 65rem;
+    h1 {padding-top: 2vw;
+        padding-bottom: 2vw;
+        box-sizing: border-box;    
         position: relative;
         display: inline-block;
         line-height: 65rem;

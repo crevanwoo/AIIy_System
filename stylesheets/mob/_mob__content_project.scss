@@ -38,7 +38,7 @@
         padding-bottom: 75rem;
         border-color: #f5f5f5;
         .block {
-            width: 580rem;
+            width: 85vw;
             padding-right: 20rem;
             padding-left: 150rem;
             position: relative;
@@ -89,30 +89,19 @@
         $line-height: 22rem;
         background-color: #e3e3e3;
         .wrapper {
-            padding-top: 30rem;
-            .img1,
-            text1 {
-                float: left;
-            }
-            .img2,
-            text2 {
-                float: right;
-            }
-            .img1,
-            .img2 {
-                background-size: contain;
-            }
+            padding-top: 30rem;        
             .text,
             h1,
             p {
-                line-height: $line-height;
+              
                 display: inline-block;
             }
+            .text {width: 100%}
             .text1 {
-                width: 570rem;
+          
             }
             .text2 {
-                width: 840rem;
+         
                 margin-bottom: 80rem;
             }
             &:after {
@@ -127,8 +116,8 @@
             color: $f_red;
         }
         ul {
-            line-height: $line-height;
-            padding-left: 30rem;
+         
+            padding-left: 10vw;
             padding-top: 20rem;
             li {
                 padding-left: 20rem;

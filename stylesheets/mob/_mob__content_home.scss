@@ -12,52 +12,43 @@
     .about {
         @extend %slide_common_style;
         font-variant: small-caps;
-        font-size: $f_24;
+        font-size: 24rem*2;
         >div:first-of-type {
             text-transform: uppercase;
             line-height: 200%;
         }
         span {
             color: $text_red;
-            font-size: 36rem;
+            font-size: 36rem*2;
             font-family: $f_medium;
             &.big {
                 color: black;
-                font-size: 58rem;
+                font-size: 58rem*2;
                 font-family: $f_regular;
             }
         }
         >div {
             position: relative;
             overflow: visible;
-            @extend %for_all_slide_cells;
-            >div:first-of-type {
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
-                background-size: cover;
-                &:before {
-                    @extend %blue_transparent;
-                    background-color: $light_blue_transparent
-                }
-            }
+       
         }
-        .additional_text {
-            width: 275rem;
-            height: 155rem;
-            padding: 35rem 25rem 0 25rem;
-            position: absolute;
+        .additional_text {            
+            width: 42.5vw;
+            margin-top: 2.5vw;
+            margin-bottom:2.5vw;
+            
+            float:left;
+            padding: 35rem 25rem;
             box-sizing: border-box;
             background-color: #fff;
             font-size: $f_16;
             text-align: center;
-            z-index: 1;
+            z-index: 1;    
+            &:nth-of-type(even) {margin-left: 5vw;}
             .service_h {
                 padding-bottom: 20rem;
                 font-family: $f_medium;
-                font-size: $f_24;
+                font-size: 50rem;
                 color: $text_red;
                 text-transform: uppercase;
             }
@@ -97,25 +88,24 @@
         margin-top: 60rem;
         position: relative;
         .text_slide {
-            padding-top: 100rem;
+            padding: 50rem 0;
             box-sizing: border-box;
-            font-size: 20rem;
+            font-size: 40rem;
+            text-align: center;
             span {
                 text-shadow: 1rem 1rem 2rem black;
-                font-size: 40rem;
+                font-size: 60rem;
                 text-transform: uppercase;
             }
         }
-        >div.arrow {
-            @extend %slider_arrow;
-            border-bottom: 3rem solid #b6b6b6;
-            border-left: 3rem solid #b6b6b6;
-        }
+     
         .slide {
-            @extend %slide_common_style;
-            >div {
+           
+                 @extend %for_all_slide_cells;
+        @extend %slider_cell;
+         
                 position: relative;
-                @extend %for_all_slide_cells;
+          
                 text-align: center;
                 display: table;
                 >div {
@@ -126,18 +116,15 @@
                     display: table-cell;
                     vertical-align: middle;
                 }
-            }
-            .cell_1 {
+            
+        
                 &:before {
                     @extend %blue_transparent;
                     background-color: $light_blue_transparent
                 }
-            }
+            
         }
-        .slider_nav {
-            @extend %slider_nav;
-            @include slider_nav(white)
-        }
+       
     }
 }
 
@@ -153,26 +140,23 @@
             color: white;
             text-transform: uppercase;
         }
-        >div.arrow {
-            @extend %slider_arrow;
-            border-bottom: 3rem solid white;
-            border-left: 3rem solid white;
-        }
-        .slider_nav {
-            @extend %slider_nav;
-            @include slider_nav(blue)
-        }
+   
+     
     }
-    .slide {
-        @extend %slide_common_style;
-        >div {
+    .slide {                
+                 @extend %for_all_slide_cells;
+        @extend %slider_cell;  
+        width: 85vw;
+        height:85vw;
+        margin-right: 5.5vw;
             box-sizing: border-box;
             padding: 30rem;
             color: white;
             position: relative;
-            @extend %for_all_slide_cells;
+      
             font-size: $f_16;
             line-height: 150%;
+        overflow:visible;
             &:before {
                 @extend %blue_transparent;
                 background-color: $light_blue_transparent
@@ -185,16 +169,14 @@
                 line-height: 200%;
                 font-family: $f_medium;
             }
-        }
-        .cell_1 {
-            @extend %slider_cell;
-        }
+        
        
-    }
+       
+   
     .play {
-        width: 120rem;
-        height: 55rem;
-        line-height: 55rem;
+        width: 15vw;
+        height: 5vw;
+        line-height: 5vw;
         font-size: $f_18;
         padding-left: 20rem;
         box-sizing: border-box;
@@ -218,7 +200,7 @@
             margin: auto;
         }
     }
-}
+} }
 
 .modal_video {
     position: fixed !important;
@@ -258,9 +240,10 @@
     }
     .close {
         position: absolute;
-        top: 5%;
-        right: 10%;
-        font-size: 30rem;
+        right:5vw;
+        top:0;
+       
+        font-size: 80rem;
         cursor: pointer;
     }
 }
