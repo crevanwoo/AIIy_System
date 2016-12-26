@@ -150,8 +150,8 @@ ul {
 .testimonials .arrow.slider_arr,
 .content.about .arrow.slider_arr {
   position: absolute;
-  width: 40rem;
-  height: 40rem;
+  width: 100rem;
+  height: 100rem;
   top: 45%;
   transform: translateY(-100%); }
   .portfolio .arrow.slider_arr:before,
@@ -205,8 +205,8 @@ ul {
 
 .slick-arrow {
   position: absolute;
-  width: 40rem;
-  height: 40rem;
+  width: 100rem;
+  height: 100rem;
   top: 270rem;
   transform: translateY(-50%);
   font-size: 0;
@@ -233,7 +233,7 @@ ul {
 .team .slick-prev {
   left: -40rem; }
 .team .slick-next {
-  right: -20rem; }
+  right: -75rem; }
 
 .slick-dots {
   display: inline-block;
@@ -263,9 +263,9 @@ ul {
 .slider_excellense {
   text-align: center; }
   .slider_excellense .slick-prev {
-    left: -60rem; }
+    left: -90rem; }
   .slider_excellense .slick-next {
-    right: -20rem; }
+    right: -50rem; }
 
 .about_page_slider .slick-arrow {
   top: 170rem; }
@@ -279,16 +279,16 @@ ul {
 .home_page_portfolio_slider {
   text-align: center; }
   .home_page_portfolio_slider .slick-prev {
-    left: -50rem; }
+    left: -80rem; }
   .home_page_portfolio_slider .slick-next {
-    right: -10rem; }
+    right: -40rem; }
 
 .page_portfolio_slider {
   text-align: center; }
   .page_portfolio_slider .slick-prev {
-    left: -60rem; }
+    left: -80rem; }
   .page_portfolio_slider .slick-next {
-    right: -10rem; }
+    right: -35rem; }
 
 .testimonials .wrapper {
   padding-right: 0; }
@@ -301,9 +301,9 @@ ul {
     border-bottom: 4rem solid white;
     border-left: 4rem solid white; }
   .testimonials_slider .slick-prev {
-    left: -60rem; }
+    left: -50rem; }
   .testimonials_slider .slick-next {
-    right: -20rem; }
+    right: -70rem; }
   .testimonials_slider .slick-dots li {
     background-color: #77a2b6; }
     .testimonials_slider .slick-dots li.slick-active {
@@ -329,7 +329,8 @@ ul {
   transform: rotate(-135deg); }
 
 .modal_carousel_slider .slick-arrow {
-  top: 65rem; }
+  top: 65rem;
+  z-index: 5; }
   .modal_carousel_slider .slick-arrow:before {
     width: 20rem;
     height: 20rem;
@@ -366,7 +367,7 @@ header {
     background-color: rgba(19, 53, 69, 0.9); }
   header .logo {
     float: left;
-    width: 209rem;
+    width: 170rem;
     height: auto; }
   header nav {
     float: left;

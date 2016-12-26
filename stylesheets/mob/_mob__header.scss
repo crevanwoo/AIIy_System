@@ -17,20 +17,32 @@ header {
         display: block;
     }
     nav {
-        &.active {ul {display: block;
-            }}
+        &.active {
+            ul {
+                display: block;
+            }
+        }
         position: relative;
-        .icon_menu {position: absolute;
+        .icon_menu {
+            /*position: absolute;
            
             padding: $wrapper_padding $wrapper_padding 0 $wrapper_padding;
             height: $header_height - $wrapper_padding ;
             
             
             font-size: 90rem;
-            color:white;
+            color:white;*/
+            position: absolute;
+            font-size: 0;
+            height: $header_height - $wrapper_padding;
+            width: 20vw;
+            background-image: url(../images/menu_icon.png);
+            background-size: 50% auto;
+            background-repeat: no-repeat;
+            background-position: center;
         }
-        ul {display: none;
-            
+        ul {
+            display: none;
             position: absolute;
             width: 100%;
             margin-top: $header_height;

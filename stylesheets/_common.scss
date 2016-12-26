@@ -121,8 +121,8 @@ ul {
 .content.about {
     .arrow.slider_arr {
         position: absolute;
-        width: 40rem;
-        height: 40rem;
+        width: 100rem;
+        height: 100rem;
         top: 45%;
         transform: translateY(-100%);
         &:before {
@@ -179,8 +179,8 @@ ul {
 
 .slick-arrow {
     position: absolute;
-    width: 40rem;
-    height: 40rem;
+     width: 100rem;
+        height: 100rem;
     top: 270rem;
     transform: translateY(-50%);
     font-size: 0;
@@ -216,7 +216,7 @@ ul {
         left: -40rem;
     }
     .slick-next {
-        right: -20rem;
+        right: -75rem;
     }
 }
 
@@ -254,11 +254,11 @@ ul {
 .slider_excellense {
     text-align: center;
     .slick-prev {
-        left: -60rem;
+        left: -90rem;
       
     }
     .slick-next {
-        right: -20rem;
+        right: -50rem;
     }
 }
 
@@ -278,20 +278,20 @@ ul {
 .home_page_portfolio_slider {
     text-align: center;
     .slick-prev {
-        left: -50rem;
+        left: -80rem;
     }
     .slick-next {
-        right: -10rem;
+        right: -40rem;
     }
 }
 
 .page_portfolio_slider {
     text-align: center;
     .slick-prev {
-        left: -60rem;
+        left: -80rem;
     }
     .slick-next {
-        right: -10rem;
+        right: -35rem;
     }
 }
 
@@ -311,10 +311,10 @@ ul {
         }
     }
     .slick-prev {
-        left: -60rem;
+        left: -50rem;
     }
     .slick-next {
-        right: -20rem;
+        right: -70rem;
     }
     .slick-dots li {
         background-color: #77a2b6;
@@ -355,6 +355,7 @@ $line_hover: #4078ba;
 .modal_carousel_slider {
     .slick-arrow {
         top: 65rem;
+        z-index:5;
         &:before {
             width: 20rem;
             height: 20rem;
