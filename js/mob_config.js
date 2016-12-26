@@ -3,12 +3,64 @@
 
 
 
-   /* page about */
+    /* page about */
 
     /* second_slider */
 
     ;
     (function () {
+
+        $('.top_home .slider .slide').on('touchstart touchmove touchend', function (e) {
+            var target = e.target;
+            while (!target.classList.contains('slide')) {
+                target = target.parentElement
+            }
+            var index = parseInt(target.getAttribute('data-slide-num'));
+
+            var slider = $('.top_home .slider');
+            var s_len = parseInt($('.top_home .slider .slide').length);
+
+            if (getSwipeDirection(e) == 'right') {
+                slider.find('.slide.active').attr('hidden', '');
+                slider.find('.slider_nav_button[data-slide-num="' + index + '"]').removeClass('active');
+                slider.find('.slide[data-slide-num="' + index + '"]').removeClass('active');
+
+                if (index < s_len) {
+
+                    slider.find('.slider_nav_button[data-slide-num="' + (index + 1) + '"]').addClass('active');
+                    slider.find('.slide[data-slide-num="' + (index + 1) + '"]').addClass('active');
+                    slider.find('.slide[data-slide-num="' + (index + 1) + '"]').removeAttr('hidden');
+                } else {
+
+                    slider.find('.slider_nav_button[data-slide-num="' + 1 + '"]').addClass('active');
+                    slider.find('.slide[data-slide-num="' + 1 + '"]').addClass('active');
+                    slider.find('.slide[data-slide-num="' + 1 + '"]').removeAttr('hidden');
+                }
+
+            } else if (getSwipeDirection(e) == 'left') {
+                slider.find('.slide.active').attr('hidden', '');
+                slider.find('.slider_nav_button[data-slide-num="' + index + '"]').removeClass('active');
+
+                slider.find('.slide[data-slide-num="' + index + '"]').removeClass('active');
+                if (index > 1) {
+
+                    slider.find('.slider_nav_button[data-slide-num="' + (index - 1) + '"]').addClass('active');
+                    slider.find('.slide[data-slide-num="' + (index - 1) + '"]').addClass('active');
+                    slider.find('.slide[data-slide-num="' + (index - 1) + '"]').removeAttr('hidden');
+                } else {
+
+
+                    slider.find('.slider_nav_button[data-slide-num="' + s_len + '"]').addClass('active');
+                    slider.find('.slide[data-slide-num="' + s_len + '"]').addClass('active');
+                    slider.find('.slide[data-slide-num="' + s_len + '"]').removeAttr('hidden');
+                }
+            }
+
+        })
+
+
+
+
         var nav_button = document.querySelectorAll('.slider_nav_button');
         for (var i = 0; i < nav_button.length; i++) {
             nav_button[i].addEventListener('click', sliderMove)
@@ -35,20 +87,44 @@
         }
 
 
+        function getTouchCoord(e) {
+            return e.originalEvent.touches[0].clientX
+        }
+
+        var firstCoord, lastCoord;
+
+        function getSwipeDirection(e) {
+            if (e.type == 'touchstart') {
+                firstCoord = getTouchCoord(e);
+            } else if (e.type == 'touchmove') {
+                lastCoord = getTouchCoord(e);
+            } else if (e.type == 'touchend') {
+                if (lastCoord - firstCoord > 10) {
+                    return 'left';
+                } else if (lastCoord - firstCoord < -10) {
+                    return 'right';
+                }
+            }
+        };
+
+
 
 
 
     })();
-    
-    
+
+
     $('.icon_menu').on('click', function () {
         var nav = $(this).parent();
-   
-        if(nav.hasClass('active')) {nav.removeClass('active')}
-        else {nav.addClass('active')}
-                       
-                       
-                       })
+
+        if (nav.hasClass('active')) {
+            nav.removeClass('active')
+        } else {
+            nav.addClass('active')
+        }
+
+
+    })
 
 
     ;
@@ -468,7 +544,7 @@ $(document).ready(function () {
 
 
 $(document).ready(function () {
-    $('.modal_carousel_slider').slick({       
+    $('.modal_carousel_slider').slick({
         swipeToSlide: true,
     });
 });
@@ -483,7 +559,7 @@ $(document).ready(function () {
 
 
 $(document).ready(function () {
-    $('.smartphone_slider').slick({     
+    $('.smartphone_slider').slick({
         swipeToSlide: true,
     });
 });
